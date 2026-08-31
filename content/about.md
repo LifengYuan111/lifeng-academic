@@ -36,7 +36,7 @@ With proven skills in clear and precise scientific communication for diverse aud
 ## Professional service
 
 - Serves as a reviewer for prestigious journals, including *Water Research*, *Water Resources Research*, *Journal of Hydrology*, *Catena*, *Environmental Modelling & Software*, *Sustainable Futures*, MDPI *Land*, *Applied Soft Computing*, *Atmospheric Research*, *Journal of Environmental Quality*, *Soil and Water Conservation Journal*, and *Research of Soil and Water Conservation* (a Chinese journal).
-- Served as a project reviewer for the EPA, 2022–present. Responsible for evaluating and making recommendations on proposed research projects that seek funding from the organization.
+- Served as a project reviewer for the EPA, 2022–2025. Responsible for evaluating and making recommendations on proposed research projects that seek funding from the organization.
 - Serves as an EPA tech reviewer, 2021–2025. Responsible for evaluating scientific and technical documents to ensure accuracy, regulatory compliance, and data integrity, while providing constructive feedback to support environmental decision-making.
 - Served as an expert advisor for the EPA project “Carbon Sequestration and Gaseous Emissions in Wetland Ecosystems” (Product ID: ACE.401.5.3, 2022–2026), “Nutrient Reduction Program Design and Implementation” (Product ID: SSWR.405.4.1, 2022–2026), and “Evaluating Natural Disaster Implications on Containment Transport in the Environment” (Task order: 68HERC24F0048, 2023–2024).
 - Served by invitation as a Guest Editor for the special issue “Tillage Systems Impact Soil Structure and Cover Crop” of the MDPI *Land* journal from 2022 to 2023.
