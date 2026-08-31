@@ -4,4 +4,3 @@ description = "Accessible summaries, abstracts, methods, findings, and supportin
 eyebrow = "Selected work, explained"
 +++
 
-These notes preserve the research summaries and supporting technical material from the original Google Sites website while presenting them in a more readable archive.
