@@ -655,6 +655,28 @@ p {
   font-size: 0.86rem;
 }
 
+.latest-publications .publication-links {
+  margin-top: 0.8rem;
+}
+
+.latest-publications .publication-link {
+  color: rgba(255, 255, 255, 0.58);
+}
+
+.latest-publications .publication-link:hover,
+.latest-publications .publication-link:focus-visible {
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--teal-light);
+}
+
+.latest-publications .publication-link:focus-visible {
+  box-shadow: 0 0 0 2px var(--navy-2), 0 0 0 4px var(--teal-light);
+}
+
+.latest-publications .publication-link__pdf > span {
+  background: var(--navy-2);
+}
+
 .two-column {
   display: grid;
   grid-template-columns: 1fr 1fr;

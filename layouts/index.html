@@ -96,9 +96,10 @@
       {{ range first 3 (sort hugo.Data.publications "year" "desc") }}
       <li>
         <span class="pub-year">{{ .year }}</span>
-        <div>
+        <div class="latest-publication__body">
           <h3>{{ .title }}</h3>
           <p>{{ .authors }}{{ with .publication }} · <em>{{ . }}</em>{{ end }}</p>
+          {{ partial "publication-links.html" . }}
         </div>
       </li>
       {{ end }}
