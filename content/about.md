@@ -7,7 +7,7 @@ toc = true
 
 ## Professional profile
 
-I am an experienced Environmental and Agricultural Scientist with over 20 years of academic and professional expertise in environmental modeling, soil erosion, hydrology, climate change impact analysis, and stormwater modeling. I am good at analyzing, interpreting, and conveying complex Environmental or Agricultural Sciences concepts—such as hydrologic flow-path modeling, sediment yield and nutrient transport and prediction, and soil-erosion hotspot identification—through advanced numerical models, machine learning (ML), and artificial intelligence (AI) techniques.
+I am an experienced Environmental Scientist with over 20 years of academic and professional expertise in environmental modeling, soil erosion, hydrology, agroecosystem, climate change impact analysis, and stormwater modeling. I am good at analyzing, interpreting, and conveying complex Environmental or Agricultural Sciences concepts—such as hydrologic flow-path modeling, sediment yield and nutrient transport and prediction, and soil-erosion hotspot identification—through advanced numerical models, machine learning (ML), and artificial intelligence (AI) techniques.
 
 With proven skills in clear and precise scientific communication for diverse audiences, I have extensive experience collaborating with interdisciplinary teams across government, research, and industry. I am adept in statistical and geospatial analysis, with a strong publication record in peer-reviewed journals.
 
