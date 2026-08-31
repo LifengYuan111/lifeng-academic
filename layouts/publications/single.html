@@ -23,10 +23,10 @@
         {{ range (seq 2025 -1 2003) }}<option value="{{ . }}">{{ . }}</option>{{ end }}
       </select>
     </label>
-    <p id="publication-count" class="publication-count" aria-live="polite">{{ len hugo.Data.publications }} publications</p>
+    <p id="publication-count" class="publication-count" aria-live="polite">{{ len site.Data.publications }} publications</p>
   </div>
   <ol id="publication-list" class="publication-list">
-    {{ range (sort hugo.Data.publications "year" "desc") }}
+    {{ range (sort site.Data.publications "year" "desc") }}
     <li class="publication-item" data-year="{{ .year }}">
       <span class="publication-item__year">{{ .year }}</span>
       <div class="publication-item__body">

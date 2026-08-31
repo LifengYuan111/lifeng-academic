@@ -55,7 +55,13 @@ cp source_inputs/citations.csv static/files/publications-source.csv
 "summary": "notes/example-summary/"
 ```
 
-这样 Publications 页面会自动显示 Research Summary 图标，Summary 页面也会自动显示 DOI、PDF、Dataset 和 Scholar 等已有资源。若以后有公开代码仓库，可在同一条记录中增加 `"code": "https://github.com/..."`。
+这样 Publications 页面会自动显示 Research Summary 图标，Summary 页面也会自动显示 DOI、PDF、Dataset 和 Scholar 等已有资源。若有演示海报或幻灯片，先放入 `static/files/presentations/`，再在同一条记录中增加：
+
+```json
+"presentation": "files/presentations/example-poster.png"
+```
+
+页面会自动显示 Presentation 图标并在新标签页打开文件。若以后有公开代码仓库，也可增加 `"code": "https://github.com/..."`。
 
 ## 发布前必须确认
 

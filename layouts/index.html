@@ -102,7 +102,7 @@
       }}
       {{ range $featuredTitles }}
         {{ $title := . }}
-        {{ range where hugo.Data.publications "title" $title }}
+        {{ range where site.Data.publications "title" $title }}
         <li>
           <span class="pub-year">{{ .year }}</span>
           <div class="latest-publication__body">

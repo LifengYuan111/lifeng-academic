@@ -1,5 +1,5 @@
 {{- $publication := . -}}
-{{- $links := index hugo.Data.publication_links $publication.title -}}
+{{- $links := index site.Data.publication_links $publication.title -}}
 {{- $hideSummary := $publication.hideSummary | default false -}}
 {{- $scholarURL := printf "https://scholar.google.com/scholar?q=%s" (urlquery $publication.title) -}}
 <nav class="publication-links" aria-label="Links for {{ $publication.title }}">
@@ -28,6 +28,11 @@
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3h10l4 4v14H5z"/><path d="M15 3v5h5M8 12h8M8 16h6"/></svg>
     </a>
     {{- end }}
+    {{- end }}
+    {{- with .presentation }}
+    <a class="publication-link" href="{{ . | relURL }}" target="_blank" rel="noopener noreferrer" title="View presentation" aria-label="View presentation">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h18v12H3zM8 21l4-5 4 5M7 8h4v4H7zM14 8h4M14 12h4"/></svg>
+    </a>
     {{- end }}
     {{- with .dataset }}
     <a class="publication-link" href="{{ . }}" target="_blank" rel="noopener noreferrer" title="Open associated dataset" aria-label="Open associated dataset">

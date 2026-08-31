@@ -9,7 +9,7 @@
   </header>
   <div class="container article-wrap">
     {{ with .Params.publication_title }}
-      {{ $publication := index hugo.Data.publication_links . }}
+      {{ $publication := index site.Data.publication_links . }}
       {{ with $publication }}
       <aside class="summary-resources" aria-label="Publication resources">
         <p>Publication resources</p>
