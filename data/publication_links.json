@@ -51,8 +51,9 @@
   "Using SWAT to evaluate streamflow and lake sediment loading in the Xinjiang River Basin with limited data": {
     "doi": "10.3390/w12010039",
     "pdf": "https://www.mdpi.com/2073-4441/12/1/39/pdf?version=1577421718",
-    "summary": "notes/xinjiang-river-swat/"
-  },
+    "summary": "notes/xinjiang-river-swat/",
+    "presentation": "files/presentations/xinjiang-river-swat-presentation.jpg"
+},
   "Soil Erosion Assessment of the Poyang Lake Basin, China: Using USLE, GIS and Remote Sensing": {
     "doi": "10.4172/2469-4134.1000168"
   },
