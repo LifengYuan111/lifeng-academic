@@ -1,5 +1,6 @@
 {{- $publication := . -}}
 {{- $links := index hugo.Data.publication_links $publication.title -}}
+{{- $hideSummary := $publication.hideSummary | default false -}}
 {{- $scholarURL := printf "https://scholar.google.com/scholar?q=%s" (urlquery $publication.title) -}}
 <nav class="publication-links" aria-label="Links for {{ $publication.title }}">
   {{- with $links }}
@@ -21,9 +22,21 @@
       </span>
     </a>
     {{- end }}
+    {{- if not $hideSummary }}
+    {{- with .summary }}
+    <a class="publication-link" href="{{ . | relURL }}" title="Read research summary" aria-label="Read research summary">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3h10l4 4v14H5z"/><path d="M15 3v5h5M8 12h8M8 16h6"/></svg>
+    </a>
+    {{- end }}
+    {{- end }}
     {{- with .dataset }}
     <a class="publication-link" href="{{ . }}" target="_blank" rel="noopener noreferrer" title="Open associated dataset" aria-label="Open associated dataset">
       <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="5" cy="6" r="2"/><circle cx="19" cy="5" r="2"/><circle cx="19" cy="19" r="2"/><circle cx="8" cy="17" r="2"/><path d="m7 7 9.8-1.6M6.5 8l1.1 6.8M10 16.8l7-10M10 17.3l7 1.4"/></svg>
+    </a>
+    {{- end }}
+    {{- with .code }}
+    <a class="publication-link" href="{{ . }}" target="_blank" rel="noopener noreferrer" title="Open associated code" aria-label="Open associated code">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 7-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
     </a>
     {{- end }}
   {{- end }}

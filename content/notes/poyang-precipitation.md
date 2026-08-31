@@ -4,6 +4,8 @@ description = "Long-term seasonal and annual precipitation trends, anomalies, an
 publication_year = 2016
 weight = 80
 type = "notes"
+topic = "Climate & Agricultural Systems"
+publication_title = "Spatio-temporal Variation Analysis of Precipitation during 1960-2008 in the Poyang Lake Basin, China"
 +++
 
 **Original post date:** Oct 15, 2009 6:16:57 AM
@@ -19,4 +21,3 @@ Long-term monthly precipitation data from 1960 to 2008 at 17 rain stations are a
 Yuan, L. , Yang, G. , Li, H. and Zhang, Z. (2016) Spatio-Temporal Variation Analysis of Precipitation during 1960-2008 in the Poyang Lake Basin, China. Open Journal of Modern Hydrology, 6, 115-127. doi: 10.4236/ojmh.2016.62010.
 
 2016 AAG Anual Meeting, San Francisco, CA. March 29 - April 2, 2016.
-

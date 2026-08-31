@@ -28,6 +28,12 @@ My core research focuses on modeling hydrologic and sediment processes at the wa
 
 Using the SWAT/SWAT+, WEPP, and SWMM modeling framework, I have applied physically based approaches to quantify watershed responses and identify critical source areas for management.
 
+**Selected work**
+
+- [SWAT modeling of streamflow and lake sediment loading under limited data](../notes/xinjiang-river-swat/)
+- [Review of watershed-scale water-quality and nonpoint-source pollution models](../notes/watershed-model-review/)
+- [EPA assessment of watershed and water-quality tools](../notes/epa-watershed-tools-report/)
+
 ### 2. Physics–data integration for hydrologic prediction
 
 A major component of my work involves improving hydrologic model performance through integration with machine-learning techniques.
@@ -40,6 +46,11 @@ Key contributions include:
 
 This line of research contributes to the emerging field of physics-informed environmental modeling.
 
+**Selected work**
+
+- [SWAT–SVR spatial calibration for streamflow prediction](../notes/swat-svr-streamflow/)
+- [SWAT–WSVR monthly flow prediction with discrete wavelet transform](../notes/swat-wsvr-wavelet/)
+
 ### 3. Hydro-climate extremes and downscaling
 
 My research extends to understanding how climate variability and extreme precipitation affect watershed processes.
@@ -51,6 +62,11 @@ Key areas include:
 - Integration of climate scenarios into watershed models for risk assessment
 
 This work supports improved prediction of hydrologic responses under future climate conditions.
+
+**Selected work**
+
+- [WEPP assessment of crop yield, runoff, and soil loss under climate change](../notes/elevated-co2-temperature/)
+- [Long-term precipitation variability in the Poyang Lake Basin](../notes/poyang-precipitation/)
 
 ### 4. Karst hydrology and groundwater–surface-water interaction
 
@@ -75,6 +91,12 @@ This work focuses on:
 - Implications for hydrologic modeling and erosion processes
 
 This observational component strengthens model realism by linking rainfall microphysics to watershed response.
+
+**Selected work**
+
+- [Coastal winter precipitation measured with a Parsivel² disdrometer](../notes/coastal-winter-precipitation/)
+
+[Explore all research summaries →](../notes/)
 
 ## Research approach
 

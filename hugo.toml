@@ -1,6 +1,6 @@
 baseURL = "https://lifengyuan111.github.io/lifeng-academic/"
 locale = "en-US"
-title = "Lifeng Yuan | Environmental & Agricultural Scientist"
+title = "Lifeng Yuan | Environmental Scientist & Hydrologic Modeler"
 enableRobotsTXT = true
 enableGitInfo = false
 summaryLength = 30
@@ -8,7 +8,7 @@ disableKinds = ["taxonomy", "term"]
 
 [params]
   author = "Lifeng Yuan"
-  description = "Environmental and agricultural scientist specializing in watershed modeling, soil erosion, climate change, urban stormwater modeling, GIS, and machine learning."
+  description = "Environmental scientist and hydrologic modeler specializing in watershed modeling, soil erosion, climate and extreme events, environmental data science, GIS, and machine learning."
   email = "yuanlifeng7833@gmail.com"
   scholar = "https://scholar.google.com/citations?user=OefAU_sAAAAJ&hl=en"
   orcid = "https://orcid.org/0000-0002-9361-6132"
@@ -48,13 +48,9 @@ disableKinds = ["taxonomy", "term"]
     pageRef = "/teaching"
     weight = 50
   [[menus.main]]
-    name = "Notes"
-    pageRef = "/notes"
-    weight = 60
-  [[menus.main]]
     name = "Contact"
     pageRef = "/contact"
-    weight = 70
+    weight = 60
 
 [outputs]
   home = ["HTML", "RSS"]

@@ -4,6 +4,8 @@ description = "Using SWAT to identify sediment-source hotspots and evaluate stre
 publication_year = 2020
 weight = 70
 type = "notes"
+topic = "Hydrology & Watershed Modeling"
+publication_title = "Using SWAT to evaluate streamflow and lake sediment loading in the Xinjiang River Basin with limited data"
 +++
 
 **Original post date:** Sep 24, 2019 10:40:44 PM
@@ -15,4 +17,3 @@ Soil erosion and lake sediment loading are primary concerns of watershed manager
 The article link: https://www.mdpi.com/2073-4441/12/1/39
 
 2019 AWRA Spring Specialty Conference, Omaha, NE. March 25-27,2019
-

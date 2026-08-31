@@ -4,6 +4,8 @@ description = "How SWMM can support emergency-response planning for biological-a
 publication_year = 2023
 weight = 20
 type = "notes"
+topic = "Urban Stormwater"
+publication_title = "Using Swmm for Emergency Response Planning: A Case Study Evaluating Biological Agent Transport Under Various Rainfall Scenarios and Urban Surfaces"
 +++
 
 ## Objective
@@ -165,4 +167,3 @@ for k,v in land_dict.items():
 
         export_output(k,category[2],fnNames[6],fnUnits[3],v[i])
 ```
-

@@ -24,7 +24,7 @@ hugo --gc --minify
 - Projects：`content/projects.md`
 - Teaching：`content/teaching.md`
 - Contact：`content/contact.md` 与 `layouts/contact/single.html`
-- Research Notes：`content/notes/`
+- Research Summaries：`content/notes/`（URL 继续使用 `/notes/`，但不显示在顶部导航）
 - 全站样式：`assets/css/main.css`
 - 菜单、域名和公开链接：`hugo.toml`
 
@@ -43,6 +43,20 @@ hugo --gc --minify
 cp source_inputs/citations.csv static/files/publications-source.csv
 ```
 
+## 维护 Research Summaries 与论文链接
+
+新增 Research Summary 时：
+
+1. 在 `content/notes/` 新建 Markdown 文件。
+2. 在 front matter 中填写 `topic` 和 `publication_title`；`publication_title` 必须与 `data/publications.json` 中的论文题名完全一致。
+3. 在 `data/publication_links.json` 对应论文记录中增加：
+
+```json
+"summary": "notes/example-summary/"
+```
+
+这样 Publications 页面会自动显示 Research Summary 图标，Summary 页面也会自动显示 DOI、PDF、Dataset 和 Scholar 等已有资源。若以后有公开代码仓库，可在同一条记录中增加 `"code": "https://github.com/..."`。
+
 ## 发布前必须确认
 
 1. GitHub 用户名和仓库名是否与 `hugo.toml` 中的 `baseURL` 一致。
@@ -50,4 +64,4 @@ cp source_inputs/citations.csv static/files/publications-source.csv
 3. 旧职位、工作经历和求职说明是否仍需按原网站原样公开。
 4. GitHub 仓库的 Pages Source 已设置为 GitHub Actions。
 
-本项目尚未进行公开发布。
+网站已通过 GitHub Pages 公开发布；每次推送到 `main` 分支都会触发部署工作流。

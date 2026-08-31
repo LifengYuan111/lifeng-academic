@@ -4,6 +4,8 @@ description = "An EPA technical report comparing watershed and water-quality too
 publication_year = 2019
 weight = 60
 type = "notes"
+topic = "Environmental Assessment"
+publication_title = "A Review of Watershed and Water Quality Tools for Nutrient Fate and Transport"
 +++
 
 **Original post date:** Mar 12, 2020 1:58:23 AM
@@ -57,4 +59,3 @@ Encourage the integration of real-time monitoring data, remote sensing, and mach
 Support collaborative, cross-agency use of standardized tools for better regulatory and restoration planning.
 
 Download this document from the EPA governmental site
-

@@ -4,6 +4,8 @@ description = "WEPP simulations of crop yield, runoff, and soil loss under eleva
 publication_year = 2022
 weight = 30
 type = "notes"
+topic = "Climate & Agricultural Systems"
+publication_title = "Simulating the potential effects of elevated CO2 concentration and temperature coupled with storm intensification on crop yield, surface runoff, and soil loss based on 25 GCMs ensemble: A site-specific case study in Oklahoma"
 +++
 
 ## Objective
@@ -221,4 +223,3 @@ Average annual runoff (a) and soil loss (b) grouped by cropping (Ca: canola; Wt:
 
 Highlighted in WEPP-CO₂ Climate Impact Study 
 ```
-

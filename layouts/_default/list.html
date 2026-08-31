@@ -11,10 +11,10 @@
   <div class="note-grid">
     {{ range .Pages.ByWeight }}
     <article class="note-card">
-      <p class="card-meta">{{ .Params.publication_year | default "Research note" }}</p>
+      <p class="card-meta">{{ .Params.publication_year | default "Research summary" }}</p>
       <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
       <p>{{ .Description | default .Summary }}</p>
-      <a class="text-link" href="{{ .RelPermalink }}">Read note <span aria-hidden="true">→</span></a>
+      <a class="text-link" href="{{ .RelPermalink }}">Read summary <span aria-hidden="true">→</span></a>
     </article>
     {{ end }}
   </div>

@@ -2,14 +2,26 @@
 <article>
   <header class="page-hero note-hero">
     <div class="container page-hero__inner page-hero__inner--narrow">
-      <p class="eyebrow">Research note{{ with .Params.publication_year }} · {{ . }}{{ end }}</p>
+      <p class="eyebrow">Research summary{{ with .Params.publication_year }} · {{ . }}{{ end }}</p>
       <h1>{{ .Title }}</h1>
       {{ with .Description }}<p class="lede">{{ . }}</p>{{ end }}
     </div>
   </header>
   <div class="container article-wrap">
+    {{ with .Params.publication_title }}
+      {{ $publication := index hugo.Data.publication_links . }}
+      {{ with $publication }}
+      <aside class="summary-resources" aria-label="Publication resources">
+        <p>Publication resources</p>
+        {{ partial "publication-links.html" (dict "title" $.Params.publication_title "hideSummary" true) }}
+      </aside>
+      {{ end }}
+    {{ end }}
     <div class="prose">{{ .Content }}</div>
-    <nav class="article-back" aria-label="Back to notes"><a href="{{ "notes/" | relURL }}">← All research notes</a></nav>
+    <nav class="article-back" aria-label="Research summary navigation">
+      <a href="{{ "notes/" | relURL }}">← All research summaries</a>
+      <a href="{{ "publications/" | relURL }}">Back to publications →</a>
+    </nav>
   </div>
 </article>
 {{ end }}

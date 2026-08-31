@@ -4,6 +4,8 @@ description = "A Parsivel2 disdrometer study of coastal winter precipitation mic
 publication_year = 2024
 weight = 10
 type = "notes"
+topic = "Climate & Agricultural Systems"
+publication_title = "Exploring the statistical characteristics of coastal winter precipitation measured using a Parsivel² disdrometer: A case study in North Carolina"
 +++
 
 ## Objective
@@ -43,4 +45,3 @@ The Parsivel2 was shown to be effective in capturing microphysical transitions a
 ## Conclusion
 
 The study demonstrates the utility of disdrometer-based analysis for improving understanding of precipitation microphysics in coastal winter environments. The insights can support better forecasting, radar validation, and hydrological modeling for regions affected by rapidly changing winter weather.
-

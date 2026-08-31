@@ -4,6 +4,8 @@ description = "A hybrid SWAT–SVR approach for spatial calibration and monthly 
 publication_year = 2021
 weight = 40
 type = "notes"
+topic = "Hydrology & Watershed Modeling"
+publication_title = "Enhanced streamflow prediction with SWAT using support vector regression for spatial calibration: A case study in the Illinois River watershed, US"
 +++
 
 ## Summary
@@ -69,4 +71,3 @@ Limited gauging data.
 Offers a data-efficient alternative to conventional SWAT calibration methods.
 
 Particularly beneficial for regional applications and ungauged basin studies.
-

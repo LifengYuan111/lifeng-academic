@@ -7,10 +7,12 @@
     "doi": "10.1016/j.atmosenv.2025.121548"
   },
   "Exploring the statistical characteristics of coastal winter precipitation measured using a Parsivel² disdrometer: A case study in North Carolina": {
-    "doi": "10.1016/j.atmosres.2024.107487"
+    "doi": "10.1016/j.atmosres.2024.107487",
+    "summary": "notes/coastal-winter-precipitation/"
   },
   "Using Swmm for Emergency Response Planning: A Case Study Evaluating Biological Agent Transport Under Various Rainfall Scenarios and Urban Surfaces": {
     "doi": "10.1016/j.jhazmat.2023.131747",
+    "summary": "notes/swmm-emergency-response/",
     "dataset": "https://catalog.data.gov/dataset/ancor-task-2-1-modeling-data"
   },
   "Comparing two weather generator‐based downscaling tools for simulating storm intensification and its impacts on soil erosion under climate change": {
@@ -18,36 +20,44 @@
   },
   "Evaluating Monthly Flow Prediction Based on SWAT and Support Vector Regression Coupled with Discrete Wavelet Transform": {
     "doi": "10.3390/w14172649",
-    "pdf": "https://www.mdpi.com/2073-4441/14/17/2649/pdf?version=1662456516"
+    "pdf": "https://www.mdpi.com/2073-4441/14/17/2649/pdf?version=1662456516",
+    "summary": "notes/swat-wsvr-wavelet/",
+    "dataset": "https://doi.org/10.23719/1527817"
   },
   "Modeling surface runoff and soil loss response to climate change under GCM ensembles and multiple cropping and tillage systems in Oklahoma": {
     "doi": "10.1016/j.still.2021.105296"
   },
   "Simulating the potential effects of elevated CO2 concentration and temperature coupled with storm intensification on crop yield, surface runoff, and soil loss based on 25 GCMs ensemble: A site-specific case study in Oklahoma": {
-    "doi": "10.1016/j.catena.2022.106251"
+    "doi": "10.1016/j.catena.2022.106251",
+    "summary": "notes/elevated-co2-temperature/"
   },
   "Enhanced streamflow prediction with SWAT using support vector regression for spatial calibration: A case study in the Illinois River watershed, US": {
     "doi": "10.1371/journal.pone.0248489",
-    "pdf": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0248489&type=printable"
+    "pdf": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0248489&type=printable",
+    "summary": "notes/swat-svr-streamflow/"
   },
   "Review of Watershed-Scale Water Quality and Nonpoint Source Pollution Models": {
     "doi": "10.3390/geosciences10010025",
-    "pdf": "https://www.mdpi.com/2076-3263/10/1/25/pdf?version=1579600036"
+    "pdf": "https://www.mdpi.com/2076-3263/10/1/25/pdf?version=1579600036",
+    "summary": "notes/watershed-model-review/"
   },
   "A Review of Watershed and Water Quality Tools for Nutrient Fate and Transport": {
     "record": "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=P1011141.TXT",
-    "pdf": "https://nepis.epa.gov/Exe/ZyPDF.cgi?Dockey=P1011141.pdf"
+    "pdf": "https://nepis.epa.gov/Exe/ZyPDF.cgi?Dockey=P1011141.pdf",
+    "summary": "notes/epa-watershed-tools-report/"
   },
   "Using SWAT to evaluate streamflow and lake sediment loading in the Xinjiang River Basin with limited data": {
     "doi": "10.3390/w12010039",
-    "pdf": "https://www.mdpi.com/2073-4441/12/1/39/pdf?version=1577421718"
+    "pdf": "https://www.mdpi.com/2073-4441/12/1/39/pdf?version=1577421718",
+    "summary": "notes/xinjiang-river-swat/"
   },
   "Soil Erosion Assessment of the Poyang Lake Basin, China: Using USLE, GIS and Remote Sensing": {
     "doi": "10.4172/2469-4134.1000168"
   },
   "Spatio-temporal Variation Analysis of Precipitation during 1960-2008 in the Poyang Lake Basin, China": {
     "doi": "10.4236/ojmh.2016.62010",
-    "pdf": "https://www.scirp.org/journal/PaperDownload.aspx?paperID=66183"
+    "pdf": "https://www.scirp.org/journal/PaperDownload.aspx?paperID=66183",
+    "summary": "notes/poyang-precipitation/"
   },
   "A cellular automata model for the process of rill erosion": {
     "doi": "10.1109/GIWRM.2012.6349546"
