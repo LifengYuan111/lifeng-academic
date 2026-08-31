@@ -29,7 +29,7 @@
     {{ range (sort hugo.Data.publications "year" "desc") }}
     <li class="publication-item" data-year="{{ .year }}">
       <span class="publication-item__year">{{ .year }}</span>
-      <div>
+      <div class="publication-item__body">
         <h2>{{ .title }}</h2>
         <p class="publication-authors">{{ replaceRE "(?i)(Lifeng Yuan|Yuan Lifeng)" "<strong>$1</strong>" .authors | safeHTML }}</p>
         <p class="publication-venue">
@@ -40,6 +40,7 @@
           {{ with .publisher }}<span>{{ . }}</span>{{ end }}
           {{ if eq .kind "Report" }}<span class="type-badge">Government report</span>{{ end }}
         </p>
+        {{ partial "publication-links.html" . }}
       </div>
     </li>
     {{ end }}

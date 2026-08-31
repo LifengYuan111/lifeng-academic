@@ -1,0 +1,33 @@
+{{- $publication := . -}}
+{{- $links := index hugo.Data.publication_links $publication.title -}}
+{{- $scholarURL := printf "https://scholar.google.com/scholar?q=%s" (urlquery $publication.title) -}}
+<nav class="publication-links" aria-label="Links for {{ $publication.title }}">
+  {{- with $links }}
+    {{- with .doi }}
+    <a class="publication-link publication-link--doi" href="https://doi.org/{{ . }}" target="_blank" rel="noopener noreferrer" title="Open DOI record" aria-label="Open DOI record">
+      <span class="publication-link__doi" aria-hidden="true">doi</span>
+    </a>
+    {{- end }}
+    {{- with .record }}
+    <a class="publication-link" href="{{ . }}" target="_blank" rel="noopener noreferrer" title="Open publication record" aria-label="Open publication record">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6m0-6-9 9"/><path d="M20 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h5"/></svg>
+    </a>
+    {{- end }}
+    {{- with .pdf }}
+    <a class="publication-link" href="{{ . }}" target="_blank" rel="noopener noreferrer" title="Open full-text PDF" aria-label="Open full-text PDF">
+      <span class="publication-link__pdf" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><path d="M6 2h8l4 4v16H6z"/><path d="M14 2v5h5"/></svg>
+        <span>PDF</span>
+      </span>
+    </a>
+    {{- end }}
+    {{- with .dataset }}
+    <a class="publication-link" href="{{ . }}" target="_blank" rel="noopener noreferrer" title="Open associated dataset" aria-label="Open associated dataset">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="5" cy="6" r="2"/><circle cx="19" cy="5" r="2"/><circle cx="19" cy="19" r="2"/><circle cx="8" cy="17" r="2"/><path d="m7 7 9.8-1.6M6.5 8l1.1 6.8M10 16.8l7-10M10 17.3l7 1.4"/></svg>
+    </a>
+    {{- end }}
+  {{- end }}
+  <a class="publication-link" href="{{ $scholarURL | safeURL }}" target="_blank" rel="noopener noreferrer" title="Find on Google Scholar" aria-label="Find on Google Scholar">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m2 9 10-5 10 5-10 5z"/><path d="M6 11.2V16c2.8 2.5 9.2 2.5 12 0v-4.8M22 9v7"/></svg>
+  </a>
+</nav>

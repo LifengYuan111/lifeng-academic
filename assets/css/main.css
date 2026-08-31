@@ -1030,6 +1030,82 @@ p {
   font-size: 0.8rem;
 }
 
+.publication-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.3rem;
+  margin-top: 0.85rem;
+}
+
+.publication-link {
+  display: inline-flex;
+  width: 38px;
+  height: 36px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  color: #929b9d;
+  text-decoration: none;
+  transition: color 160ms ease, background-color 160ms ease, transform 160ms ease;
+}
+
+.publication-link:hover,
+.publication-link:focus-visible {
+  background: rgba(31, 111, 120, 0.09);
+  color: var(--teal);
+  outline: none;
+  transform: translateY(-1px);
+}
+
+.publication-link:focus-visible {
+  box-shadow: 0 0 0 2px var(--paper), 0 0 0 4px var(--teal);
+}
+
+.publication-link > svg,
+.publication-link__pdf > svg {
+  width: 25px;
+  height: 25px;
+  overflow: visible;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.8;
+}
+
+.publication-link__doi {
+  display: inline-flex;
+  width: 27px;
+  height: 27px;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid currentColor;
+  border-radius: 50%;
+  font-size: 0.67rem;
+  font-weight: 850;
+  letter-spacing: -0.04em;
+  line-height: 1;
+}
+
+.publication-link__pdf {
+  position: relative;
+  display: inline-flex;
+  color: inherit;
+}
+
+.publication-link__pdf > span {
+  position: absolute;
+  right: -4px;
+  bottom: 1px;
+  padding: 0 1px;
+  background: var(--paper);
+  color: inherit;
+  font-size: 0.46rem;
+  font-weight: 900;
+  line-height: 1.1;
+}
+
 .publication-venue span:not(.type-badge)::before {
   margin-right: 0.25rem;
   color: #a4aeac;
