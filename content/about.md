@@ -13,7 +13,7 @@ With proven skills in clear and precise scientific communication for diverse aud
 
 **Position Title:** Physical Scientist, Center for Environmental Solutions and Emergency Response, U.S. Environmental Protection Agency (EPA), USA.
 
-**Research Area:** Watershed modeling, Soil erosion, Climate change, Urban Stormwater Modeling
+**Research Area:** Watershed modeling, Soil erosion, Climate change, Urban Stormwater Modeling, Environmental Data Science
 
 ### Core competencies
 
