@@ -1,0 +1,26 @@
+{{ if .IsHome }}
+<aside class="announcement" aria-label="Professional availability">
+  <div class="container announcement__inner">
+    <p>Former EPA/USDA scientist seeking new research roles in climate, soil, and water modeling. Open to U.S. and global opportunities. Let’s connect!</p>
+    <a href="{{ "contact/" | relURL }}">Contact me <span aria-hidden="true">→</span></a>
+  </div>
+</aside>
+{{ end }}
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="{{ site.Home.RelPermalink }}" aria-label="Lifeng Yuan, home">
+      <span class="brand__mark" aria-hidden="true"><span></span></span>
+      <span>Lifeng Yuan</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      <span class="sr-only">Toggle navigation</span>
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+      {{ range site.Menus.main }}
+        {{ $active := or ($.IsMenuCurrent .Menu .) ($.HasMenuCurrent .Menu .) }}
+        <a href="{{ .URL }}"{{ if $active }} class="is-active" aria-current="page"{{ end }}>{{ .Name }}</a>
+      {{ end }}
+    </nav>
+  </div>
+</header>

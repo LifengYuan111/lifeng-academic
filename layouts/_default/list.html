@@ -1,0 +1,22 @@
+{{ define "main" }}
+<header class="page-hero">
+  <div class="container page-hero__inner">
+    {{ with .Params.eyebrow }}<p class="eyebrow">{{ . }}</p>{{ end }}
+    <h1>{{ .Title }}</h1>
+    {{ with .Description }}<p class="lede">{{ . }}</p>{{ end }}
+  </div>
+</header>
+<div class="container section-list">
+  {{ with .Content }}<div class="prose section-intro">{{ . }}</div>{{ end }}
+  <div class="note-grid">
+    {{ range .Pages.ByWeight }}
+    <article class="note-card">
+      <p class="card-meta">{{ .Params.publication_year | default "Research note" }}</p>
+      <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+      <p>{{ .Description | default .Summary }}</p>
+      <a class="text-link" href="{{ .RelPermalink }}">Read note <span aria-hidden="true">→</span></a>
+    </article>
+    {{ end }}
+  </div>
+</div>
+{{ end }}

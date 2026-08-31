@@ -1,0 +1,30 @@
+{{ define "main" }}
+<header class="page-hero">
+  <div class="container page-hero__inner">
+    <p class="eyebrow">Connect</p>
+    <h1>{{ .Title }}</h1>
+    <p class="lede">{{ .Description }}</p>
+  </div>
+</header>
+<div class="container contact-page">
+  <section class="contact-primary">
+    <p class="eyebrow">Email</p>
+    <h2>Start a conversation</h2>
+    <p>You can reach me through email for research collaboration, academic opportunities, technical discussion, and professional inquiries.</p>
+    <a class="contact-email" href="mailto:{{ site.Params.email }}">{{ site.Params.email }} <span aria-hidden="true">↗</span></a>
+  </section>
+  <section aria-labelledby="profiles-title">
+    <div class="section-heading">
+      <div><p class="eyebrow">Academic profiles</p><h2 id="profiles-title">Find my work online</h2></div>
+    </div>
+    <div class="profile-link-grid">
+      <a href="{{ site.Params.scholar }}"><span>Google Scholar</span><small>Publications and citations</small><b aria-hidden="true">↗</b></a>
+      <a href="{{ site.Params.orcid }}"><span>ORCID</span><small>0000-0002-9361-6132</small><b aria-hidden="true">↗</b></a>
+      <a href="{{ site.Params.linkedin }}"><span>LinkedIn</span><small>Professional profile</small><b aria-hidden="true">↗</b></a>
+      <a href="{{ site.Params.github }}"><span>GitHub</span><small>Code and technical work</small><b aria-hidden="true">↗</b></a>
+      <a href="{{ site.Params.cv }}"><span>Curriculum Vitae</span><small>View the existing CV</small><b aria-hidden="true">↗</b></a>
+      <a href="https://sites.google.com/view/yuanlifeng/home"><span>Legacy Google Site</span><small>Original website</small><b aria-hidden="true">↗</b></a>
+    </div>
+  </section>
+</div>
+{{ end }}

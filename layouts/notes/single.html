@@ -1,0 +1,15 @@
+{{ define "main" }}
+<article>
+  <header class="page-hero note-hero">
+    <div class="container page-hero__inner page-hero__inner--narrow">
+      <p class="eyebrow">Research note{{ with .Params.publication_year }} · {{ . }}{{ end }}</p>
+      <h1>{{ .Title }}</h1>
+      {{ with .Description }}<p class="lede">{{ . }}</p>{{ end }}
+    </div>
+  </header>
+  <div class="container article-wrap">
+    <div class="prose">{{ .Content }}</div>
+    <nav class="article-back" aria-label="Back to notes"><a href="{{ "notes/" | relURL }}">← All research notes</a></nav>
+  </div>
+</article>
+{{ end }}

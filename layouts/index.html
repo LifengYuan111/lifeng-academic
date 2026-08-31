@@ -1,0 +1,135 @@
+{{ define "main" }}
+<section class="home-hero" aria-labelledby="hero-title">
+  <picture class="home-hero__media">
+    <source srcset="{{ "images/lifeng-yuan-watershed-banner.webp" | relURL }}" type="image/webp">
+    <img src="{{ "images/lifeng-yuan-watershed-banner.png" | relURL }}" width="1983" height="793" alt="Lifeng Yuan in front of a river basin landscape" fetchpriority="high">
+  </picture>
+  <div class="home-hero__scrim" aria-hidden="true"></div>
+  <div class="container home-hero__content">
+    <p class="eyebrow eyebrow--light">Environmental &amp; Agricultural Scientist</p>
+    <h1 id="hero-title">Lifeng Yuan</h1>
+    <p class="home-hero__specialties">Watershed modeling · Soil erosion · Climate change · Urban stormwater modeling</p>
+    <div class="button-row">
+      <a class="button button--light" href="{{ "research/" | relURL }}">Explore research</a>
+      <a class="button button--ghost-light" href="{{ "publications/" | relURL }}">View publications</a>
+    </div>
+  </div>
+</section>
+
+<section class="position-band" aria-label="Position">
+  <div class="container position-band__inner">
+    <p><span>Position Title</span> Physical Scientist, Center for Environmental Solutions and Emergency Response, U.S. Environmental Protection Agency (EPA), USA.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container intro-grid">
+    <div>
+      <p class="eyebrow">Profile</p>
+      <h2>Modeling environmental systems for practical decisions</h2>
+    </div>
+    <div class="intro-copy">
+      <p>I am an experienced Environmental and Agricultural Scientist with over 15 years of academic and professional expertise in environmental modeling, soil erosion, hydrology, climate change impact analysis, and stormwater modeling.</p>
+      <p>My work combines advanced numerical models, machine learning, artificial intelligence, statistical analysis, and geospatial methods to explain complex environmental processes and support decision-making across government, research, and industry.</p>
+      <a class="text-link" href="{{ "about/" | relURL }}">Full professional profile <span aria-hidden="true">→</span></a>
+    </div>
+    <dl class="metric-row">
+      <div><dt>15+</dt><dd>Years of expertise</dd></div>
+      <div><dt>50+</dt><dd>Peer-reviewed articles</dd></div>
+      <div><dt>20+</dt><dd>Conference presentations</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section class="section section--tint">
+  <div class="container">
+    <div class="section-heading">
+      <div><p class="eyebrow">Research areas</p><h2>From rainfall to watershed response</h2></div>
+      <a class="text-link" href="{{ "research/" | relURL }}">Research profile <span aria-hidden="true">→</span></a>
+    </div>
+    <div class="expertise-grid">
+      <article><span>01</span><h3>Watershed &amp; Hydraulic Modeling</h3><p>SWAT, SWAT+, SWMM, process simulation, calibration, and high-performance computing.</p></article>
+      <article><span>02</span><h3>Hydroinformatics &amp; Machine Learning</h3><p>Support vector regression, wavelet analysis, Python, R, and physics–data integration.</p></article>
+      <article><span>03</span><h3>Climate Change &amp; Agriculture</h3><p>WEPP, CMIP, GCM ensembles, CLIGEN, storm intensification, crop yield, and soil loss.</p></article>
+      <article><span>04</span><h3>Urban Stormwater</h3><p>SWMM and PCSWMM modeling for runoff, contaminant transport, and emergency response.</p></article>
+      <article><span>05</span><h3>GIS &amp; Remote Sensing</h3><p>ArcGIS, DEM analysis, ERDAS, ENVI, spatial modeling, and Google Earth Engine.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-heading">
+      <div><p class="eyebrow">Selected projects</p><h2>Research designed for real-world use</h2></div>
+      <a class="text-link" href="{{ "projects/" | relURL }}">All projects <span aria-hidden="true">→</span></a>
+    </div>
+    <div class="project-grid">
+      <article class="project-card">
+        <p class="card-meta">U.S. EPA · 2021–2024</p>
+        <h3>Stormwater Fate and Transport of Biological Contaminants</h3>
+        <p>High-resolution SWMM development to simulate <em>Bacillus anthracis</em> transport across urban surfaces under multiple storm scenarios.</p>
+        <ul class="tag-list"><li>SWMM</li><li>Python</li><li>Emergency response</li></ul>
+      </article>
+      <article class="project-card">
+        <p class="card-meta">USDA-ARS · 2020–2021</p>
+        <h3>Climate-Sensitive Agricultural Management and Erosion Prediction</h3>
+        <p>WEPP and Python automation for evaluating crop yield and soil loss under storm intensification and alternative tillage systems.</p>
+        <ul class="tag-list"><li>WEPP</li><li>Climate</li><li>Soil erosion</li></ul>
+      </article>
+      <article class="project-card">
+        <p class="card-meta">U.S. EPA · 2017–2020</p>
+        <h3>Advancing Streamflow Prediction with SWAT and Machine Learning</h3>
+        <p>Hybrid SWAT–SVR and SWAT–Wavelet approaches for streamflow, sediment prediction, and watershed tool evaluation.</p>
+        <ul class="tag-list"><li>SWAT</li><li>Machine learning</li><li>Hydrology</li></ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section section--navy">
+  <div class="container">
+    <div class="section-heading section-heading--light">
+      <div><p class="eyebrow eyebrow--light">Latest work</p><h2>Recent publications</h2></div>
+      <a class="text-link text-link--light" href="{{ "publications/" | relURL }}">Complete list <span aria-hidden="true">→</span></a>
+    </div>
+    <ol class="latest-publications">
+      {{ range first 3 (sort hugo.Data.publications "year" "desc") }}
+      <li>
+        <span class="pub-year">{{ .year }}</span>
+        <div>
+          <h3>{{ .title }}</h3>
+          <p>{{ .authors }}{{ with .publication }} · <em>{{ . }}</em>{{ end }}</p>
+        </div>
+      </li>
+      {{ end }}
+    </ol>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container two-column">
+    <div>
+      <p class="eyebrow">Collaboration &amp; service</p>
+      <h2>Interdisciplinary science across agencies and journals</h2>
+      <p>Experience includes multi-agency collaboration with EPA, USDA, DHS, and the U.S. Coast Guard; proposal development; Quality Assurance Project Plans; project and technical review; and service as a journal reviewer and guest editor.</p>
+      <a class="text-link" href="{{ "about/#professional-service" | relURL }}">Professional service <span aria-hidden="true">→</span></a>
+    </div>
+    <div class="field-panel">
+      <p class="eyebrow">Field &amp; laboratory</p>
+      <ul class="check-list">
+        <li>Soil and water sampling design, surveys, analysis, and instrumentation</li>
+        <li>River and lake water-quality monitoring in the Poyang Lake region</li>
+        <li>Artificial rainfall and rill-erosion experiments with 3D laser scanning</li>
+        <li>Land-use investigations and aerial and satellite image interpretation</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="contact-cta">
+  <div class="container contact-cta__inner">
+    <div><p class="eyebrow eyebrow--light">Connect</p><h2>Interested in collaboration or research opportunities?</h2></div>
+    <a class="button button--light" href="{{ "contact/" | relURL }}">Get in touch</a>
+  </div>
+</section>
+{{ end }}

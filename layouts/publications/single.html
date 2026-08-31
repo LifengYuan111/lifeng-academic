@@ -1,0 +1,50 @@
+{{ define "main" }}
+<header class="page-hero">
+  <div class="container page-hero__inner">
+    <p class="eyebrow">Scholarly output</p>
+    <h1>{{ .Title }}</h1>
+    <p class="lede">{{ .Description }}</p>
+    <div class="button-row">
+      <a class="button button--primary" href="{{ site.Params.scholar }}">Google Scholar profile</a>
+      <a class="button button--secondary" href="{{ "files/publications-source.csv" | relURL }}" download>Download source CSV</a>
+    </div>
+  </div>
+</header>
+<div class="container publications-wrap">
+  <div class="publications-toolbar" aria-label="Filter publications">
+    <label class="search-field">
+      <span>Search publications</span>
+      <input id="publication-search" type="search" placeholder="Title, author, journal, or year" autocomplete="off">
+    </label>
+    <label class="year-field">
+      <span>Year</span>
+      <select id="publication-year">
+        <option value="">All years</option>
+        {{ range (seq 2025 -1 2003) }}<option value="{{ . }}">{{ . }}</option>{{ end }}
+      </select>
+    </label>
+    <p id="publication-count" class="publication-count" aria-live="polite">{{ len hugo.Data.publications }} publications</p>
+  </div>
+  <ol id="publication-list" class="publication-list">
+    {{ range (sort hugo.Data.publications "year" "desc") }}
+    <li class="publication-item" data-year="{{ .year }}">
+      <span class="publication-item__year">{{ .year }}</span>
+      <div>
+        <h2>{{ .title }}</h2>
+        <p class="publication-authors">{{ replaceRE "(?i)(Lifeng Yuan|Yuan Lifeng)" "<strong>$1</strong>" .authors | safeHTML }}</p>
+        <p class="publication-venue">
+          {{ with .publication }}<em>{{ . }}</em>{{ end }}
+          {{ with .volume }}<span>{{ . }}</span>{{ end }}
+          {{ with .number }}<span>({{ . }})</span>{{ end }}
+          {{ with .pages }}<span>{{ . }}</span>{{ end }}
+          {{ with .publisher }}<span>{{ . }}</span>{{ end }}
+          {{ if eq .kind "Report" }}<span class="type-badge">Government report</span>{{ end }}
+        </p>
+      </div>
+    </li>
+    {{ end }}
+  </ol>
+  <p id="publication-empty" class="empty-state" hidden>No publications match these filters.</p>
+  <p class="data-note">Publication metadata was imported from the supplied Google Scholar export and deduplicated by normalized title and year, retaining the more complete record. The original export remains available above.</p>
+</div>
+{{ end }}

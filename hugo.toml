@@ -1,0 +1,63 @@
+baseURL = "https://lifengyuan111.github.io/lifeng-yuan-academic/"
+locale = "en-US"
+title = "Lifeng Yuan | Environmental & Agricultural Scientist"
+enableRobotsTXT = true
+enableGitInfo = false
+summaryLength = 30
+disableKinds = ["taxonomy", "term"]
+
+[params]
+  author = "Lifeng Yuan"
+  description = "Environmental and agricultural scientist specializing in watershed modeling, soil erosion, climate change, urban stormwater modeling, GIS, and machine learning."
+  email = "yuanlifeng7833@gmail.com"
+  scholar = "https://scholar.google.com/citations?user=OefAU_sAAAAJ&hl=en"
+  orcid = "https://orcid.org/0000-0002-9361-6132"
+  linkedin = "https://www.linkedin.com/in/lifengyuan2025"
+  github = "https://github.com/LifengYuan111"
+  cv = "https://drive.google.com/file/d/14NVckS4eAn0-rCRDrIAByegHXQ_PWMI2/view?usp=sharing"
+  ogImage = "images/lifeng-yuan-watershed-banner.png"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = false
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 3
+    ordered = false
+
+[menus]
+  [[menus.main]]
+    name = "About"
+    pageRef = "/about"
+    weight = 10
+  [[menus.main]]
+    name = "Research"
+    pageRef = "/research"
+    weight = 20
+  [[menus.main]]
+    name = "Publications"
+    pageRef = "/publications"
+    weight = 30
+  [[menus.main]]
+    name = "Projects"
+    pageRef = "/projects"
+    weight = 40
+  [[menus.main]]
+    name = "Teaching"
+    pageRef = "/teaching"
+    weight = 50
+  [[menus.main]]
+    name = "Notes"
+    pageRef = "/notes"
+    weight = 60
+  [[menus.main]]
+    name = "Contact"
+    pageRef = "/contact"
+    weight = 70
+
+[outputs]
+  home = ["HTML", "RSS"]
+  section = ["HTML"]
+  taxonomy = ["HTML"]
+  term = ["HTML"]

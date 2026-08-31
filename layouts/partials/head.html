@@ -1,0 +1,39 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+{{ $description := .Description | default .Summary | plainify | default site.Params.description }}
+<meta name="description" content="{{ $description }}">
+<meta name="author" content="{{ site.Params.author }}">
+<meta name="theme-color" content="#17324d">
+<title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} | Lifeng Yuan{{ end }}</title>
+<link rel="canonical" href="{{ .Permalink }}">
+<link rel="icon" href="{{ "favicon.svg" | relURL }}" type="image/svg+xml">
+<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+<meta property="og:title" content="{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} | Lifeng Yuan{{ end }}">
+<meta property="og:description" content="{{ $description }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:image" content="{{ site.Params.ogImage | absURL }}">
+<meta name="twitter:card" content="summary_large_image">
+{{ with .OutputFormats.Get "RSS" }}<link rel="alternate" type="application/rss+xml" title="{{ site.Title }}" href="{{ .RelPermalink }}">{{ end }}
+{{ $css := resources.Get "css/main.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+<script>document.documentElement.classList.remove('no-js');document.documentElement.classList.add('js');</script>
+{{ if .IsHome }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Lifeng Yuan",
+  "url": "{{ .Permalink }}",
+  "image": "{{ "images/lifeng-yuan-profile.png" | absURL }}",
+  "jobTitle": "Physical Scientist",
+  "affiliation": {"@type": "Organization", "name": "U.S. Environmental Protection Agency"},
+  "sameAs": [
+    "{{ site.Params.scholar }}",
+    "{{ site.Params.orcid }}",
+    "{{ site.Params.linkedin }}",
+    "{{ site.Params.github }}"
+  ]
+}
+</script>
+{{ end }}
