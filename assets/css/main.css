@@ -1636,3 +1636,51 @@ p {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* Teaching and article tables */
+.prose table {
+  width: 100%;
+  max-width: 75ch;
+  margin: 1.5rem 0 2rem;
+  border: 1px solid var(--line);
+  border-collapse: collapse;
+  background: #fff;
+  font-family: Inter, ui-sans-serif, sans-serif;
+  font-size: 0.96rem;
+}
+
+.prose th,
+.prose td {
+  padding: 0.8rem 1rem;
+  border: 1px solid var(--line);
+  text-align: left;
+  vertical-align: middle;
+}
+
+.prose thead th {
+  background: var(--navy);
+  color: #fff;
+  font-weight: 700;
+}
+
+.prose tbody tr:nth-child(even) {
+  background: var(--cream);
+}
+
+.prose tbody tr:hover {
+  background: #eef7f5;
+}
+
+@media (max-width: 640px) {
+  .prose table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .prose th,
+  .prose td {
+    padding: 0.65rem 0.75rem;
+  }
+}
