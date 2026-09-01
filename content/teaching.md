@@ -41,12 +41,12 @@ All of my mentees went on to secure positions in competitive fields, a testament
 
 While serving as an Associate Professor at Nanjing University of Posts and Telecommunications (2009–2013), I supervised four graduate students on applied GIS and environmental-modeling research projects. These projects, often conducted in collaboration with industry partners, focused on the development of GIS-based systems for practical applications. Under my guidance, all students successfully completed their degrees and secured positions in competitive sectors, reflecting the real-world relevance and impact of their training.
 
-| Graduate Student | Program Duration (Years) | Graduation Year |
-| :--- | :---: | :---: |
-| Xingfei Liu | 3 | 2013 |
-| Zhiyuan Jiang | 3 | 2014 |
-| Mingzhe Fei | 3 | 2015 |
-| Meng Shao | 3 | 2016 |
+| Graduate Student | Program Duration (Years) | Graduation Year | Selected Co-authored Publication |
+| :--- | :---: | :---: | :--- |
+| Xingfei Liu | 3 | 2013 | [A cellular automata model for the process of rill erosion (2012)](https://doi.org/10.1109/GIWRM.2012.6349546) |
+| Zhiyuan Jiang | 3 | 2014 | [Design and Achievement of Vehicle Management System based on GPS (2012)](https://scholar.google.com/scholar?q=%22Design+and+Achievement+of+Vehicle+Management+System+based+on+GPS%22) |
+| Mingzhe Fei | 3 | 2015 | [Accuracy Assessment for TRMM in the Poyang Lake Basin (2015)](https://scholar.google.com/scholar?q=%22Accuracy+Assessment+for+TRMM+in+the+Poyang+Lake+Basin%22) |
+| Meng Shao | 3 | 2016 | — |
 
 ### Third Prize — Graduate Student Forum on Geography, 2012
 
