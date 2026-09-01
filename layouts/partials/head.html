@@ -33,6 +33,10 @@
 {{ $projectsCSS := resources.Get "css/projects-page.css" | minify | fingerprint }}
 <link rel="stylesheet" href="{{ $projectsCSS.RelPermalink }}" integrity="{{ $projectsCSS.Data.Integrity }}">
 {{ end }}
+{{ if eq .Params.sectionNav "teaching" }}
+{{ $teachingCSS := resources.Get "css/teaching-page.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $teachingCSS.RelPermalink }}" integrity="{{ $teachingCSS.Data.Integrity }}">
+{{ end }}
 {{ with .Params.sectionNav }}
 {{ $sectionNavigationCSS := resources.Get "css/section-navigation.css" | minify | fingerprint }}
 <link rel="stylesheet" href="{{ $sectionNavigationCSS.RelPermalink }}" integrity="{{ $sectionNavigationCSS.Data.Integrity }}">

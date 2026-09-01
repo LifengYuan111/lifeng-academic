@@ -7,6 +7,8 @@ heroClass = "page-hero--wide"
 sectionNav = "teaching"
 +++
 
+{{< teaching-highlights >}}
+
 ## Teaching philosophy
 
 I am a dedicated educator and researcher with a Ph.D. in Physical Geography from the Chengdu Institute of Mountain Hazards and Environment, Chinese Academy of Sciences (CAS). My teaching philosophy is centered on cultivating intellectual curiosity, encouraging innovation, and fostering collaboration to prepare students for dynamic, real-world career environments.
@@ -21,10 +23,7 @@ In more theoretical courses such as Digital Elevation Models, I enriched the cur
 
 ### Courses taught
 
-* GIS Software Application and Development (ArcGIS Desktop), 64 periods, Fall 2007–2012
-* Digital Elevation Model, 32 periods, Fall 2007–2012
-* Urban Geographic Information System, 32 periods, Spring 2008–2009
-* WebGIS (ArcGIS Server, ArcIMS), GIS Design and Visualization, 40 periods, Fall 2007–2012
+{{< teaching-courses >}}
 
 ## GIS Education & Technology Development
 
@@ -41,6 +40,8 @@ All of my mentees went on to secure positions in competitive fields, a testament
 ### Graduate student mentorship
 
 While serving as an Associate Professor at Nanjing University of Posts and Telecommunications (2009–2013), I supervised four graduate students on applied GIS and environmental-modeling research projects. These projects, often conducted in collaboration with industry partners, focused on the development of GIS-based systems for practical applications. Under my guidance, all students successfully completed their degrees and secured positions in competitive sectors, reflecting the real-world relevance and impact of their training.
+
+{{< mentorship-highlights >}}
 
 | Graduate Student | Program Duration (Years) | Graduation Year | Selected Co-authored Publication |
 | :--- | :---: | :---: | :--- |
