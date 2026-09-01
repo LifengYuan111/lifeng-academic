@@ -1,5 +1,5 @@
 +++
-title = "Teaching \& Mentoring"
+title = "Teaching & Mentoring"
 description = "A teaching philosophy grounded in intellectual curiosity, applied learning, innovation, collaboration, and preparation for real-world careers."
 eyebrow = "Education"
 toc = true
