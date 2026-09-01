@@ -38,6 +38,8 @@ While serving as an Associate Professor at Nanjing University of Posts and Telec
 
 Awarded to Liu Xingfei for the paper titled “CA Simulation of the Erosion-Deposition Process on Loess Surface,” this honor was presented at the 2012 Graduate Student Forum on Geography hosted by the School of Geographical Science, Hohai University, Nanjing, China. The award recognizes excellence in research and presentation among graduate students in the field of geography.
 
+**[View award certificate →](../files/teaching/graduate-student-forum-third-prize-2012.png "View 2012 Graduate Student Forum Third Prize certificate")**
+
 ## Scholarly contributions and recognition
 
 Beyond teaching, I actively contribute to pedagogical research in GIS and curriculum innovation. I have published six academic papers on GIS education, instructional strategies, and course design. My teaching excellence has been recognized through several awards, including the Young Teacher Excellence Award in 2010 and multiple nominations for national teaching competitions. I have also been honored as a Teaching Exemplar and Outstanding Instructor.
