@@ -1,8 +1,9 @@
 +++
 title = "Teaching & Mentoring"
-description = "A teaching philosophy grounded in intellectual curiosity, applied learning, innovation, collaboration, and preparation for real-world careers."
+description = "Applied teaching and mentoring in geospatial science, environmental modeling, and career readiness."
 eyebrow = "Education"
 toc = true
+heroClass = "page-hero--wide"
 +++
 
 ## Teaching philosophy

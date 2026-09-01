@@ -1,5 +1,5 @@
 {{ define "main" }}
-<header class="page-hero">
+<header class="page-hero{{ with .Params.heroClass }} {{ . }}{{ end }}">
   <div class="container page-hero__inner">
     {{ with .Params.eyebrow }}<p class="eyebrow">{{ . }}</p>{{ end }}
     <h1>{{ .Title }}</h1>

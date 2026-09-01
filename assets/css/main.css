@@ -1684,3 +1684,20 @@ p {
     padding: 0.65rem 0.75rem;
   }
 }
+/* Wide page hero used by the Teaching page */
+.page-hero--wide h1 {
+  max-width: none;
+  font-size: clamp(2.6rem, 5vw, 4.5rem);
+}
+
+.page-hero--wide .lede {
+  max-width: 980px;
+  font-size: clamp(1.05rem, 1.6vw, 1.2rem);
+}
+
+@media (min-width: 980px) {
+  .page-hero--wide h1,
+  .page-hero--wide .lede {
+    white-space: nowrap;
+  }
+}
