@@ -1,0 +1,92 @@
+[
+  {
+    "category": "Urban Stormwater",
+    "period": "2021–2024",
+    "institution": "U.S. EPA · U.S. Coast Guard · DHS",
+    "title": "Stormwater Fate & Transport of Biological Contaminants",
+    "description": "Led high-resolution SWMM development to simulate Bacillus anthracis transport across urban surfaces under multiple storm scenarios, integrating custom Python automation and field observations for decontamination-strategy evaluation.",
+    "tools": ["SWMM / PCSWMM", "Python / IronPython", "GIS", "HPC"],
+    "funding": "U.S. EPA Homeland Security Research Program",
+    "technical_components": ["Urban catchment modeling", "Rainfall-scenario design", "Contaminant fate and transport", "Model automation"],
+    "role": ["Model development", "Python scripting", "Field-data integration", "Scenario evaluation"],
+    "featured": true,
+    "compact": false
+  },
+  {
+    "category": "Climate & Agriculture",
+    "period": "2020–2021",
+    "institution": "USDA-ARS · Grazinglands Research Laboratory",
+    "title": "Climate-Sensitive Agricultural Management & Erosion Prediction",
+    "description": "Simulated impacts of storm intensification and climate change on crop yield and soil loss under multiple tillage systems using WEPP and Python automation.",
+    "tools": ["WEPP", "Python", "Climate Ensembles", "CLIGEN"],
+    "funding": "USDA Agricultural Research Service",
+    "technical_components": ["Climate-data processing", "Batch simulation", "Cropping and tillage scenarios", "Runoff, soil-loss, and yield assessment"],
+    "role": ["Model development", "Workflow automation", "Data analysis", "Visualization and manuscript preparation"],
+    "featured": false,
+    "compact": false
+  },
+  {
+    "category": "Watershed Modeling",
+    "period": "2017–2020",
+    "institution": "U.S. EPA · Robert S. Kerr Environmental Research Center",
+    "title": "Advancing Streamflow Prediction with SWAT & Machine Learning",
+    "description": "Developed hybrid SWAT–SVR and SWAT–Wavelet models to improve streamflow and sediment predictions while supporting EPA watershed and water-quality tool evaluation.",
+    "tools": ["SWAT / SWAT-CUP", "SVR", "Wavelet", "GIS"],
+    "funding": "U.S. Environmental Protection Agency",
+    "technical_components": ["Hydrologic calibration", "Machine-learning integration", "Multi-site evaluation", "Performance visualization"],
+    "role": ["Model development", "Data processing", "Machine-learning integration", "Statistical evaluation and manuscript preparation"],
+    "featured": false,
+    "compact": false
+  },
+  {
+    "category": "Soil Erosion & GIS",
+    "period": "2011–2013",
+    "institution": "Chinese Academy of Sciences",
+    "title": "Soil Erosion & GIS-Based Risk Mapping in the Loess Plateau",
+    "description": "Principal Investigator of a rill-erosion modeling project using 3D Cellular Automata and GIS, validated through laboratory and field rainfall experiments and 3D laser scanning.",
+    "tools": ["Cellular Automata", "GIS", "3D Laser Scanning", "Rainfall Simulation"],
+    "funding": "National Natural Science Foundation of China · Grant No. 41001158",
+    "technical_components": ["Rill-erosion process modeling", "Experimental validation", "Terrain analysis"],
+    "role": ["Principal Investigator", "Model development", "Experimental design", "Analysis and reporting"],
+    "featured": false,
+    "compact": false
+  },
+  {
+    "category": "Water Quality & GIS",
+    "period": "2011–2013",
+    "institution": "Key Laboratory of Virtual Geographic Environment · Poyang Lake Basin",
+    "title": "Agricultural Nonpoint-Source Pollution Risk Assessment",
+    "description": "Developed GIS-based spatial multi-criteria models for nitrogen and phosphorus pollution-risk evaluation and created a database for watershed vulnerability zones.",
+    "tools": ["GIS", "Multi-Criteria Analysis", "Geodatabase"],
+    "funding": "Ministry of Education of China",
+    "technical_components": ["Nutrient-risk indicators", "Watershed vulnerability mapping", "Spatial database design"],
+    "role": ["Framework development", "GIS processing", "Risk assessment", "Database development"],
+    "featured": false,
+    "compact": false
+  },
+  {
+    "category": "GIS & Education",
+    "period": "2012",
+    "institution": "University–industry collaboration",
+    "title": "GIS Education & Technology Development",
+    "description": "Developed GIS-based educational systems through university–industry collaboration, supporting interactive instruction, spatial analysis, and geographic visualization.",
+    "tools": ["ArcEngine", "Visual C#", "WebGIS"],
+    "cta_label": "Explore teaching technology",
+    "cta_url": "teaching/#gis-education--technology-development",
+    "featured": false,
+    "compact": true
+  },
+  {
+    "category": "Hydro-climate Analysis",
+    "period": "2009–2011",
+    "institution": "Poyang Lake Watershed",
+    "title": "Climate–Hydrology–Substance Transport",
+    "description": "Used geostatistics and wavelet analysis to simulate long-term runoff, rainfall variability, and sediment transport in the Poyang Lake Basin.",
+    "tools": ["Geostatistics", "Wavelet Analysis", "GIS", "Hydrologic Data"],
+    "funding": "Chinese Academy of Sciences Knowledge Innovation Program",
+    "technical_components": ["Long-term rainfall and runoff variability", "Sediment-transport assessment", "Spatial analysis"],
+    "role": ["Data processing", "Statistical analysis", "Hydrologic interpretation and reporting"],
+    "featured": false,
+    "compact": false
+  }
+]
