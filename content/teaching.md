@@ -44,7 +44,7 @@ While serving as an Associate Professor at Nanjing University of Posts and Telec
 | Graduate Student | Program Duration (Years) | Graduation Year | Selected Co-authored Publication |
 | :--- | :---: | :---: | :--- |
 | Xingfei Liu | 3 | 2013 | [A cellular automata model for the process of rill erosion (2012)](https://doi.org/10.1109/GIWRM.2012.6349546) |
-| Zhiyuan Jiang | 3 | 2014 | [Design and Achievement of Vehicle Management System based on GPS (2012)](https://scholar.google.com/scholar?q=%22Design+and+Achievement+of+Vehicle+Management+System+based+on+GPS%22) |
+| Zhiyuan Jiang | 3 | 2014 | [Design and Achievement of Vehicle Management System based on GPS (2012)](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=OefAU_sAAAAJ&pagesize=80&citation_for_view=OefAU_sAAAAJ:geHnlv5EZngC) |
 | Mingzhe Fei | 3 | 2015 | [Accuracy Assessment for TRMM in the Poyang Lake Basin (2015)](https://scholar.google.com/scholar?q=%22Accuracy+Assessment+for+TRMM+in+the+Poyang+Lake+Basin%22) |
 | Meng Shao | 3 | 2016 | — |
 
