@@ -42,6 +42,19 @@
     "compact": false
   },
   {
+    "id": "gis-education",
+    "category": "GIS & Education",
+    "period": "2012",
+    "institution": "University–industry collaboration",
+    "title": "GIS Education & Technology Development",
+    "description": "Developed GIS-based educational systems through university–industry collaboration, supporting interactive instruction, spatial analysis, and geographic visualization.",
+    "tools": ["ArcEngine", "Visual C#", "WebGIS"],
+    "cta_label": "Explore teaching technology",
+    "cta_url": "teaching/#gis-education--technology-development",
+    "featured": false,
+    "compact": true
+  },
+  {
     "id": "loess-plateau-erosion",
     "category": "Soil Erosion & GIS",
     "period": "2011–2013",
@@ -68,19 +81,6 @@
     "role": ["Framework development", "GIS processing", "Risk assessment", "Database development"],
     "featured": false,
     "compact": false
-  },
-  {
-    "id": "gis-education",
-    "category": "GIS & Education",
-    "period": "2012",
-    "institution": "University–industry collaboration",
-    "title": "GIS Education & Technology Development",
-    "description": "Developed GIS-based educational systems through university–industry collaboration, supporting interactive instruction, spatial analysis, and geographic visualization.",
-    "tools": ["ArcEngine", "Visual C#", "WebGIS"],
-    "cta_label": "Explore teaching technology",
-    "cta_url": "teaching/#gis-education--technology-development",
-    "featured": false,
-    "compact": true
   },
   {
     "id": "hydro-climate-analysis",

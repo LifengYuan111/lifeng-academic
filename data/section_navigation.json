@@ -27,9 +27,9 @@
       {"id": "epa-stormwater", "meta": "2021", "label": "EPA Stormwater"},
       {"id": "climate-erosion", "meta": "2020", "label": "Climate & Erosion"},
       {"id": "swat-machine-learning", "meta": "2017", "label": "SWAT + Machine Learning"},
+      {"id": "gis-education", "meta": "2012", "label": "GIS Education Tech"},
       {"id": "loess-plateau-erosion", "meta": "2011", "label": "Loess Plateau Erosion"},
       {"id": "nps-risk-assessment", "meta": "2011", "label": "NPS Risk Assessment"},
-      {"id": "gis-education", "meta": "2012", "label": "GIS Education Tech"},
       {"id": "hydro-climate-analysis", "meta": "2009", "label": "Poyang Hydro-Climate"}
     ]
   },
