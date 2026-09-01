@@ -58,8 +58,6 @@ English and Chinese
 
 ## Work experience
 
-## Career timeline
-
 {{< career-timeline >}}
 
 ## Education
