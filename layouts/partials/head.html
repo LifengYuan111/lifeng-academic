@@ -25,6 +25,10 @@
 {{ $featuredPublicationsCSS := resources.Get "css/featured-publications.css" | minify | fingerprint }}
 <link rel="stylesheet" href="{{ $featuredPublicationsCSS.RelPermalink }}" integrity="{{ $featuredPublicationsCSS.Data.Integrity }}">
 {{ end }}
+{{ if eq .Type "research" }}
+{{ $researchCSS := resources.Get "css/research-page.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $researchCSS.RelPermalink }}" integrity="{{ $researchCSS.Data.Integrity }}">
+{{ end }}
 <script>document.documentElement.classList.remove('no-js');document.documentElement.classList.add('js');</script>
 {{ if .IsHome }}
 <script type="application/ld+json">

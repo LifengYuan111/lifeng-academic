@@ -1,0 +1,101 @@
+[
+  {
+    "number": "01",
+    "title": "Watershed Hydrology & Sediment Dynamics",
+    "description": "Process-based modeling of streamflow, erosion, sediment transport, nonpoint-source pollution, and water quality at the watershed scale, with emphasis on critical-source-area identification and management.",
+    "keywords": ["SWAT / SWAT+", "Sediment", "NPS", "Water Quality"],
+    "selected_works": [
+      {
+        "title": "SWAT modeling of streamflow and lake sediment loading under limited data",
+        "meta": "Water · 2020",
+        "url": "notes/xinjiang-river-swat/",
+        "external": false
+      },
+      {
+        "title": "Review of watershed-scale water-quality and nonpoint-source pollution models",
+        "meta": "Geosciences · 2020",
+        "url": "notes/watershed-model-review/",
+        "external": false
+      },
+      {
+        "title": "EPA assessment of watershed and water-quality tools",
+        "meta": "U.S. EPA report · 2019",
+        "url": "notes/epa-watershed-tools-report/",
+        "external": false
+      }
+    ]
+  },
+  {
+    "number": "02",
+    "title": "Physics + Data Integration",
+    "description": "Hybrid approaches that combine process-based watershed models with support vector regression, wavelets, and machine learning to improve prediction while retaining physical understanding.",
+    "keywords": ["SWAT–SVR", "Wavelet", "Machine Learning", "Prediction"],
+    "selected_works": [
+      {
+        "title": "SWAT–SVR spatial calibration for streamflow prediction",
+        "meta": "PLOS ONE · 2021",
+        "url": "notes/swat-svr-streamflow/",
+        "external": false
+      },
+      {
+        "title": "SWAT–WSVR monthly flow prediction with discrete wavelet transform",
+        "meta": "Water · 2022",
+        "url": "notes/swat-wsvr-wavelet/",
+        "external": false
+      }
+    ]
+  },
+  {
+    "number": "03",
+    "title": "Hydro-climate Extremes & Downscaling",
+    "description": "Climate variability, precipitation downscaling, storm intensification, and future-scenario analysis for runoff, soil erosion, crop yield, and watershed risk.",
+    "keywords": ["WEPP", "Climate Extremes", "Downscaling", "Scenario Analysis"],
+    "selected_works": [
+      {
+        "title": "Elevated CO2, temperature, and storm-intensification effects on crop yield, runoff, and soil loss",
+        "meta": "Catena · 2022",
+        "url": "notes/elevated-co2-temperature/",
+        "external": false
+      },
+      {
+        "title": "Surface-runoff and soil-loss response to climate change under GCM ensembles and management systems",
+        "meta": "Soil & Tillage Research · 2022",
+        "url": "https://doi.org/10.1016/j.still.2021.105296",
+        "external": true
+      },
+      {
+        "title": "Long-term precipitation variability in the Poyang Lake Basin",
+        "meta": "Open Journal of Modern Hydrology · 2016",
+        "url": "notes/poyang-precipitation/",
+        "external": false
+      }
+    ]
+  },
+  {
+    "number": "04",
+    "title": "Karst Hydrology",
+    "description": "Improved representation of losing streams, sinkhole-driven recharge, and groundwater–surface-water connectivity in SWAT+ for complex and data-limited karst watersheds.",
+    "keywords": ["Karst", "Sinkholes", "Losing Streams", "SWAT+"],
+    "selected_works": []
+  },
+  {
+    "number": "05",
+    "title": "Precipitation Microphysics",
+    "description": "Parsivel²-based analysis of raindrop-size distributions and storm variability to connect rainfall structure with runoff, erosion processes, and hydrologic-model realism.",
+    "keywords": ["Parsivel²", "Raindrop Size", "Rainfall", "Erosion"],
+    "selected_works": [
+      {
+        "title": "Evaluating Parsivel²’s raindrop data across simulated and natural rain events",
+        "meta": "Atmospheric Environment · 2025",
+        "url": "https://doi.org/10.1016/j.atmosenv.2025.121548",
+        "external": true
+      },
+      {
+        "title": "Coastal winter precipitation measured with a Parsivel² disdrometer",
+        "meta": "Atmospheric Research · 2024",
+        "url": "notes/coastal-winter-precipitation/",
+        "external": false
+      }
+    ]
+  }
+]

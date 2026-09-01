@@ -1,0 +1,29 @@
+<div class="research-theme-grid">
+  {{ range site.Data.research_themes }}
+  <article class="research-theme-card">
+    <header class="research-theme-card__header">
+      <span class="research-theme-card__number" aria-hidden="true">{{ .number }}</span>
+      <h3>{{ .title }}</h3>
+    </header>
+    <p class="research-theme-card__description">{{ .description }}</p>
+    <ul class="research-theme-card__keywords" aria-label="Research focus areas">
+      {{ range .keywords }}<li>{{ . }}</li>{{ end }}
+    </ul>
+    {{ with .selected_works }}
+    <details class="research-theme-card__works">
+      <summary>Selected work</summary>
+      <ul>
+        {{ range . }}
+        <li>
+          <a href="{{ if .external }}{{ .url }}{{ else }}{{ .url | relURL }}{{ end }}"{{ if .external }} target="_blank" rel="noopener noreferrer"{{ end }}>
+            <span>{{ .title }}</span>
+            <small>{{ .meta }}</small>
+          </a>
+        </li>
+        {{ end }}
+      </ul>
+    </details>
+    {{ end }}
+  </article>
+  {{ end }}
+</div>
