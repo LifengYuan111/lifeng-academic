@@ -7,7 +7,12 @@
 <meta name="theme-color" content="#17324d">
 <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} | Lifeng Yuan{{ end }}</title>
 <link rel="canonical" href="{{ .Permalink }}">
-<link rel="icon" href="{{ "favicon.svg" | relURL }}" type="image/svg+xml">
+{{ with resources.Get "images/lifeng-yuan-site-mark.png" }}
+  {{ $favicon := .Resize "64x64 png" }}
+  {{ $touchIcon := .Resize "180x180 png" }}
+  <link rel="icon" href="{{ $favicon.RelPermalink }}" type="image/png" sizes="64x64">
+  <link rel="apple-touch-icon" href="{{ $touchIcon.RelPermalink }}" sizes="180x180">
+{{ end }}
 <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
 <meta property="og:title" content="{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} | Lifeng Yuan{{ end }}">
 <meta property="og:description" content="{{ $description }}">

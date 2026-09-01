@@ -9,7 +9,12 @@
 <header class="site-header">
   <div class="container nav-wrap">
     <a class="brand" href="{{ site.Home.RelPermalink }}" aria-label="Lifeng Yuan, home">
-      <span class="brand__mark" aria-hidden="true"><span></span></span>
+      {{ with resources.Get "images/lifeng-yuan-site-mark.png" }}
+        {{ $brandMark := .Resize "96x96 webp q90" }}
+        <span class="brand__mark" aria-hidden="true">
+          <img src="{{ $brandMark.RelPermalink }}" width="96" height="96" alt="">
+        </span>
+      {{ end }}
       <span>Lifeng Yuan</span>
     </a>
     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
