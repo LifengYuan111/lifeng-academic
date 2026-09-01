@@ -17,10 +17,6 @@
 {{ with .OutputFormats.Get "RSS" }}<link rel="alternate" type="application/rss+xml" title="{{ site.Title }}" href="{{ .RelPermalink }}">{{ end }}
 {{ $css := resources.Get "css/main.css" | minify | fingerprint }}
 <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
-{{ $softwareCSS := resources.Get "css/software-copyrights.css" | minify | fingerprint }}
-<link rel="stylesheet" href="{{ $softwareCSS.RelPermalink }}" integrity="{{ $softwareCSS.Data.Integrity }}">
-{{ $careerCSS := resources.Get "css/career-timeline.css" | minify | fingerprint }}
-<link rel="stylesheet" href="{{ $careerCSS.RelPermalink }}" integrity="{{ $careerCSS.Data.Integrity }}">
 {{ if eq .Type "publications" }}
 {{ $featuredPublicationsCSS := resources.Get "css/featured-publications.css" | minify | fingerprint }}
 <link rel="stylesheet" href="{{ $featuredPublicationsCSS.RelPermalink }}" integrity="{{ $featuredPublicationsCSS.Data.Integrity }}">
@@ -34,10 +30,14 @@
 <link rel="stylesheet" href="{{ $projectsCSS.RelPermalink }}" integrity="{{ $projectsCSS.Data.Integrity }}">
 {{ end }}
 {{ if eq .Params.sectionNav "teaching" }}
+{{ $softwareCSS := resources.Get "css/software-copyrights.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $softwareCSS.RelPermalink }}" integrity="{{ $softwareCSS.Data.Integrity }}">
 {{ $teachingCSS := resources.Get "css/teaching-page.css" | minify | fingerprint }}
 <link rel="stylesheet" href="{{ $teachingCSS.RelPermalink }}" integrity="{{ $teachingCSS.Data.Integrity }}">
 {{ end }}
 {{ if eq .Params.sectionNav "about" }}
+{{ $careerCSS := resources.Get "css/career-timeline.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $careerCSS.RelPermalink }}" integrity="{{ $careerCSS.Data.Integrity }}">
 {{ $aboutCSS := resources.Get "css/about-page.css" | minify | fingerprint }}
 <link rel="stylesheet" href="{{ $aboutCSS.RelPermalink }}" integrity="{{ $aboutCSS.Data.Integrity }}">
 {{ end }}

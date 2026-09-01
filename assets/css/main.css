@@ -1,19 +1,71 @@
 :root {
-  --navy: #17324d;
-  --navy-2: #0f263a;
-  --teal: #1f6f78;
-  --teal-light: #83c5be;
-  --rust: #c96e4b;
-  --cream: #f6f3ed;
-  --paper: #fffdfa;
-  --ink: #17242c;
-  --muted: #5a6972;
-  --line: #d8dedc;
-  --white: #ffffff;
-  --shadow: 0 18px 45px rgba(23, 50, 77, 0.1);
-  --radius: 4px;
+  /* Core color system */
+  --color-navy: #17324d;
+  --color-navy-deep: #0f263a;
+  --color-teal: #1f6f78;
+  --color-teal-soft: #83c5be;
+  --color-background: #f6f3ed;
+  --color-surface: #fffdfa;
+  --color-text: #17242c;
+  --color-body: #34434b;
+  --color-muted: #5a6972;
+  --color-border: #d8dedc;
+  --color-white: #ffffff;
+  --border-soft: rgba(23, 50, 77, 0.13);
+  --border-teal: rgba(31, 111, 120, 0.32);
+  --focus-ring: rgba(31, 111, 120, 0.3);
+
+  /* Backward-compatible aliases used by existing components */
+  --navy: var(--color-navy);
+  --navy-2: var(--color-navy-deep);
+  --teal: var(--color-teal);
+  --teal-light: var(--color-teal-soft);
+  --cream: var(--color-background);
+  --paper: var(--color-surface);
+  --ink: var(--color-text);
+  --muted: var(--color-muted);
+  --line: var(--color-border);
+  --white: var(--color-white);
+
+  /* Typography scale */
+  --font-serif: Georgia, "Times New Roman", serif;
+  --font-sans: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-body: 1rem;
+  --text-card-title: 1.25rem;
+  --text-h3: clamp(1.25rem, 2vw, 1.45rem);
+  --text-h2: clamp(2rem, 3vw, 2.8rem);
+  --text-page-title: clamp(2.8rem, 5vw, 4.8rem);
+  --text-hero-title: clamp(3.5rem, 7vw, 6.25rem);
+  --line-heading: 1.12;
+  --line-body: 1.7;
+  --line-card: 1.58;
+  --line-meta: 1.45;
+
+  /* Spacing and component rhythm */
+  --space-2xs: 0.4rem;
+  --space-xs: 0.75rem;
+  --space-sm: 1rem;
+  --space-md: 1.25rem;
+  --space-lg: 2rem;
+  --space-xl: 3.5rem;
+  --space-2xl: 5.5rem;
+  --space-3xl: 7rem;
+  --card-padding: clamp(1.35rem, 2.6vw, 1.75rem);
+  --card-gap: 1rem;
+  --shadow-card: 0 0.55rem 1.6rem rgba(23, 50, 77, 0.055);
+  --shadow-card-hover: 0 0.8rem 2rem rgba(23, 50, 77, 0.08);
+  --shadow: var(--shadow-card-hover);
+  --radius: 5px;
+  --radius-pill: 999px;
+  --transition-fast: 160ms ease;
+
   --container: 1180px;
   --narrow: 760px;
+  --measure: 70ch;
+  --measure-narrow: 62ch;
+  --sidebar-width: 220px;
 }
 
 *,
@@ -31,9 +83,9 @@ body {
   margin: 0;
   background: var(--paper);
   color: var(--ink);
-  font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  font-size: 1rem;
-  line-height: 1.7;
+  font-family: var(--font-sans);
+  font-size: var(--text-body);
+  line-height: var(--line-body);
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
 }
@@ -57,7 +109,12 @@ a {
 }
 
 a:hover {
-  color: var(--rust);
+  color: var(--navy);
+}
+
+:where(a, button, summary, input, select):focus-visible {
+  outline: 3px solid var(--focus-ring);
+  outline-offset: 3px;
 }
 
 h1,
@@ -66,22 +123,22 @@ h3,
 h4 {
   margin: 0 0 0.75em;
   color: var(--navy);
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--font-serif);
   font-weight: 500;
-  line-height: 1.12;
+  line-height: var(--line-heading);
   letter-spacing: -0.025em;
 }
 
 h1 {
-  font-size: clamp(2.8rem, 7vw, 5.8rem);
+  font-size: var(--text-page-title);
 }
 
 h2 {
-  font-size: clamp(2rem, 4vw, 3.3rem);
+  font-size: var(--text-h2);
 }
 
 h3 {
-  font-size: clamp(1.25rem, 2vw, 1.55rem);
+  font-size: var(--text-h3);
 }
 
 p {
@@ -138,8 +195,8 @@ p {
   gap: 2rem;
   min-height: 44px;
   padding-block: 0.45rem;
-  font-size: 0.82rem;
-  line-height: 1.45;
+  font-size: var(--text-sm);
+  line-height: var(--line-meta);
 }
 
 .announcement p {
@@ -226,7 +283,7 @@ p {
   position: relative;
   padding-block: 0.7rem;
   color: var(--ink);
-  font-size: 0.88rem;
+  font-size: var(--text-sm);
   font-weight: 650;
   letter-spacing: 0.01em;
   text-decoration: none;
@@ -239,7 +296,7 @@ p {
   left: 0;
   height: 2px;
   transform: scaleX(0);
-  background: var(--rust);
+  background: var(--teal);
   content: "";
   transition: transform 180ms ease;
 }
@@ -307,7 +364,7 @@ p {
 
 .home-hero h1 {
   color: var(--white);
-  font-size: clamp(4rem, 7.4vw, 7rem);
+  font-size: var(--text-hero-title);
   text-shadow: 0 2px 24px rgba(0, 0, 0, 0.25);
 }
 
@@ -320,9 +377,9 @@ p {
 }
 
 .eyebrow {
-  margin-bottom: 1rem;
+  margin-bottom: var(--space-sm);
   color: var(--teal);
-  font-size: 0.76rem;
+  font-size: var(--text-xs);
   font-weight: 800;
   letter-spacing: 0.16em;
   line-height: 1.2;
@@ -330,7 +387,7 @@ p {
 }
 
 .eyebrow--light {
-  color: #b9e0dc;
+  color: var(--teal-light);
 }
 
 .button-row {
@@ -348,10 +405,10 @@ p {
   padding: 0.7rem 1.2rem;
   border: 1px solid transparent;
   border-radius: 2px;
-  font-size: 0.88rem;
+  font-size: var(--text-sm);
   font-weight: 750;
   text-decoration: none;
-  transition: background 160ms ease, border-color 160ms ease, color 160ms ease, transform 160ms ease;
+  transition: background var(--transition-fast), border-color var(--transition-fast), color var(--transition-fast), transform var(--transition-fast);
 }
 
 .button:hover {
@@ -411,20 +468,20 @@ p {
 .position-band p {
   margin: 0;
   color: var(--navy);
-  font-size: 0.9rem;
+  font-size: var(--text-sm);
 }
 
 .position-band span {
   margin-right: 0.65rem;
   color: var(--teal);
-  font-size: 0.7rem;
+  font-size: var(--text-xs);
   font-weight: 800;
   letter-spacing: 0.12em;
   text-transform: uppercase;
 }
 
 .section {
-  padding-block: clamp(4.5rem, 8vw, 7.5rem);
+  padding-block: clamp(4.25rem, 7vw, 6.5rem);
 }
 
 .section--tint {
@@ -449,8 +506,9 @@ p {
 }
 
 .intro-copy {
+  max-width: var(--measure-narrow);
   color: var(--muted);
-  font-size: 1.1rem;
+  font-size: clamp(1rem, 1.3vw, 1.075rem);
 }
 
 .text-link {
@@ -458,7 +516,7 @@ p {
   align-items: center;
   gap: 0.35rem;
   color: var(--teal);
-  font-size: 0.88rem;
+  font-size: var(--text-sm);
   font-weight: 800;
   text-decoration: none;
 }
@@ -510,7 +568,7 @@ p {
 .metric-row dd {
   margin: 0.4rem 0 0;
   color: var(--muted);
-  font-size: 0.85rem;
+  font-size: var(--text-sm);
 }
 
 .section-heading {
@@ -518,7 +576,7 @@ p {
   align-items: end;
   justify-content: space-between;
   gap: 2rem;
-  margin-bottom: 3rem;
+  margin-bottom: clamp(2rem, 4vw, 3rem);
 }
 
 .section-heading h2 {
@@ -541,7 +599,7 @@ p {
 .expertise-grid article {
   grid-column: span 2;
   min-height: 270px;
-  padding: 2rem;
+  padding: var(--card-padding);
   background: var(--paper);
 }
 
@@ -551,9 +609,9 @@ p {
 
 .expertise-grid article span {
   display: block;
-  margin-bottom: 3rem;
-  color: var(--rust);
-  font-size: 0.72rem;
+  margin-bottom: var(--space-lg);
+  color: var(--teal);
+  font-size: var(--text-xs);
   font-weight: 800;
 }
 
@@ -561,14 +619,15 @@ p {
 .project-card p,
 .note-card p {
   color: var(--muted);
-  font-size: 0.92rem;
+  font-size: var(--text-sm);
+  line-height: var(--line-card);
 }
 
 .project-grid,
 .note-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1.25rem;
+  gap: var(--card-gap);
 }
 
 .project-card,
@@ -576,26 +635,29 @@ p {
   display: flex;
   min-height: 370px;
   flex-direction: column;
-  padding: 2rem;
-  border: 1px solid var(--line);
+  padding: var(--card-padding);
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius);
   background: var(--paper);
-  transition: box-shadow 180ms ease, transform 180ms ease;
+  box-shadow: var(--shadow-card);
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast), transform var(--transition-fast);
 }
 
 .project-card:hover,
 .note-card:hover {
-  transform: translateY(-3px);
-  box-shadow: var(--shadow);
+  border-color: var(--border-teal);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-card-hover);
 }
 
 .project-card h3 {
   min-height: 4.1em;
 }
 
-.card-meta {
-  margin-bottom: 1.5rem !important;
-  color: var(--rust) !important;
-  font-size: 0.72rem !important;
+p.card-meta {
+  margin-bottom: 1.5rem;
+  color: var(--teal);
+  font-size: var(--text-xs);
   font-weight: 800;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -613,10 +675,10 @@ p {
 .tag-list li,
 .type-badge {
   padding: 0.25rem 0.55rem;
-  border-radius: 99px;
+  border-radius: var(--radius-pill);
   background: var(--cream);
   color: var(--teal);
-  font-size: 0.72rem;
+  font-size: var(--text-xs);
   font-weight: 700;
 }
 
@@ -630,7 +692,7 @@ p {
   display: grid;
   grid-template-columns: 90px 1fr;
   gap: 2rem;
-  padding-block: 2rem;
+  padding-block: var(--space-lg);
   border-top: 1px solid rgba(255, 255, 255, 0.16);
 }
 
@@ -640,19 +702,21 @@ p {
 
 .latest-publications .pub-year {
   color: var(--teal-light);
-  font-size: 0.85rem;
+  font-size: var(--text-sm);
   font-weight: 800;
 }
 
 .latest-publications h3 {
   margin-bottom: 0.5rem;
-  font-size: 1.4rem;
+  font-size: var(--text-card-title);
+  line-height: 1.3;
 }
 
 .latest-publications p {
   margin: 0;
   color: rgba(255, 255, 255, 0.6);
-  font-size: 0.86rem;
+  font-size: var(--text-sm);
+  line-height: var(--line-meta);
 }
 
 .latest-publications .publication-links {
@@ -747,7 +811,7 @@ p {
 .page-hero__inner {
   position: relative;
   z-index: 1;
-  padding-block: clamp(4rem, 8vw, 7rem);
+  padding-block: clamp(3.75rem, 7vw, 6rem);
 }
 
 .page-hero__inner::after {
@@ -763,13 +827,15 @@ p {
 .page-hero h1 {
   max-width: 12ch;
   margin-bottom: 0.25em;
+  font-size: var(--text-page-title);
 }
 
 .page-hero .lede {
-  max-width: 720px;
+  max-width: 68ch;
   margin-bottom: 0;
   color: var(--muted);
-  font-size: clamp(1.05rem, 2vw, 1.3rem);
+  font-size: clamp(1.025rem, 1.5vw, 1.2rem);
+  line-height: 1.62;
 }
 
 .page-hero .button-row {
@@ -788,10 +854,10 @@ p {
 
 .page-layout {
   display: grid;
-  grid-template-columns: 220px minmax(0, 780px);
-  gap: clamp(3rem, 8vw, 7rem);
+  grid-template-columns: var(--sidebar-width) minmax(0, 800px);
+  gap: clamp(3rem, 6vw, 5.5rem);
   justify-content: center;
-  padding-block: clamp(4rem, 8vw, 7rem);
+  padding-block: clamp(4rem, 7vw, 6rem);
 }
 
 .page-layout--single {
@@ -809,7 +875,7 @@ p {
 .page-toc > p {
   margin-bottom: 0.8rem;
   color: var(--navy);
-  font-size: 0.72rem;
+  font-size: var(--text-xs);
   font-weight: 800;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -830,8 +896,8 @@ p {
   display: block;
   padding: 0.25rem 0;
   color: var(--muted);
-  font-size: 0.8rem;
-  line-height: 1.35;
+  font-size: var(--text-sm);
+  line-height: var(--line-meta);
   text-decoration: none;
 }
 
@@ -841,7 +907,7 @@ p {
 
 .prose {
   min-width: 0;
-  color: #34434b;
+  color: var(--color-body);
 }
 
 .prose > :first-child {
@@ -849,23 +915,27 @@ p {
 }
 
 .prose h2 {
-  margin-top: 2.2em;
-  padding-top: 0.15em;
-  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  margin-top: var(--space-2xl);
+  margin-bottom: var(--space-md);
+  padding-top: 0;
+  font-size: var(--text-h2);
   scroll-margin-top: 110px;
 }
 
 .prose h3 {
-  margin-top: 2em;
-  font-family: Inter, ui-sans-serif, sans-serif;
-  font-size: 1.15rem;
+  margin-top: var(--space-xl);
+  margin-bottom: var(--space-sm);
+  font-family: var(--font-sans);
+  font-size: var(--text-card-title);
   font-weight: 750;
   letter-spacing: -0.01em;
 }
 
-.prose p,
-.prose li {
-  max-width: 75ch;
+.prose > p,
+.prose > ul,
+.prose > ol,
+.prose > blockquote {
+  max-width: var(--measure);
 }
 
 .prose strong {
@@ -877,9 +947,16 @@ p {
   padding-left: 1.25rem;
 }
 
+.prose > ul,
+.prose > ol {
+  margin-top: var(--space-sm);
+  margin-bottom: var(--space-lg);
+}
+
 .prose li {
-  margin-bottom: 0.55rem;
+  margin-bottom: var(--space-xs);
   padding-left: 0.25rem;
+  line-height: 1.65;
 }
 
 .prose blockquote {
@@ -930,13 +1007,13 @@ p {
 
 .summary-group__heading h2 {
   margin: 0;
-  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  font-size: var(--text-h2);
 }
 
 .summary-group__heading span {
   flex: 0 0 auto;
   color: var(--muted);
-  font-size: 0.76rem;
+  font-size: var(--text-xs);
   font-weight: 750;
   letter-spacing: 0.04em;
   text-transform: uppercase;
@@ -952,7 +1029,8 @@ p {
 
 .note-card h2,
 .note-card h3 {
-  font-size: 1.45rem;
+  font-size: var(--text-card-title);
+  line-height: 1.3;
 }
 
 .note-card h2 a,
@@ -979,7 +1057,7 @@ p {
 .summary-resources > p {
   margin: 0;
   color: var(--navy);
-  font-size: 0.72rem;
+  font-size: var(--text-xs);
   font-weight: 800;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -1004,7 +1082,7 @@ p {
 }
 
 .article-back a {
-  font-size: 0.88rem;
+  font-size: var(--text-sm);
   font-weight: 750;
   text-decoration: none;
 }
@@ -1012,10 +1090,10 @@ p {
 .publications-toolbar {
   display: grid;
   grid-template-columns: minmax(260px, 1fr) 180px auto;
-  gap: 1rem;
+  gap: var(--space-sm);
   align-items: end;
   margin-bottom: 2.5rem;
-  padding: 1.2rem;
+  padding: var(--card-padding);
   border: 1px solid var(--line);
   background: var(--cream);
 }
@@ -1029,7 +1107,7 @@ p {
 .search-field > span,
 .year-field > span {
   color: var(--navy);
-  font-size: 0.72rem;
+  font-size: var(--text-xs);
   font-weight: 800;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -1040,8 +1118,8 @@ p {
   width: 100%;
   min-height: 46px;
   padding: 0.65rem 0.8rem;
-  border: 1px solid #b9c4c2;
-  border-radius: 2px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
   outline: none;
   background: var(--white);
   color: var(--ink);
@@ -1056,7 +1134,7 @@ p {
 .publication-count {
   margin: 0 0 0.65rem;
   color: var(--muted);
-  font-size: 0.8rem;
+  font-size: var(--text-sm);
   font-weight: 700;
   white-space: nowrap;
 }
@@ -1071,7 +1149,7 @@ p {
   display: grid;
   grid-template-columns: 80px 1fr;
   gap: 1.5rem;
-  padding-block: 1.8rem;
+  padding-block: var(--space-lg);
   border-top: 1px solid var(--line);
 }
 
@@ -1084,15 +1162,15 @@ p {
 }
 
 .publication-item__year {
-  color: var(--rust);
-  font-size: 0.8rem;
+  color: var(--teal);
+  font-size: var(--text-sm);
   font-weight: 800;
 }
 
 .publication-item h2 {
   margin-bottom: 0.65rem;
   font-family: Inter, ui-sans-serif, sans-serif;
-  font-size: 1.07rem;
+  font-size: clamp(1.05rem, 1.5vw, 1.15rem);
   font-weight: 760;
   letter-spacing: -0.01em;
   line-height: 1.42;
@@ -1101,7 +1179,8 @@ p {
 .publication-authors {
   margin-bottom: 0.35rem;
   color: var(--muted);
-  font-size: 0.86rem;
+  font-size: var(--text-sm);
+  line-height: var(--line-meta);
 }
 
 .publication-venue {
@@ -1110,7 +1189,8 @@ p {
   gap: 0.15rem 0.45rem;
   margin: 0;
   color: var(--muted);
-  font-size: 0.8rem;
+  font-size: var(--text-sm);
+  line-height: var(--line-meta);
 }
 
 .publication-links {
@@ -1128,7 +1208,7 @@ p {
   align-items: center;
   justify-content: center;
   border-radius: 4px;
-  color: #929b9d;
+  color: var(--muted);
   text-decoration: none;
   transition: color 160ms ease, background-color 160ms ease, transform 160ms ease;
 }
@@ -1191,7 +1271,7 @@ p {
 
 .publication-venue span:not(.type-badge)::before {
   margin-right: 0.25rem;
-  color: #a4aeac;
+  color: var(--line);
   content: "·";
 }
 
@@ -1205,12 +1285,12 @@ p {
   max-width: 760px;
   margin: 2rem 0 0;
   color: var(--muted);
-  font-size: 0.78rem;
+  font-size: var(--text-xs);
 }
 
 .site-footer {
   padding-block: 3.5rem;
-  background: #0a1b29;
+  background: var(--navy-2);
   color: rgba(255, 255, 255, 0.58);
 }
 
@@ -1227,7 +1307,7 @@ p {
 .footer-grid > div:first-child p {
   max-width: 430px;
   margin: 0.7rem 0 0;
-  font-size: 0.85rem;
+  font-size: var(--text-sm);
 }
 
 .footer-links {
@@ -1240,7 +1320,7 @@ p {
 
 .footer-links a {
   color: rgba(255, 255, 255, 0.78);
-  font-size: 0.82rem;
+  font-size: var(--text-sm);
   text-decoration: none;
 }
 
@@ -1253,7 +1333,7 @@ p {
   margin: 1rem 0 0;
   padding-top: 1.4rem;
   border-top: 1px solid rgba(255, 255, 255, 0.11);
-  font-size: 0.72rem;
+  font-size: var(--text-xs);
 }
 
 .not-found {
@@ -1275,7 +1355,7 @@ p {
   gap: 0 5rem;
   margin-bottom: clamp(5rem, 10vw, 8rem);
   padding: clamp(2rem, 5vw, 4rem);
-  border-left: 5px solid var(--rust);
+  border-left: 5px solid var(--teal-light);
   background: var(--navy);
   color: rgba(255, 255, 255, 0.75);
 }
@@ -1346,7 +1426,7 @@ p {
   position: absolute;
   top: 1.2rem;
   right: 1.2rem;
-  color: var(--rust);
+  color: var(--teal);
 }
 
 @media (max-width: 960px) {
@@ -1363,7 +1443,7 @@ p {
     padding: 0.75rem 1.5rem 1.2rem;
     border-bottom: 1px solid var(--line);
     background: var(--paper);
-    box-shadow: 0 20px 35px rgba(23, 50, 77, 0.1);
+    box-shadow: var(--shadow-card-hover);
   }
 
   .site-nav.is-open {
@@ -1481,7 +1561,7 @@ p {
   }
 
   .home-hero h1 {
-    font-size: clamp(3.3rem, 18vw, 5rem);
+    font-size: clamp(3.25rem, 16vw, 4.75rem);
   }
 
   .position-band span {
@@ -1638,27 +1718,32 @@ p {
 /* Teaching and article tables */
 .prose table {
   width: 100%;
-  max-width: 75ch;
-  margin: 1.5rem 0 2rem;
-  border: 1px solid var(--line);
+  max-width: 100%;
+  margin: var(--space-lg) 0 var(--space-xl);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
   border-collapse: collapse;
-  background: #fff;
-  font-family: Inter, ui-sans-serif, sans-serif;
-  font-size: 0.96rem;
+  background: var(--white);
+  font-family: var(--font-sans);
+  font-size: var(--text-sm);
 }
 
 .prose th,
 .prose td {
-  padding: 0.8rem 1rem;
-  border: 1px solid var(--line);
+  padding: 0.9rem 1rem;
+  border: 0;
+  border-bottom: 1px solid var(--line);
   text-align: left;
   vertical-align: middle;
 }
 
 .prose thead th {
-  background: var(--navy);
-  color: #fff;
-  font-weight: 700;
+  border-bottom: 2px solid var(--teal);
+  background: var(--cream);
+  color: var(--navy);
+  font-size: var(--text-xs);
+  font-weight: 800;
+  letter-spacing: 0.04em;
 }
 
 .prose tbody tr:nth-child(even) {
@@ -1666,14 +1751,14 @@ p {
 }
 
 .prose tbody tr:hover {
-  background: #eef7f5;
+  background: rgba(131, 197, 190, 0.1);
 }
 
 @media (max-width: 640px) {
   .prose table {
     display: block;
     overflow-x: auto;
-    white-space: nowrap;
+    white-space: normal;
     -webkit-overflow-scrolling: touch;
   }
 
@@ -1685,17 +1770,10 @@ p {
 /* Wide page hero used by the Teaching page */
 .page-hero--wide h1 {
   max-width: none;
-  font-size: clamp(2.6rem, 5vw, 4.5rem);
+  font-size: var(--text-page-title);
 }
 
 .page-hero--wide .lede {
-  max-width: 980px;
-  font-size: clamp(1.05rem, 1.6vw, 1.2rem);
-}
-
-@media (min-width: 980px) {
-  .page-hero--wide h1,
-  .page-hero--wide .lede {
-    white-space: nowrap;
-  }
+  max-width: 68ch;
+  font-size: clamp(1.025rem, 1.5vw, 1.2rem);
 }
