@@ -59,11 +59,14 @@ With extensive teaching experience, innovative course design, and a strong resea
 
 This certificate confirms that Dr. Lifeng Yuan was awarded the Associate Professor Qualification by the Evaluation Committee of High-level Professional and Technical Positions of College Teachers in Jiangsu Province, China. The certification was issued on September 17, 2009, and recognizes his professional status and teaching accomplishments at the time of service at Nanjing University of Posts and Telecommunications.
 
-The qualification was officially conferred by the Personnel Department of Jiangsu Province, following formal evaluation procedures.\*\*\[View certificate →](../files/certificates/associate-professor-qualification-certificate.png "View Associate Professor Qualification Certification")\*\*
+The qualification was officially conferred by the Personnel Department of Jiangsu Province, following formal evaluation procedures.
+
+**[View certificate →](../files/certificates/associate-professor-qualification-certificate.png "View Associate Professor Qualification Certification")**
 
 ### Colleges and Universities Teacher Qualification Certificate
 
 This certificate certifies that Dr. Lifeng Yuan has been officially granted the Teacher Qualification for Colleges and Universities by the Education Department of Jiangsu Province. The certification, issued on June 28, 2007, affirms that he meets the requirements outlined by the Teachers Law of the People’s Republic of China and the Regulations of Teaching Qualification, qualifying him to teach at the college and university level.
 
-Dr. Yuan received this recognition based on his educational background, teaching capabilities, and successful completion of required assessments, solidifying his professional status as a higher-education instructor.\*\*\[View certificate →](../files/certificates/colleges-universities-teacher-qualification-certificate.png "View Colleges and Universities Teacher Qualification Certificate")\*\*
+Dr. Yuan received this recognition based on his educational background, teaching capabilities, and successful completion of required assessments, solidifying his professional status as a higher-education instructor.
 
+**[View certificate →](../files/certificates/colleges-universities-teacher-qualification-certificate.png "View Colleges and Universities Teacher Qualification Certificate")**
