@@ -2,6 +2,15 @@
 <html lang="en" class="no-js">
   <head>
     {{ partial "head.html" . }}
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-E5VV9ZZ7RV"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'G-E5VV9ZZ7RV');
+	</script>
   </head>
   <body class="{{ if .IsHome }}is-home{{ else }}is-inner{{ end }}">
     <a class="skip-link" href="#main-content">Skip to content</a>
