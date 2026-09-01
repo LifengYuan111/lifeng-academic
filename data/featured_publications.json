@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Exploring the statistical characteristics of coastal winter precipitation measured using a Parsivel² disdrometer: A case study in North Carolina",
+    "tags": ["Rainfall Microphysics", "Hydrology"]
+  },
+  {
+    "title": "Using SWMM for Emergency Response Planning: A Case Study Evaluating Biological Agent Transport Under Various Rainfall Scenarios and Urban Surfaces",
+    "tags": ["SWMM", "Emergency Response"]
+  },
+  {
+    "title": "Evaluating Monthly Flow Prediction Based on SWAT and Support Vector Regression Coupled with Discrete Wavelet Transform",
+    "tags": ["SWAT–Wavelet", "Machine Learning"]
+  },
+  {
+    "title": "Simulating the potential effects of elevated CO2 concentration and temperature coupled with storm intensification on crop yield, surface runoff, and soil loss based on 25 GCMs ensemble: A site-specific case study in Oklahoma",
+    "tags": ["WEPP", "Climate Impacts"]
+  },
+  {
+    "title": "Modeling surface runoff and soil loss response to climate change under GCM ensembles and multiple cropping and tillage systems in Oklahoma",
+    "tags": ["WEPP", "Agricultural Systems"]
+  },
+  {
+    "title": "Review of Watershed-Scale Water Quality and Nonpoint Source Pollution Models",
+    "tags": ["Watershed Models", "Water Quality"]
+  }
+]

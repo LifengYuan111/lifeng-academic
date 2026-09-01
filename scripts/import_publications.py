@@ -14,6 +14,15 @@ REPORT_TITLES = {
     "A Review of Watershed and Water Quality Tools for Nutrient Fate and Transport"
 }
 
+TITLE_CORRECTIONS = {
+    "Evaluating Parsivel2’s raindrop data: A comparative study of different terminal drop velocity models on simulated and natural rain events":
+        "Evaluating Parsivel²’s raindrop data: A comparative study of different terminal drop velocity models on simulated and natural rain events",
+    "Exploring the statistical characteristics of coastal winter precipitation measured using a Parsivel2 disdrometer: A case study in North Carolina":
+        "Exploring the statistical characteristics of coastal winter precipitation measured using a Parsivel² disdrometer: A case study in North Carolina",
+    "Using Swmm for Emergency Response Planning: A Case Study Evaluating Biological Agent Transport Under Various Rainfall Scenarios and Urban Surfaces":
+        "Using SWMM for Emergency Response Planning: A Case Study Evaluating Biological Agent Transport Under Various Rainfall Scenarios and Urban Surfaces"
+}
+
 
 def normalized(value: str) -> str:
     return re.sub(r"\s+", " ", value).strip().casefold()
@@ -30,6 +39,7 @@ def import_publications(source: Path) -> list[dict[str, object]]:
     deduplicated: dict[tuple[str, str], dict[str, str]] = {}
     for raw in rows:
         row = {key.strip(): (value or "").strip() for key, value in raw.items()}
+        row["Title"] = TITLE_CORRECTIONS.get(row["Title"], row["Title"])
         # Scholar may export the same author names in different orders or styles.
         # Title and year are the stable fields for the two known duplicate groups.
         key = (normalized(row["Title"]), row["Year"])

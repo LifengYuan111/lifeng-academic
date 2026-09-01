@@ -5,7 +5,7 @@ publication_year = 2023
 weight = 20
 type = "notes"
 topic = "Urban Stormwater"
-publication_title = "Using Swmm for Emergency Response Planning: A Case Study Evaluating Biological Agent Transport Under Various Rainfall Scenarios and Urban Surfaces"
+publication_title = "Using SWMM for Emergency Response Planning: A Case Study Evaluating Biological Agent Transport Under Various Rainfall Scenarios and Urban Surfaces"
 +++
 
 ## Objective

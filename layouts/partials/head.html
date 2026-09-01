@@ -21,6 +21,10 @@
 <link rel="stylesheet" href="{{ $softwareCSS.RelPermalink }}" integrity="{{ $softwareCSS.Data.Integrity }}">
 {{ $careerCSS := resources.Get "css/career-timeline.css" | minify | fingerprint }}
 <link rel="stylesheet" href="{{ $careerCSS.RelPermalink }}" integrity="{{ $careerCSS.Data.Integrity }}">
+{{ if eq .Type "publications" }}
+{{ $featuredPublicationsCSS := resources.Get "css/featured-publications.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $featuredPublicationsCSS.RelPermalink }}" integrity="{{ $featuredPublicationsCSS.Data.Integrity }}">
+{{ end }}
 <script>document.documentElement.classList.remove('no-js');document.documentElement.classList.add('js');</script>
 {{ if .IsHome }}
 <script type="application/ld+json">

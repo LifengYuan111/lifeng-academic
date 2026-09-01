@@ -11,41 +11,79 @@
   </div>
 </header>
 <div class="container publications-wrap">
-  <div class="publications-toolbar" aria-label="Filter publications">
-    <label class="search-field">
-      <span>Search publications</span>
-      <input id="publication-search" type="search" placeholder="Title, author, journal, or year" autocomplete="off">
-    </label>
-    <label class="year-field">
-      <span>Year</span>
-      <select id="publication-year">
-        <option value="">All years</option>
-        {{ range (seq 2025 -1 2003) }}<option value="{{ . }}">{{ . }}</option>{{ end }}
-      </select>
-    </label>
-    <p id="publication-count" class="publication-count" aria-live="polite">{{ len site.Data.publications }} publications</p>
-  </div>
-  <ol id="publication-list" class="publication-list">
-    {{ range (sort site.Data.publications "year" "desc") }}
-    <li class="publication-item" data-year="{{ .year }}">
-      <span class="publication-item__year">{{ .year }}</span>
-      <div class="publication-item__body">
-        <h2>{{ .title }}</h2>
-        <p class="publication-authors">{{ replaceRE "(?i)(Lifeng Yuan|Yuan Lifeng)" "<strong>$1</strong>" .authors | safeHTML }}</p>
-        <p class="publication-venue">
-          {{ with .publication }}<em>{{ . }}</em>{{ end }}
-          {{ with .volume }}<span>{{ . }}</span>{{ end }}
-          {{ with .number }}<span>({{ . }})</span>{{ end }}
-          {{ with .pages }}<span>{{ . }}</span>{{ end }}
-          {{ with .publisher }}<span>{{ . }}</span>{{ end }}
-          {{ if eq .kind "Report" }}<span class="type-badge">Government report</span>{{ end }}
-        </p>
-        {{ partial "publication-links.html" . }}
-      </div>
-    </li>
-    {{ end }}
-  </ol>
-  <p id="publication-empty" class="empty-state" hidden>No publications match these filters.</p>
-  <p class="data-note">Publication metadata was imported from the supplied Google Scholar export and deduplicated by normalized title and year, retaining the more complete record. The original export remains available above.</p>
+  <section class="featured-publications" aria-labelledby="featured-publications-heading">
+    <header class="featured-publications__heading">
+      <p class="eyebrow">Selected work</p>
+      <h2 id="featured-publications-heading">Featured Publications</h2>
+      <p>Six representative publications highlighting rainfall measurement, urban stormwater, watershed modeling, machine learning, climate impacts, and agricultural systems.</p>
+    </header>
+    <div class="featured-publications__grid">
+      {{ range site.Data.featured_publications }}
+        {{ $feature := . }}
+        {{ range first 1 (where site.Data.publications "title" $feature.title) }}
+        <article class="featured-publication-card">
+          <p class="featured-publication-card__year">{{ .year }}</p>
+          <h3>{{ .title }}</h3>
+          <p class="featured-publication-card__venue">{{ with .publication }}<em>{{ . }}</em>{{ end }}{{ with .volume }} · {{ . }}{{ end }}{{ with .pages }} · {{ . }}{{ end }}</p>
+          <ul class="tag-list" aria-label="Research areas">
+            {{ range $feature.tags }}<li>{{ . }}</li>{{ end }}
+          </ul>
+          {{ $links := index site.Data.publication_links .title }}
+          {{ with $links }}
+          <nav class="featured-publication-card__actions" aria-label="Featured publication links">
+            {{ with .doi }}<a href="https://doi.org/{{ . }}" target="_blank" rel="noopener noreferrer">DOI</a>{{ end }}
+            {{ with .summary }}<a href="{{ . | relURL }}">Research Summary</a>{{ end }}
+            {{ with .presentation }}<a href="{{ . | relURL }}" target="_blank" rel="noopener noreferrer">Presentation</a>{{ end }}
+          </nav>
+          {{ end }}
+        </article>
+        {{ end }}
+      {{ end }}
+    </div>
+  </section>
+
+  <section class="all-publications" aria-labelledby="all-publications-heading">
+    <header class="all-publications__heading">
+      <p class="eyebrow">Complete scholarly record</p>
+      <h2 id="all-publications-heading">All Publications <span>— {{ len site.Data.publications }}</span></h2>
+      <p>Search the full record by title, author, journal, keyword, or year.</p>
+    </header>
+    <div class="publications-toolbar" aria-label="Filter publications">
+      <label class="search-field">
+        <span>Search publications</span>
+        <input id="publication-search" type="search" placeholder="Title, author, journal, or year" autocomplete="off">
+      </label>
+      <label class="year-field">
+        <span>Year</span>
+        <select id="publication-year">
+          <option value="">All years</option>
+          {{ range (seq 2025 -1 2003) }}<option value="{{ . }}">{{ . }}</option>{{ end }}
+        </select>
+      </label>
+      <p id="publication-count" class="publication-count" aria-live="polite">{{ len site.Data.publications }} publications</p>
+    </div>
+    <ol id="publication-list" class="publication-list">
+      {{ range (sort site.Data.publications "year" "desc") }}
+      <li class="publication-item" data-year="{{ .year }}">
+        <span class="publication-item__year">{{ .year }}</span>
+        <div class="publication-item__body">
+          <h2>{{ .title }}</h2>
+          <p class="publication-authors">{{ replaceRE "(?i)(Lifeng Yuan|Yuan Lifeng)" "<strong>$1</strong>" .authors | safeHTML }}</p>
+          <p class="publication-venue">
+            {{ with .publication }}<em>{{ . }}</em>{{ end }}
+            {{ with .volume }}<span>{{ . }}</span>{{ end }}
+            {{ with .number }}<span>({{ . }})</span>{{ end }}
+            {{ with .pages }}<span>{{ . }}</span>{{ end }}
+            {{ with .publisher }}<span>{{ . }}</span>{{ end }}
+            {{ if eq .kind "Report" }}<span class="type-badge">Government report</span>{{ end }}
+          </p>
+          {{ partial "publication-links.html" . }}
+        </div>
+      </li>
+      {{ end }}
+    </ol>
+    <p id="publication-empty" class="empty-state" hidden>No publications match these filters.</p>
+    <p class="data-note">Publication metadata was imported from the supplied Google Scholar export and deduplicated by normalized title and year, retaining the more complete record. The original export remains available above.</p>
+  </section>
 </div>
 {{ end }}
