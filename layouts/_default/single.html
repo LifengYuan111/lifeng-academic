@@ -1,9 +1,20 @@
 {{ define "main" }}
-<header class="page-hero{{ with .Params.heroClass }} {{ . }}{{ end }}">
+<header class="page-hero{{ with .Params.heroClass }} {{ . }}{{ end }}{{ if eq .Params.sectionNav "about" }} page-hero--about{{ end }}">
   <div class="container page-hero__inner">
-    {{ with .Params.eyebrow }}<p class="eyebrow">{{ . }}</p>{{ end }}
-    <h1>{{ .Title }}</h1>
-    {{ with .Description }}<p class="lede">{{ . }}</p>{{ end }}
+    {{ if eq .Params.sectionNav "about" }}
+    <div class="about-hero__layout">
+      <div class="about-hero__copy">
+        {{ with .Params.eyebrow }}<p class="eyebrow">{{ . }}</p>{{ end }}
+        <h1>{{ .Title }}</h1>
+        {{ with .Description }}<p class="lede">{{ . }}</p>{{ end }}
+      </div>
+      {{ partial "about-career-journey.html" . }}
+    </div>
+    {{ else }}
+      {{ with .Params.eyebrow }}<p class="eyebrow">{{ . }}</p>{{ end }}
+      <h1>{{ .Title }}</h1>
+      {{ with .Description }}<p class="lede">{{ . }}</p>{{ end }}
+    {{ end }}
   </div>
 </header>
 <div class="container page-layout{{ if not .Params.toc }} page-layout--single{{ end }}{{ with .Params.sectionNav }} page-layout--section-nav{{ end }}">

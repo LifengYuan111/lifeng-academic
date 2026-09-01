@@ -3,11 +3,9 @@
     "title": "On this page",
     "items": [
       {"id": "professional-profile", "label": "Profile"},
-      {"id": "core-competencies", "label": "Core Expertise"},
-      {"id": "professional-service", "label": "Professional Service"},
-      {"id": "work-experience", "label": "Experience"},
+      {"id": "work-experience", "label": "Career"},
       {"id": "education", "label": "Education"},
-      {"id": "certificates-honors-and-awards", "label": "Honors & Recognition"},
+      {"id": "selected-honors--recognition", "label": "Recognition"},
       {"id": "educational-technology-development", "label": "Educational Technology"}
     ]
   },

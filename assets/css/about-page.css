@@ -1,0 +1,250 @@
+.page-hero--about .page-hero__inner::after {
+  display: none;
+}
+
+.about-hero__layout {
+  display: grid;
+  grid-template-columns: minmax(320px, 0.8fr) minmax(520px, 1.2fr);
+  align-items: center;
+  gap: clamp(3rem, 6vw, 6rem);
+}
+
+.about-hero__copy {
+  min-width: 0;
+}
+
+.about-hero__copy::after {
+  display: block;
+  width: 64px;
+  height: 3px;
+  margin-top: clamp(1.5rem, 3vw, 2.25rem);
+  border-radius: 999px;
+  background: var(--teal);
+  content: "";
+}
+
+.page-hero--about .lede {
+  max-width: 560px;
+}
+
+.about-career-journey {
+  min-width: 0;
+  padding: clamp(1.25rem, 3vw, 1.75rem) 0;
+}
+
+.about-career-journey__title {
+  margin: 0 0 1.25rem;
+  color: var(--teal);
+  font-size: 0.68rem;
+  font-weight: 850;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.about-career-journey__track {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.about-career-journey__track::before {
+  position: absolute;
+  top: 2.55rem;
+  right: 8.3%;
+  left: 8.3%;
+  height: 1px;
+  background: rgba(23, 50, 77, 0.24);
+  content: "";
+}
+
+.about-career-journey__track li {
+  position: relative;
+  min-width: 0;
+  text-align: center;
+}
+
+.about-career-journey__track time {
+  display: block;
+  min-height: 1.8rem;
+  color: var(--teal);
+  font-size: 0.72rem;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.04em;
+}
+
+.about-career-journey__node {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 10px;
+  height: 10px;
+  margin: 0.45rem auto 0.8rem;
+  border: 2px solid var(--paper);
+  border-radius: 50%;
+  background: var(--teal);
+  box-shadow: 0 0 0 1px var(--teal);
+}
+
+.about-career-journey__label strong,
+.about-career-journey__label small {
+  display: block;
+}
+
+.about-career-journey__label strong {
+  color: var(--navy);
+  font-size: 0.75rem;
+  line-height: 1.35;
+}
+
+.about-career-journey__label small {
+  margin-top: 0.12rem;
+  color: var(--muted);
+  font-size: 0.66rem;
+  line-height: 1.35;
+}
+
+.about-expertise-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.65rem;
+  margin: 1.25rem 0 2rem;
+  padding: 0;
+  list-style: none;
+}
+
+.prose .about-expertise-list li {
+  position: relative;
+  margin: 0;
+  padding: 0.8rem 0.9rem 0.8rem 1.8rem;
+  border: 1px solid rgba(23, 50, 77, 0.14);
+  background: var(--white);
+  color: var(--navy);
+  font-size: 0.78rem;
+  font-weight: 750;
+  line-height: 1.4;
+}
+
+.about-expertise-list li::before {
+  position: absolute;
+  top: 50%;
+  left: 0.85rem;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--teal);
+  content: "";
+  transform: translateY(-50%);
+}
+
+.about-expertise-list li:last-child {
+  grid-column: 1 / -1;
+}
+
+.about-recognition-list {
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--line);
+  list-style: none;
+}
+
+.prose .about-recognition-list li {
+  display: grid;
+  grid-template-columns: 7rem minmax(0, 1fr);
+  gap: 1rem;
+  margin: 0;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.about-recognition-list time {
+  color: var(--teal);
+  font-size: 0.74rem;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.04em;
+}
+
+.about-recognition-list span,
+.about-recognition-list strong,
+.about-recognition-list small {
+  display: block;
+}
+
+.about-recognition-list strong {
+  color: var(--navy);
+  font-size: 0.82rem;
+  line-height: 1.35;
+}
+
+.about-recognition-list small {
+  margin-top: 0.2rem;
+  color: var(--muted);
+  font-size: 0.7rem;
+  line-height: 1.45;
+}
+
+@media (max-width: 1050px) {
+  .about-hero__layout {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .about-career-journey {
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .about-career-journey__track {
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+  }
+
+  .about-career-journey__track::before {
+    top: 0.55rem;
+    right: auto;
+    bottom: 0.55rem;
+    left: 4.625rem;
+    width: 1px;
+    height: auto;
+  }
+
+  .about-career-journey__track li {
+    display: grid;
+    grid-template-columns: 3.5rem 1.25rem minmax(0, 1fr);
+    align-items: center;
+    gap: 0.5rem;
+    text-align: left;
+  }
+
+  .about-career-journey__track time {
+    min-height: 0;
+    text-align: right;
+  }
+
+  .about-career-journey__node {
+    margin: 0 auto;
+  }
+
+  .about-career-journey__label small {
+    margin-top: 0;
+  }
+
+  .about-expertise-list {
+    grid-template-columns: 1fr;
+  }
+
+  .about-expertise-list li:last-child {
+    grid-column: auto;
+  }
+
+  .prose .about-recognition-list li {
+    grid-template-columns: 1fr;
+    gap: 0.2rem;
+  }
+}
