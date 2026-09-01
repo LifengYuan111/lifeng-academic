@@ -1,5 +1,6 @@
 [
   {
+    "id": "epa-stormwater",
     "category": "Urban Stormwater",
     "period": "2021–2024",
     "institution": "U.S. EPA · U.S. Coast Guard · DHS",
@@ -13,6 +14,7 @@
     "compact": false
   },
   {
+    "id": "climate-erosion",
     "category": "Climate & Agriculture",
     "period": "2020–2021",
     "institution": "USDA-ARS · Grazinglands Research Laboratory",
@@ -26,6 +28,7 @@
     "compact": false
   },
   {
+    "id": "swat-machine-learning",
     "category": "Watershed Modeling",
     "period": "2017–2020",
     "institution": "U.S. EPA · Robert S. Kerr Environmental Research Center",
@@ -39,6 +42,7 @@
     "compact": false
   },
   {
+    "id": "loess-plateau-erosion",
     "category": "Soil Erosion & GIS",
     "period": "2011–2013",
     "institution": "Chinese Academy of Sciences",
@@ -52,6 +56,7 @@
     "compact": false
   },
   {
+    "id": "nps-risk-assessment",
     "category": "Water Quality & GIS",
     "period": "2011–2013",
     "institution": "Key Laboratory of Virtual Geographic Environment · Poyang Lake Basin",
@@ -65,6 +70,7 @@
     "compact": false
   },
   {
+    "id": "gis-education",
     "category": "GIS & Education",
     "period": "2012",
     "institution": "University–industry collaboration",
@@ -77,6 +83,7 @@
     "compact": true
   },
   {
+    "id": "hydro-climate-analysis",
     "category": "Hydro-climate Analysis",
     "period": "2009–2011",
     "institution": "Poyang Lake Watershed",

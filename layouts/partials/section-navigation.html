@@ -1,0 +1,38 @@
+{{ $navigation := index site.Data.section_navigation .Params.sectionNav }}
+{{ with $navigation }}
+<div class="section-nav-shell" data-section-navigation>
+  <aside class="section-nav" aria-label="{{ .title }}">
+    <p class="section-nav__title">{{ .title }}</p>
+    <ol class="section-nav__list">
+      {{ range .items }}
+      <li class="section-nav__item{{ if .divider }} section-nav__item--divider{{ end }}">
+        <a href="#{{ .id }}" data-section-link="{{ .id }}">
+          {{ with .meta }}<span class="section-nav__meta">{{ . }}</span>{{ end }}
+          <span>{{ .label }}</span>
+        </a>
+      </li>
+      {{ end }}
+    </ol>
+  </aside>
+
+  <details class="section-nav-mobile">
+    <summary>
+      <span>
+        <small>{{ .title }}</small>
+        <strong data-section-current>{{ (index .items 0).label }}</strong>
+      </span>
+      <span class="section-nav-mobile__icon" aria-hidden="true"></span>
+    </summary>
+    <ol class="section-nav__list">
+      {{ range .items }}
+      <li class="section-nav__item{{ if .divider }} section-nav__item--divider{{ end }}">
+        <a href="#{{ .id }}" data-section-link="{{ .id }}">
+          {{ with .meta }}<span class="section-nav__meta">{{ . }}</span>{{ end }}
+          <span>{{ .label }}</span>
+        </a>
+      </li>
+      {{ end }}
+    </ol>
+  </details>
+</div>
+{{ end }}

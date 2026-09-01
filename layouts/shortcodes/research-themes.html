@@ -1,6 +1,6 @@
 <div class="research-theme-grid">
   {{ range site.Data.research_themes }}
-  <article class="research-theme-card">
+  <article class="research-theme-card" id="{{ .id }}">
     <header class="research-theme-card__header">
       <span class="research-theme-card__number" aria-hidden="true">{{ .number }}</span>
       <h3>{{ .title }}</h3>

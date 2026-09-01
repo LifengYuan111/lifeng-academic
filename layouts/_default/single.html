@@ -6,8 +6,10 @@
     {{ with .Description }}<p class="lede">{{ . }}</p>{{ end }}
   </div>
 </header>
-<div class="container page-layout{{ if not .Params.toc }} page-layout--single{{ end }}">
-  {{ if .Params.toc }}
+<div class="container page-layout{{ if not .Params.toc }} page-layout--single{{ end }}{{ with .Params.sectionNav }} page-layout--section-nav{{ end }}">
+  {{ if .Params.sectionNav }}
+  {{ partial "section-navigation.html" . }}
+  {{ else if .Params.toc }}
   <aside class="page-toc" aria-label="On this page">
     <p>On this page</p>
     {{ .TableOfContents }}

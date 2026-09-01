@@ -1,6 +1,6 @@
 <div class="project-portfolio-grid" aria-label="Selected research and development projects">
   {{ range site.Data.project_cards }}
-  <article class="project-portfolio-card{{ if .featured }} project-portfolio-card--featured{{ end }}{{ if .compact }} project-portfolio-card--compact{{ end }}">
+  <article class="project-portfolio-card{{ if .featured }} project-portfolio-card--featured{{ end }}{{ if .compact }} project-portfolio-card--compact{{ end }}" id="{{ .id }}">
     <p class="project-portfolio-card__category">{{ .category }}</p>
     <p class="project-portfolio-card__meta">{{ .institution }} <span aria-hidden="true">·</span> {{ .period }}</p>
     <h3>{{ .title }}</h3>

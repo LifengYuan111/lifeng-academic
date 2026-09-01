@@ -4,6 +4,7 @@ description = "Applied teaching and mentoring in geospatial science, environment
 eyebrow = "Education"
 toc = true
 heroClass = "page-hero--wide"
+sectionNav = "teaching"
 +++
 
 ## Teaching philosophy

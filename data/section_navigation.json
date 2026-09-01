@@ -1,0 +1,49 @@
+{
+  "about": {
+    "title": "On this page",
+    "items": [
+      {"id": "professional-profile", "label": "Profile"},
+      {"id": "core-competencies", "label": "Core Expertise"},
+      {"id": "professional-service", "label": "Professional Service"},
+      {"id": "work-experience", "label": "Experience"},
+      {"id": "education", "label": "Education"},
+      {"id": "certificates-honors-and-awards", "label": "Honors & Recognition"},
+      {"id": "educational-technology-development", "label": "Educational Technology"}
+    ]
+  },
+  "research": {
+    "title": "Research areas",
+    "items": [
+      {"id": "watershed-hydrology", "meta": "01", "label": "Watershed Hydrology"},
+      {"id": "physics-data", "meta": "02", "label": "Physics + Data"},
+      {"id": "hydro-climate-extremes", "meta": "03", "label": "Hydro-Climate Extremes"},
+      {"id": "karst-hydrology", "meta": "04", "label": "Karst Hydrology"},
+      {"id": "rainfall-microphysics", "meta": "05", "label": "Rainfall Microphysics"},
+      {"id": "research-approach", "label": "Research Approach", "divider": true},
+      {"id": "research-statement", "label": "Research Statement"}
+    ]
+  },
+  "projects": {
+    "title": "Selected projects",
+    "items": [
+      {"id": "epa-stormwater", "meta": "2021", "label": "EPA Stormwater"},
+      {"id": "climate-erosion", "meta": "2020", "label": "Climate & Erosion"},
+      {"id": "swat-machine-learning", "meta": "2017", "label": "SWAT + Machine Learning"},
+      {"id": "loess-plateau-erosion", "meta": "2011", "label": "Loess Plateau Erosion"},
+      {"id": "nps-risk-assessment", "meta": "2011", "label": "NPS Risk Assessment"},
+      {"id": "gis-education", "meta": "2012", "label": "GIS Education Tech"},
+      {"id": "hydro-climate-analysis", "meta": "2009", "label": "Poyang Hydro-Climate"}
+    ]
+  },
+  "teaching": {
+    "title": "On this page",
+    "items": [
+      {"id": "teaching-philosophy", "label": "Teaching Profile"},
+      {"id": "courses-taught", "label": "Courses"},
+      {"id": "gis-education--technology-development", "label": "GIS Technology"},
+      {"id": "mentorship-and-student-success", "label": "Mentorship"},
+      {"id": "scholarly-contributions-and-recognition", "label": "Education Publications"},
+      {"id": "teaching-qualifications", "label": "Teaching Qualifications"}
+    ]
+  }
+}

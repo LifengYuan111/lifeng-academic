@@ -3,6 +3,7 @@ title = "About"
 description = "Professional experience, education, service, honors, and software contributions in environmental science, hydrology, soil erosion, and geospatial modeling."
 eyebrow = "Professional profile"
 toc = true
+sectionNav = "about"
 +++
 
 ## Professional profile

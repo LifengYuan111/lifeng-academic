@@ -1,6 +1,7 @@
 [
   {
     "number": "01",
+    "id": "watershed-hydrology",
     "title": "Watershed Hydrology & Sediment Dynamics",
     "description": "Process-based modeling of streamflow, erosion, sediment transport, nonpoint-source pollution, and water quality at the watershed scale, with emphasis on critical-source-area identification and management.",
     "keywords": ["SWAT / SWAT+", "Sediment", "NPS", "Water Quality"],
@@ -27,6 +28,7 @@
   },
   {
     "number": "02",
+    "id": "physics-data",
     "title": "Physics + Data Integration",
     "description": "Hybrid approaches that combine process-based watershed models with support vector regression, wavelets, and machine learning to improve prediction while retaining physical understanding.",
     "keywords": ["SWAT–SVR", "Wavelet", "Machine Learning", "Prediction"],
@@ -47,6 +49,7 @@
   },
   {
     "number": "03",
+    "id": "hydro-climate-extremes",
     "title": "Hydro-climate Extremes & Downscaling",
     "description": "Climate variability, precipitation downscaling, storm intensification, and future-scenario analysis for runoff, soil erosion, crop yield, and watershed risk.",
     "keywords": ["WEPP", "Climate Extremes", "Downscaling", "Scenario Analysis"],
@@ -73,6 +76,7 @@
   },
   {
     "number": "04",
+    "id": "karst-hydrology",
     "title": "Karst Hydrology",
     "description": "Improved representation of losing streams, sinkhole-driven recharge, and groundwater–surface-water connectivity in SWAT+ for complex and data-limited karst watersheds.",
     "keywords": ["Karst", "Sinkholes", "Losing Streams", "SWAT+"],
@@ -80,6 +84,7 @@
   },
   {
     "number": "05",
+    "id": "rainfall-microphysics",
     "title": "Precipitation Microphysics",
     "description": "Parsivel²-based analysis of raindrop-size distributions and storm variability to connect rainfall structure with runoff, erosion processes, and hydrologic-model realism.",
     "keywords": ["Parsivel²", "Raindrop Size", "Rainfall", "Erosion"],

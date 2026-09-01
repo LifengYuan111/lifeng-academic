@@ -4,6 +4,7 @@ description = "An integrative research program connecting watershed processes, e
 eyebrow = "Research profile"
 toc = true
 type = "research"
+sectionNav = "research"
 +++
 
 ## Overview

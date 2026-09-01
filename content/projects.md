@@ -4,6 +4,7 @@ description = "Selected projects connecting environmental models, climate data, 
 eyebrow = "Applied research"
 toc = true
 type = "projects"
+sectionNav = "projects"
 +++
 
 ## Selected projects
