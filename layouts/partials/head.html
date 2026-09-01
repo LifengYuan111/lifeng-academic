@@ -17,6 +17,8 @@
 {{ with .OutputFormats.Get "RSS" }}<link rel="alternate" type="application/rss+xml" title="{{ site.Title }}" href="{{ .RelPermalink }}">{{ end }}
 {{ $css := resources.Get "css/main.css" | minify | fingerprint }}
 <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+{{ $softwareCSS := resources.Get "css/software-copyrights.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $softwareCSS.RelPermalink }}" integrity="{{ $softwareCSS.Data.Integrity }}">
 <script>document.documentElement.classList.remove('no-js');document.documentElement.classList.add('js');</script>
 {{ if .IsHome }}
 <script type="application/ld+json">

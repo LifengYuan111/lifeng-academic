@@ -25,6 +25,12 @@ In more theoretical courses such as Digital Elevation Models, I enriched the cur
 * Urban Geographic Information System, 32 periods, Spring 2008–2009
 * WebGIS (ArcGIS Server, ArcIMS), GIS Design and Visualization, 40 periods, Fall 2007–2012
 
+## GIS educational technology transfer
+
+I translated GIS teaching and applied research into registered software systems for experimental instruction and geospatial information services. Two systems were developed in collaboration with an educational-equipment company and graduate students, while a WebGIS rainfall service system was registered through Nanjing University of Posts and Telecommunications.
+
+{{< software-copyrights >}}
+
 ## Mentorship and student success
 
 As a mentor, I have actively supported both undergraduate and graduate students in research, technical development, and professional readiness. From 2009 to 2013, I supervised four graduate students working on GIS-based system design for real-world industry applications. These projects, developed in collaboration with external partners, provided practical experience and helped students transition successfully into careers in GIS, geospatial analysis, and environmental modeling.
