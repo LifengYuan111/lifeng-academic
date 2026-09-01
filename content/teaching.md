@@ -25,9 +25,9 @@ In more theoretical courses such as Digital Elevation Models, I enriched the cur
 * Urban Geographic Information System, 32 periods, Spring 2008–2009
 * WebGIS (ArcGIS Server, ArcIMS), GIS Design and Visualization, 40 periods, Fall 2007–2012
 
-## GIS educational technology transfer
+## GIS Education & Technology Development
 
-I translated GIS teaching and applied research into registered software systems for experimental instruction and geospatial information services. Two systems were developed in collaboration with an educational-equipment company and graduate students, while a WebGIS rainfall service system was registered through Nanjing University of Posts and Telecommunications.
+Beyond classroom instruction and graduate mentorship, I contributed to the development of three registered GIS-based educational technologies supporting geography teaching, spatial analysis, 3D visualization, interactive learning, and geospatial information services. Two systems were developed in collaboration with an educational-equipment company and graduate students, while a WebGIS rainfall service system was registered through Nanjing University of Posts and Telecommunications.
 
 {{< software-copyrights >}}
 

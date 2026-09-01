@@ -117,60 +117,8 @@ Dissertation: *Analysis of the Physical and Chemical Properties of Soil in the N
 - 2008–2012: Member, Geographical Society of China
 - 2011–2016: The 6th Council Members of the Jiangsu Society of Remote Sensing and Geographic Information Systems
 
-## Software copyrights
+## Educational Technology Development
 
-### Geolocation Simulation Teaching System (GPS)
+Co-developed **three registered GIS and geography educational software systems** supporting interactive teaching, spatial analysis, and 3D geographic visualization.
 
-Computer Software Copyright Registration Certificate issued by the National Copyright Administration of the People’s Republic of China.
-
-- **Software title:** 全球定位仿真实验教学系统 (Geolocation Simulation Teaching System, GPS)
-- **Version:** 1.0
-- **Registration no.:** 2012SR044489
-- **Certificate no.:** 00123705
-- **Software completion date:** December 25, 2011
-- **First release date:** February 18, 2012
-- **Copyright holder:** Suzhou Yulong Science and Education Equipment Co., Ltd.
-- **Developers:** Yuan Lifeng, Fang Yuyun
-- **Category:** General software
-- **Issuing authority:** National Copyright Administration of China
-- **Issue date:** July 29, 2012
-
-This certificate affirms that the software was developed and registered according to the Regulations on Computer Software Protection and officially grants copyright protection under Chinese law.
-
-### 3D Geography Simulation Teaching System
-
-Computer Software Copyright Registration Certificate issued by the National Copyright Administration of the People’s Republic of China.
-
-- **Software title:** 地理三维仿真实验教学系统 (3D Geography Simulation Teaching System)
-- **Version:** 1.0
-- **Copyright holder:** Suzhou Yulong Science and Education Equipment Co., Ltd.
-- **Authors:** Lifeng Yuan, Xingfei Liu
-- **Software completion date:** December 25, 2011
-- **First publication date:** February 18, 2012
-- **Type of rights:** Full copyright
-- **Rights scope:** All rights reserved
-- **Registration number:** 2012SR044554
-- **Certificate number:** 00123708
-- **Issuing authority:** National Copyright Administration of China
-- **Issue date:** July 29, 2012
-
-This certificate confirms that the software has been registered and protected in accordance with the Regulations for the Protection of Computer Software and related legal provisions.
-
-### Rainfall Service Information System Based on WebGIS
-
-Computer Software Copyright Registration Certificate issued by the National Copyright Administration of the People’s Republic of China.
-
-- **Software title:** 基于WebGIS的雨情服务信息系统 (Rainfall Service Information System Based on WebGIS)
-- **Version:** 1.0
-- **Copyright holder:** Nanjing University of Posts and Telecommunications
-- **Author:** Nanjing University of Posts and Telecommunications
-- **Software completion date:** January 10, 2013
-- **First publication date:** Not yet published
-- **Type of rights:** Full copyright
-- **Rights scope:** All rights reserved
-- **Registration number:** 2013SR085064
-- **Certificate number:** 00244257
-- **Issuing authority:** National Copyright Administration of China
-- **Issue date:** May 14, 2013
-
-This certificate affirms that the software is protected under the Regulations for the Protection of Computer Software, securing exclusive copyright rights under Chinese law.
+**[Explore GIS Education & Technology Development →](../teaching/#gis-education--technology-development)**
