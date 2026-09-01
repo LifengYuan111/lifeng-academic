@@ -744,22 +744,20 @@ p {
   background: var(--cream);
 }
 
-.page-hero::after {
-  position: absolute;
-  top: -80px;
-  right: -120px;
-  width: 500px;
-  height: 500px;
-  border: 1px solid rgba(31, 111, 120, 0.2);
-  border-radius: 42% 58% 55% 45%;
-  content: "";
-  transform: rotate(20deg);
-}
-
 .page-hero__inner {
   position: relative;
   z-index: 1;
   padding-block: clamp(4rem, 8vw, 7rem);
+}
+
+.page-hero__inner::after {
+  display: block;
+  width: 64px;
+  height: 3px;
+  margin-top: clamp(1.5rem, 3vw, 2.25rem);
+  border-radius: 999px;
+  background: var(--teal);
+  content: "";
 }
 
 .page-hero h1 {
