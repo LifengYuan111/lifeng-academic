@@ -1,5 +1,5 @@
 +++
-title = "Teaching & Mentoring"
+title = "Teaching \& Mentoring"
 description = "A teaching philosophy grounded in intellectual curiosity, applied learning, innovation, collaboration, and preparation for real-world careers."
 eyebrow = "Education"
 toc = true
@@ -11,7 +11,7 @@ I am a dedicated educator and researcher with a Ph.D. in Physical Geography from
 
 ## Teaching experience and pedagogical approach
 
-Since earning my University & College Teaching Certificate in China in 2006, I have committed myself to higher education, advancing from Assistant to Associate Professor at Nanjing University of Posts and Telecommunications. Over a seven-year tenure, I taught a range of undergraduate and graduate courses, including GIS Software Application and Development, Digital Elevation Models, and WebGIS, where I consistently combined rigorous theoretical foundations with practical, real-world applications.
+Since earning my University \& College Teaching Certificate in China in 2006, I have committed myself to higher education, advancing from Assistant to Associate Professor at Nanjing University of Posts and Telecommunications. Over a seven-year tenure, I taught a range of undergraduate and graduate courses, including GIS Software Application and Development, Digital Elevation Models, and WebGIS, where I consistently combined rigorous theoretical foundations with practical, real-world applications.
 
 For technical courses such as GIS Software Application and Development, I emphasized hands-on, experiential learning. Classes were held in computer labs equipped with ArcGIS, where students engaged in real-time demonstrations and collaborative projects that mirrored industry scenarios. This interactive environment not only enhanced technical competencies but also nurtured creative problem-solving and teamwork.
 
@@ -19,10 +19,10 @@ In more theoretical courses such as Digital Elevation Models, I enriched the cur
 
 ### Courses taught
 
-- GIS Software Application and Development (ArcGIS Desktop), 64 periods, Fall 2007–2012
-- Digital Elevation Model, 32 periods, Fall 2007–2012
-- Urban Geographic Information System, 32 periods, Spring 2008–2009
-- WebGIS (ArcGIS Server, ArcIMS), GIS Design and Visualization, 40 periods, Fall 2007–2012
+* GIS Software Application and Development (ArcGIS Desktop), 64 periods, Fall 2007–2012
+* Digital Elevation Model, 32 periods, Fall 2007–2012
+* Urban Geographic Information System, 32 periods, Spring 2008–2009
+* WebGIS (ArcGIS Server, ArcIMS), GIS Design and Visualization, 40 periods, Fall 2007–2012
 
 ## Mentorship and student success
 
@@ -59,10 +59,11 @@ With extensive teaching experience, innovative course design, and a strong resea
 
 This certificate confirms that Dr. Lifeng Yuan was awarded the Associate Professor Qualification by the Evaluation Committee of High-level Professional and Technical Positions of College Teachers in Jiangsu Province, China. The certification was issued on September 17, 2009, and recognizes his professional status and teaching accomplishments at the time of service at Nanjing University of Posts and Telecommunications.
 
-The qualification was officially conferred by the Personnel Department of Jiangsu Province, following formal evaluation procedures.
+The qualification was officially conferred by the Personnel Department of Jiangsu Province, following formal evaluation procedures.\*\*\[View certificate →](../files/certificates/associate-professor-qualification-certificate.png "View Associate Professor Qualification Certification")\*\*
 
 ### Colleges and Universities Teacher Qualification Certificate
 
 This certificate certifies that Dr. Lifeng Yuan has been officially granted the Teacher Qualification for Colleges and Universities by the Education Department of Jiangsu Province. The certification, issued on June 28, 2007, affirms that he meets the requirements outlined by the Teachers Law of the People’s Republic of China and the Regulations of Teaching Qualification, qualifying him to teach at the college and university level.
 
-Dr. Yuan received this recognition based on his educational background, teaching capabilities, and successful completion of required assessments, solidifying his professional status as a higher-education instructor.
+Dr. Yuan received this recognition based on his educational background, teaching capabilities, and successful completion of required assessments, solidifying his professional status as a higher-education instructor.\*\*\[View certificate →](../files/certificates/colleges-universities-teacher-qualification-certificate.png "View Colleges and Universities Teacher Qualification Certificate")\*\*
+
