@@ -1,0 +1,218 @@
+.career-timeline {
+  position: relative;
+  max-width: none;
+  margin: 2rem 0 3rem;
+}
+
+.career-timeline::before {
+  position: absolute;
+  top: 1.6rem;
+  bottom: 1.6rem;
+  left: 0.9rem;
+  width: 2px;
+  background: var(--line);
+  content: "";
+}
+
+.career-timeline__item {
+  position: relative;
+  margin: 0 0 1.6rem;
+  padding-left: 3.5rem;
+}
+
+.career-timeline__item:last-child {
+  margin-bottom: 0;
+}
+
+.career-timeline__node {
+  position: absolute;
+  z-index: 1;
+  top: 1.55rem;
+  left: 0.38rem;
+  width: 1.1rem;
+  height: 1.1rem;
+  border: 3px solid var(--rust);
+  border-radius: 50%;
+  background: var(--paper);
+  box-shadow: 0 0 0 0.35rem var(--paper);
+}
+
+.career-timeline__card {
+  padding: clamp(1.35rem, 3.2vw, 2rem);
+  border: 1px solid rgba(23, 50, 77, 0.1);
+  border-radius: 0.35rem;
+  background: #fff;
+  box-shadow: 0 0.8rem 2.2rem rgba(23, 50, 77, 0.08);
+  transition: border-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
+}
+
+.career-timeline__card:hover {
+  border-color: rgba(21, 111, 115, 0.3);
+  box-shadow: 0 1rem 2.6rem rgba(23, 50, 77, 0.12);
+  transform: translateY(-2px);
+}
+
+.prose .career-timeline__period {
+  margin: 0 0 0.7rem;
+  color: var(--rust);
+  font-family: Inter, ui-sans-serif, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.prose .career-timeline__card h3 {
+  margin: 0;
+  color: var(--navy);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.45rem, 3vw, 1.9rem);
+  line-height: 1.16;
+}
+
+.prose .career-timeline__role {
+  margin: 0.65rem 0 0;
+  color: var(--navy);
+  font-family: Inter, ui-sans-serif, sans-serif;
+  font-size: 0.82rem;
+  font-weight: 750;
+  letter-spacing: 0.07em;
+  line-height: 1.45;
+  text-transform: uppercase;
+}
+
+.prose .career-timeline__meta {
+  margin: 0.45rem 0 1.1rem;
+  color: var(--muted);
+  font-family: Inter, ui-sans-serif, sans-serif;
+  font-size: 0.8rem;
+  line-height: 1.55;
+}
+
+.career-timeline__details {
+  margin-top: 1.25rem;
+  border-top: 1px solid var(--line);
+}
+
+.career-timeline__details summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 0 0.1rem;
+  color: var(--teal);
+  font-family: Inter, ui-sans-serif, sans-serif;
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  list-style: none;
+  cursor: pointer;
+}
+
+.career-timeline__details summary::-webkit-details-marker {
+  display: none;
+}
+
+.career-timeline__details summary::after {
+  display: inline-grid;
+  flex: 0 0 1.65rem;
+  width: 1.65rem;
+  height: 1.65rem;
+  border: 1px solid rgba(21, 111, 115, 0.35);
+  border-radius: 50%;
+  content: "+";
+  place-items: center;
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.career-timeline__details[open] summary::after {
+  content: "−";
+}
+
+.career-timeline__details summary:hover,
+.career-timeline__details summary:focus-visible {
+  color: var(--navy);
+}
+
+.career-timeline__details summary:focus-visible {
+  border-radius: 0.2rem;
+  outline: 3px solid rgba(21, 111, 115, 0.22);
+  outline-offset: 0.25rem;
+}
+
+.career-timeline__details ol,
+.career-timeline__details ul,
+.career-timeline__detail-section {
+  margin: 1rem 0 0;
+  padding: 1.1rem 1.1rem 1rem 2.35rem;
+  border-left: 3px solid rgba(21, 111, 115, 0.35);
+  background: var(--cream);
+}
+
+.career-timeline__detail-section {
+  padding-left: 1.2rem;
+}
+
+.prose .career-timeline__details li {
+  margin-bottom: 0.7rem;
+}
+
+.prose .career-timeline__details li:last-child {
+  margin-bottom: 0;
+}
+
+.prose .career-timeline__detail-section h4 {
+  margin: 0 0 0.65rem;
+  color: var(--navy);
+  font-family: Inter, ui-sans-serif, sans-serif;
+  font-size: 0.88rem;
+}
+
+.prose .career-timeline__detail-section h4:not(:first-child) {
+  margin-top: 1.35rem;
+}
+
+.career-timeline__detail-section ul {
+  margin: 0;
+  padding: 0 0 0 1.2rem;
+  border: 0;
+  background: transparent;
+}
+
+.career-timeline__detail-section p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 680px) {
+  .career-timeline::before {
+    left: 0.58rem;
+  }
+
+  .career-timeline__item {
+    padding-left: 2.25rem;
+  }
+
+  .career-timeline__node {
+    left: 0.05rem;
+  }
+
+  .career-timeline__card {
+    padding: 1.2rem;
+  }
+
+  .career-timeline__card:hover {
+    transform: none;
+  }
+
+  .career-timeline__details ol {
+    padding-left: 2rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .career-timeline__card {
+    transition: none;
+  }
+}

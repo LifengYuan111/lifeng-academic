@@ -58,71 +58,9 @@ English and Chinese
 
 ## Work experience
 
-### Physical Scientist, U.S. EPA
+## Career timeline
 
-**Aug 2021–Jul 2025** · Full-time, 40 hours/week, GS-1301-12-04  
-**Physical Scientist (Federal Postdoctoral Research Associate)** at Homeland Security and Materials Management Division (HSMMD), Center for Environmental Solutions and Emergency Response (CESER), U.S. EPA Office of Research and Development (ORD), RTP, NC.
-
-Led high-resolution Storm Water Management Model (SWMM) development for simulating the transport of biological agents under various storm scenarios and urban surfaces, supporting EPA’s mission in weather-related emergency response. Utilized field instruments (Parsivel2 disdrometer, etc.) and cloud-based technologies to monitor surface runoff in urban settings. Used High-Performance Computing (HPC) (Linux-based) and Python and R to assess stormwater contamination risks and surface material impacts, including calibration and validation of washoff coefficient on different urban surfaces and detailed simulations of contaminant transport during extreme weather conditions.
-
-**Key accomplishments**
-
-1. Demonstrated that surface materials significantly affect spore transport in stormwater, providing critical data for biological decontamination strategies.
-2. Conducted collaborative research with federal partners (DHS and U.S. Coast Guard) on wide-area contaminant migration studies and decontamination technologies.
-3. Published findings in top peer-reviewed journals and presented technical papers at key conferences, contributing to the EPA’s national Homeland Security Research Program (HSRP), which enhances decision-making for federal agencies, first responders, and water utilities, thereby strengthening national emergency preparedness.
-
-### Postdoctoral Research Associate, USDA-ARS
-
-**Oct 2020–Jul 2021** · Full-time, 40 hours/week  
-**Postdoctoral Research Associate** at the Grazinglands Research Lab (USDA-ARS), El Reno, OK.
-
-Simulated the impacts of storm intensification and climate change on crop yield, surface runoff, and soil erosion using the Water Erosion Prediction Project (WEPP) model. Conceived and implemented research programs on nutrient transport and sediment yield prediction using advanced modeling techniques. Collaborated with interdisciplinary teams across federal agencies, universities, and research institutions. Integrated storm intensification into statistical downscaling methods (GPCC) for daily precipitation to improve localized climate-impact assessments.
-
-**Key accomplishments**
-
-1. Led a comprehensive study evaluating the impact of climate change on surface runoff, soil erosion, and crop production by integrating multiple climate scenarios and agricultural practices into predictive models.
-2. Developed models for predicting the impact of climate change on soil erosion and nutrient dynamics.
-3. Demonstrated the effectiveness of no-till practices and crop rotations in reducing soil erosion, providing critical insights into sustainable agricultural strategies to mitigate climate-change impacts and supporting USDA-ARS probabilistic forecasting efforts.
-
-### Senior Research Associate, U.S. EPA
-
-**Oct 2017–Sep 2020** · Full-time, 40 hours/week  
-**Senior Research Associate (NRC Contractor)** at the Robert S. Kerr Environmental Research Center (U.S. EPA), Ada, OK.
-
-Integrated the Soil and Water Assessment Tool (SWAT) with machine-learning technologies to improve hydrological predictions and hazard forecasts. Developed hybrid SWAT-SVR models to enhance streamflow predictions under varying weather conditions. Conducted complex data analysis using machine-learning algorithms (SVR, wavelet analysis) to enhance streamflow-prediction accuracy at 12 hydrological stations and optimize model performance.
-
-**Key accomplishments**
-
-1. Conducted an in-depth review and evaluation of 14 watershed-scale nonpoint-source pollution models, resulting in a peer-reviewed *Geosciences* publication and a comprehensive EPA technical report to support regulatory decision-making and water-quality management.
-2. Developed and applied SWAT to simulate sediment yield in high-risk erosion areas, providing critical insights for targeted soil-erosion control.
-3. Leveraged AI technology and wavelet analysis by developing a hybrid SWAT-WSVR model. This work significantly improved streamflow-prediction accuracy, benefited watershed management, flood-risk assessment, and sediment control strategies, and supported the EPA’s Safe and Sustainable Water Resources (SSWR) national program.
-
-### Visiting Scholar, USDA-ARS and Purdue University
-
-**Mar 2013–Sep 2017** · Full-time, 40 hours/week  
-**Visiting Scholar** at National Soil Erosion Research Lab (USDA-ARS), Purdue University, West Lafayette, IN.
-
-Performed research on watershed-scale soil-erosion assessments using GIS and Remote Sensing technologies and the Universal Soil Loss Equation (USLE).
-
-**Key accomplishments**
-
-1. Applied USLE, GIS, and Remote Sensing technologies to assess soil erosion in the Poyang Lake basin, identifying high-risk erosion areas and guiding conservation efforts.
-2. Provided valuable insights for targeted land-management strategies to mitigate erosion risks.
-3. Analyzed long-term precipitation data to identify spatio-temporal precipitation patterns, contributing to storm research and water-resource management for future climate-impact studies. This research directly addressed challenges in quantifying soil-erosion risks, assessing sediment impacts on reservoirs, and understanding long-term precipitation variability.
-
-### Assistant and Associate Professor
-
-**Jul 2006–Feb 2013** · Full-time, 40 hours/week  
-**Assistant Professor (2006–2009) / Associate Professor (2009–2017)**, Nanjing University of Posts and Telecommunications, Nanjing, Jiangsu, China.
-
-**Courses taught**
-
-- GIS Software Application and Development (ArcGIS Desktop), 64 periods, Fall 2007–2012
-- Digital Elevation Model, 32 periods, Fall 2007–2012
-- Urban Geographic Information System, 32 periods, Spring 2008–2009
-- WebGIS (ArcGIS Server, ArcIMS), GIS Design and Visualization, 40 periods, Fall 2007–2012
-
-**Graduate Student Mentor (2010–2014):** Mentored and provided academic guidance to four graduate students in the Spatial Information System major. Successfully led all students to complete their degrees on time, resulting in a 100% graduation rate. Advised on research projects and supported professional development, leading all students to secure employment in mainland China after graduation.
+{{< career-timeline >}}
 
 ## Education
 
