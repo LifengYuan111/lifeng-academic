@@ -34,6 +34,13 @@ All of my mentees went on to secure positions in competitive fields, a testament
 
 While serving as an Associate Professor at Nanjing University of Posts and Telecommunications (2009–2013), I supervised four graduate students on applied GIS and environmental-modeling research projects. These projects, often conducted in collaboration with industry partners, focused on the development of GIS-based systems for practical applications. Under my guidance, all students successfully completed their degrees and secured positions in competitive sectors, reflecting the real-world relevance and impact of their training.
 
+| Graduate Student | Program Duration (Years) | Graduation Year |
+| :--- | :---: | :---: |
+| Xingfei Liu | 3 | 2013 |
+| Zhiyuan Jiang | 3 | 2014 |
+| Mingzhe Fei | 3 | 2015 |
+| Meng Shao | 3 | 2016 |
+
 ### Third Prize — Graduate Student Forum on Geography, 2012
 
 Awarded to Liu Xingfei for the paper titled “CA Simulation of the Erosion-Deposition Process on Loess Surface,” this honor was presented at the 2012 Graduate Student Forum on Geography hosted by the School of Geographical Science, Hohai University, Nanjing, China. The award recognizes excellence in research and presentation among graduate students in the field of geography.
