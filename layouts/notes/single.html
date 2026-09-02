@@ -1,5 +1,5 @@
 {{ define "main" }}
-<article>
+<article class="research-summary">
   <header class="page-hero note-hero">
     <div class="container page-hero__inner page-hero__inner--narrow">
       <p class="eyebrow">Research summary{{ with .Params.publication_year }} · {{ . }}{{ end }}</p>
@@ -7,21 +7,51 @@
       {{ with .Description }}<p class="lede">{{ . }}</p>{{ end }}
     </div>
   </header>
-  <div class="container article-wrap">
-    {{ with .Params.publication_title }}
-      {{ $publication := index site.Data.publication_links . }}
-      {{ with $publication }}
-      <aside class="summary-resources" aria-label="Publication resources">
-        <p>Publication resources</p>
-        {{ partial "publication-links.html" (dict "title" $.Params.publication_title "hideSummary" true) }}
-      </aside>
+  <div class="container research-summary__layout">
+    <aside class="research-summary__sidebar" aria-label="Research summary overview">
+      <div class="research-summary__facts">
+        <p>Summary overview</p>
+        <dl>
+          {{ with .Params.topic }}
+          <div>
+            <dt>Research area</dt>
+            <dd>{{ . }}</dd>
+          </div>
+          {{ end }}
+          {{ with .Params.publication_year }}
+          <div>
+            <dt>Publication year</dt>
+            <dd>{{ . }}</dd>
+          </div>
+          {{ end }}
+        </dl>
+      </div>
+      {{ with .TableOfContents }}
+      <div class="research-summary__toc">
+        <p>On this summary</p>
+        {{ . }}
+      </div>
       {{ end }}
-    {{ end }}
-    <div class="prose">{{ .Content }}</div>
-    <nav class="article-back" aria-label="Research summary navigation">
-      <a href="{{ "notes/" | relURL }}">← All research summaries</a>
-      <a href="{{ "publications/" | relURL }}">Back to publications →</a>
-    </nav>
+    </aside>
+    <div class="research-summary__main">
+      {{ with .Params.publication_title }}
+        {{ $publication := index site.Data.publication_links . }}
+        {{ with $publication }}
+        <aside class="summary-resources" aria-label="Publication resources">
+          <div class="summary-resources__copy">
+            <p>Publication resources</p>
+            <span>Open the article, full text, presentation, dataset, or Scholar record where available.</span>
+          </div>
+          {{ partial "publication-links.html" (dict "title" $.Params.publication_title "hideSummary" true) }}
+        </aside>
+        {{ end }}
+      {{ end }}
+      <div class="prose research-summary__content">{{ .Content }}</div>
+      <nav class="article-back" aria-label="Research summary navigation">
+        <a href="{{ "notes/" | relURL }}">← All research summaries</a>
+        <a href="{{ "publications/" | relURL }}">Back to publications →</a>
+      </nav>
+    </div>
   </div>
 </article>
 {{ end }}

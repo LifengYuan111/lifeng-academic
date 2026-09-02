@@ -30,6 +30,10 @@
 {{ $researchCSS := resources.Get "css/research-page.css" | minify | fingerprint }}
 <link rel="stylesheet" href="{{ $researchCSS.RelPermalink }}" integrity="{{ $researchCSS.Data.Integrity }}">
 {{ end }}
+{{ if eq .Type "notes" }}
+{{ $researchSummariesCSS := resources.Get "css/research-summaries.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $researchSummariesCSS.RelPermalink }}" integrity="{{ $researchSummariesCSS.Data.Integrity }}">
+{{ end }}
 {{ if eq .Type "projects" }}
 {{ $projectsCSS := resources.Get "css/projects-page.css" | minify | fingerprint }}
 <link rel="stylesheet" href="{{ $projectsCSS.RelPermalink }}" integrity="{{ $projectsCSS.Data.Integrity }}">
