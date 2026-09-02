@@ -85,9 +85,9 @@
   {
     "number": "05",
     "id": "rainfall-microphysics",
-    "title": "Precipitation Microphysics",
-    "description": "Parsivel²-based analysis of raindrop-size distributions and storm variability to connect rainfall structure with runoff, erosion processes, and hydrologic-model realism.",
-    "keywords": ["Parsivel²", "Raindrop Size", "Rainfall", "Erosion"],
+    "title": "Precipitation Microphysics & Urban Stormwater",
+    "description": "Parsivel²-based analysis of raindrop-size distributions and storm variability, integrated with high-resolution SWMM modeling of urban runoff and contaminant transport across varied rainfall scenarios and surface conditions.",
+    "keywords": ["Parsivel²", "Raindrop Size", "SWMM", "Urban Stormwater Modeling"],
     "selected_works": [
       {
         "title": "Evaluating Parsivel²’s raindrop data across simulated and natural rain events",
@@ -99,6 +99,12 @@
         "title": "Coastal winter precipitation measured with a Parsivel² disdrometer",
         "meta": "Atmospheric Research · 2024",
         "url": "notes/coastal-winter-precipitation/",
+        "external": false
+      },
+      {
+        "title": "SWMM emergency-response modeling of biological-agent transport across urban surfaces",
+        "meta": "Journal of Hazardous Materials · 2023",
+        "url": "notes/swmm-emergency-response/",
         "external": false
       }
     ]
