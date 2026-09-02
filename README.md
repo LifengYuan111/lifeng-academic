@@ -1,6 +1,6 @@
 # Lifeng Yuan Academic Website
 
-A custom Hugo academic website migrated from the existing Google Sites content. The public website is English-only; maintenance notes are provided in Chinese below.
+A custom Hugo academic website migrated from the existing Google Sites content.
 
 ## Features
 
