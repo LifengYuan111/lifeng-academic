@@ -4,4 +4,3 @@ description = "Selected research summaries highlighting methods, models, dataset
 eyebrow = "Methods, findings, and applications"
 +++
 
-This supporting portfolio connects selected publications with concise explanations of the scientific questions, methods, findings, and practical relevance behind the work.
