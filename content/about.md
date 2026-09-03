@@ -16,16 +16,6 @@ My work integrates process-based models, machine learning, statistical analysis,
 
 {{< about-expertise >}}
 
-### Selected professional service
-
-- Reviewer for journals including *Water Resources Research*, *Journal of Hydrology*, *Water Research*, *Environmental Modelling & Software*, and *Catena*.
-- EPA research-project and technical reviewer, 2021–2025.
-- Expert advisor for EPA research activities related to wetlands, nutrient reduction, and contaminant transport.
-
-### Field & laboratory experience
-
-Soil and water sampling, water-quality monitoring, rainfall-simulation experiments, erosion measurements, and land-cover field investigations in the United States and China.
-
 ## Work experience
 
 {{< career-timeline >}}
@@ -54,6 +44,16 @@ Dissertation: *Analysis of the Physical and Chemical Properties of Soil in the N
 [Introduction to Northwest A&F University](https://en.nwsuaf.edu.cn/)
 
 [View WES verified education credential](https://badges.wes.org/Evidence?i=245b70b3-7d5d-4938-905c-a98e1390b897&type=us)
+
+### Selected professional service
+
+- Reviewer for journals including *Water Resources Research*, *Journal of Hydrology*, *Water Research*, *Environmental Modelling & Software*, and *Catena*.
+- EPA research-project and technical reviewer, 2021–2025.
+- Expert advisor for EPA research activities related to wetlands, nutrient reduction, and contaminant transport.
+
+### Field & laboratory experience
+
+Soil and water sampling, water-quality monitoring, rainfall-simulation experiments, erosion measurements, and land-cover field investigations in the United States and China.
 
 ## Selected honors & recognition
 
