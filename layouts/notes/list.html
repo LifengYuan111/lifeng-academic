@@ -8,7 +8,7 @@
 </header>
 <div class="container section-list">
   {{ with .Content }}<div class="prose section-intro">{{ . }}</div>{{ end }}
-  {{ $allSummaries := .Pages }}
+  {{ $allSummaries := where .Pages "Params.exclude_from_summaries" "ne" true }}
   {{ $topics := slice
     "Hydrology & Watershed Modeling"
     "Urban Stormwater"

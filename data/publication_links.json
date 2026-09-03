@@ -27,7 +27,8 @@
     "dataset": "https://doi.org/10.23719/1527817"
   },
   "Modeling surface runoff and soil loss response to climate change under GCM ensembles and multiple cropping and tillage systems in Oklahoma": {
-    "doi": "10.1016/j.still.2021.105296"
+    "doi": "10.1016/j.still.2021.105296",
+    "summary": "notes/oklahoma-gcm-runoff-soil-loss/"
   },
   "Simulating the potential effects of elevated CO₂ concentration and temperature coupled with storm intensification on crop yield, surface runoff, and soil loss based on 25 GCMs ensemble: A site-specific case study in Oklahoma": {
     "doi": "10.1016/j.catena.2022.106251",

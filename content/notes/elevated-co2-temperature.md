@@ -9,12 +9,6 @@ publication_title = "Simulating the potential effects of elevated CO₂ concentr
 snapshot_question = "How do elevated CO₂, warming, and storm intensification jointly affect crop yield, runoff, and soil loss?"
 snapshot_methods = "Modified WEPP · CLIGEN · 25-GCM CMIP5 ensemble · RCP4.5 and RCP8.5 scenarios"
 snapshot_relevance = "Supports climate-resilient cropping, tillage, and soil-conservation decisions under compound climate stressors."
-figure = "images/research-summaries/wepp-climate-runoff-soil-loss.png"
-figure_width = 1074
-figure_height = 725
-figure_alt = "Four panels comparing projected percentage changes in precipitation, runoff, and soil loss under RCP4.5 and RCP8.5 for two future periods"
-figure_caption = "Projected changes in annual precipitation and runoff in relation to soil-loss change under RCP4.5 and RCP8.5 for 2021–2050 and 2051–2080."
-figure_credit = "Source: Yuan et al. (2022)."
 +++
 
 ## Objective
