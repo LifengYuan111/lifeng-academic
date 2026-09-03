@@ -9,6 +9,12 @@ publication_title = "Using SWAT to evaluate streamflow and lake sediment loading
 snapshot_question = "Can SWAT identify sediment-source hotspots and estimate lake loading when watershed data are limited?"
 snapshot_methods = "SWAT · long-term streamflow and sediment records · sensitivity analysis · calibration, validation, and uncertainty analysis"
 snapshot_relevance = "Targets erosion control toward high-slope orchards, barren land, and mountainous sediment-source areas."
+figure = "images/research-summaries/xinjiang-sediment-yield-subbasins.jpg"
+figure_width = 920
+figure_height = 853
+figure_alt = "Map of modeled annual sediment yield classes across numbered subbasins of the Xinjiang River Basin"
+figure_caption = "Modeled mean annual sediment yield by subbasin, highlighting higher-yield source areas in the southern and eastern mountain regions of the Xinjiang River Basin."
+figure_credit = "Source: Yuan et al. (2020)."
 +++
 
 **Original post date:** Sep 24, 2019 10:40:44 PM

@@ -9,6 +9,12 @@ publication_title = "Using SWMM for Emergency Response Planning: A Case Study Ev
 snapshot_question = "How do rainfall intensity and urban surface type control biological-agent transport through stormwater systems?"
 snapshot_methods = "SWMM / PCSWMM · rainfall scenarios · contaminant fate and transport · Python automation"
 snapshot_relevance = "Supports exposure-zone identification, decontamination strategy evaluation, and emergency-response planning."
+figure = "images/research-summaries/swmm-agent-transport-surfaces.png"
+figure_width = 2048
+figure_height = 1536
+figure_alt = "Six maps comparing simulated biological-agent transport across asphalt and grass surfaces and concrete surfaces for scenarios A1, A2, and A3"
+figure_caption = "Comparison of simulated biological-agent transport pathways and load ranges on asphalt–grass and concrete surfaces across application scenarios A1–A3."
+figure_credit = "Source: Yuan et al. (2023)."
 +++
 
 ## Objective

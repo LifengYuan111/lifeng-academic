@@ -166,6 +166,7 @@
 .research-snapshot__title {
   margin: 0 0 1rem;
   color: var(--teal);
+  font-family: var(--font-sans);
   font-size: var(--text-xs);
   font-weight: 800;
   letter-spacing: 0.12em;
@@ -224,6 +225,18 @@
   border: 1px solid var(--border-soft);
   border-radius: var(--radius);
   background: var(--white);
+}
+
+.research-summary__figure--portrait img,
+.research-summary__figure--portrait figcaption {
+  width: min(100%, 38rem);
+  margin-inline: auto;
+}
+
+.research-summary__figure--compact img,
+.research-summary__figure--compact figcaption {
+  width: min(100%, 28rem);
+  margin-inline: auto;
 }
 
 .research-summary__figure figcaption {

@@ -9,6 +9,12 @@ publication_title = "Exploring the statistical characteristics of coastal winter
 snapshot_question = "How do coastal winter precipitation types differ in particle-size distribution and fall velocity?"
 snapshot_methods = "Parsivel² disdrometer · precipitation-type classification · drop-size and velocity–diameter analysis"
 snapshot_relevance = "Improves precipitation characterization for forecasting, radar validation, runoff, and erosion modeling."
+figure = "images/research-summaries/coastal-winter-precipitation-dsd.png"
+figure_width = 2048
+figure_height = 1388
+figure_alt = "Density contours of normalized drop concentration versus mass-weighted mean drop diameter with stratiform and convective precipitation observations and literature comparisons"
+figure_caption = "Joint distribution of mass-weighted mean drop diameter and normalized intercept parameter for all, stratiform, and convective precipitation, compared with values reported by earlier studies."
+figure_credit = "Source: Yuan et al. (2024)."
 +++
 
 ## Objective

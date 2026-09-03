@@ -72,8 +72,8 @@
       </section>
       {{ end }}
       {{ with .Params.figure }}
-      <figure class="research-summary__figure">
-        <img src="{{ . | relURL }}" alt="{{ $.Params.figure_alt | default $.Title }}" loading="lazy" decoding="async">
+      <figure class="research-summary__figure{{ with $.Params.figure_layout }} research-summary__figure--{{ . | anchorize }}{{ end }}">
+        <img src="{{ . | relURL }}" alt="{{ $.Params.figure_alt | default $.Title }}"{{ with $.Params.figure_width }} width="{{ . }}"{{ end }}{{ with $.Params.figure_height }} height="{{ . }}"{{ end }} loading="lazy" decoding="async">
         {{ with $.Params.figure_caption }}
         <figcaption>
           <span>Research figure</span>

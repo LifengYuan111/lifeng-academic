@@ -9,6 +9,13 @@ publication_title = "Enhanced streamflow prediction with SWAT using support vect
 snapshot_question = "Can support vector regression improve spatial calibration of SWAT streamflow predictions where gauge data are limited?"
 snapshot_methods = "SWAT · support vector regression · 13 USGS stations · leave-one-out validation · flow-duration analysis"
 snapshot_relevance = "Reduces calibration burden and supports regional streamflow prediction in data-limited or ungauged basins."
+figure = "images/research-summaries/swat-svr-spatial-calibration-workflow.jpg"
+figure_width = 1385
+figure_height = 2048
+figure_layout = "portrait"
+figure_alt = "Workflow showing SWAT inputs, seasonal streamflow, SWAT-CUP parameterization, and leave-one-out SVR calibration across 13 USGS stations"
+figure_caption = "Spatial-calibration workflow comparing SWAT–SVR output with conventional SWAT-CUP parameterization through leave-one-out sampling across 13 USGS stations."
+figure_credit = "Source: Yuan and Forshay (2021)."
 +++
 
 ## Summary
