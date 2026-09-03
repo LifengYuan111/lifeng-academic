@@ -6,6 +6,9 @@ weight = 40
 type = "notes"
 topic = "Hydrology & Watershed Modeling"
 publication_title = "Enhanced streamflow prediction with SWAT using support vector regression for spatial calibration: A case study in the Illinois River watershed, US"
+snapshot_question = "Can support vector regression improve spatial calibration of SWAT streamflow predictions where gauge data are limited?"
+snapshot_methods = "SWAT · support vector regression · 13 USGS stations · leave-one-out validation · flow-duration analysis"
+snapshot_relevance = "Reduces calibration burden and supports regional streamflow prediction in data-limited or ungauged basins."
 +++
 
 ## Summary

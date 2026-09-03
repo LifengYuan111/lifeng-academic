@@ -6,6 +6,9 @@ weight = 60
 type = "notes"
 topic = "Environmental Assessment"
 publication_title = "A Review of Watershed and Water Quality Tools for Nutrient Fate and Transport"
+snapshot_question = "Which watershed and water-quality tools best fit specific nutrient fate and transport applications?"
+snapshot_methods = "Comparative technical review · model capabilities · data, scale, calibration, and application criteria"
+snapshot_relevance = "Supports transparent model selection for watershed planning, regulatory assessment, and restoration."
 +++
 
 **Original post date:** Mar 12, 2020 1:58:23 AM

@@ -6,6 +6,9 @@ weight = 30
 type = "notes"
 topic = "Hydrology & Watershed Modeling"
 publication_title = "Evaluating Monthly Flow Prediction Based on SWAT and Support Vector Regression Coupled with Discrete Wavelet Transform"
+snapshot_question = "Can wavelet decomposition strengthen a hybrid SWAT–SVR framework for multi-site monthly streamflow prediction?"
+snapshot_methods = "SWAT-CUP · discrete wavelet transform · support vector regression · 12 hydrologic sites"
+snapshot_relevance = "Demonstrates physics–data integration that improves prediction while retaining watershed-process representation."
 +++
 
 ## Research Question

@@ -6,6 +6,9 @@ weight = 80
 type = "notes"
 topic = "Climate & Agricultural Systems"
 publication_title = "Spatio-temporal Variation Analysis of Precipitation during 1960-2008 in the Poyang Lake Basin, China"
+snapshot_question = "How did seasonal and annual precipitation vary across the Poyang Lake Basin from 1960 to 2008?"
+snapshot_methods = "17 rain stations · anomaly analysis · linear regression · Mann–Kendall test · continuous wavelet transform"
+snapshot_relevance = "Provides long-term evidence for basin-scale water-resources assessment, planning, and management."
 +++
 
 **Original post date:** Oct 15, 2009 6:16:57 AM

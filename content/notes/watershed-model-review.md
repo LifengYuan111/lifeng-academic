@@ -6,6 +6,9 @@ weight = 50
 type = "notes"
 topic = "Environmental Assessment"
 publication_title = "Review of Watershed-Scale Water Quality and Nonpoint Source Pollution Models"
+snapshot_question = "How should users select among watershed-scale water-quality and nonpoint-source pollution models?"
+snapshot_methods = "Structured review of 14 models · complexity, inputs, scale, pollutants, calibration, and availability"
+snapshot_relevance = "Helps practitioners match model capabilities and complexity to watershed-management decisions."
 +++
 
 **Original post date:** Jan 10, 2020 4:58:1 PM

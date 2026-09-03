@@ -6,6 +6,9 @@ weight = 70
 type = "notes"
 topic = "Hydrology & Watershed Modeling"
 publication_title = "Using SWAT to evaluate streamflow and lake sediment loading in the Xinjiang River Basin with limited data"
+snapshot_question = "Can SWAT identify sediment-source hotspots and estimate lake loading when watershed data are limited?"
+snapshot_methods = "SWAT · long-term streamflow and sediment records · sensitivity analysis · calibration, validation, and uncertainty analysis"
+snapshot_relevance = "Targets erosion control toward high-slope orchards, barren land, and mountainous sediment-source areas."
 +++
 
 **Original post date:** Sep 24, 2019 10:40:44 PM

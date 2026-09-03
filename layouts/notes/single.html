@@ -46,6 +46,43 @@
         </aside>
         {{ end }}
       {{ end }}
+      {{ if or .Params.snapshot_question .Params.snapshot_methods .Params.snapshot_relevance }}
+      <section class="research-snapshot" aria-labelledby="research-snapshot-title">
+        <h2 class="research-snapshot__title" id="research-snapshot-title">Research snapshot</h2>
+        <div class="research-snapshot__grid">
+          {{ with .Params.snapshot_question }}
+          <div class="research-snapshot__item">
+            <span>Research question</span>
+            <p>{{ . }}</p>
+          </div>
+          {{ end }}
+          {{ with .Params.snapshot_methods }}
+          <div class="research-snapshot__item">
+            <span>Methods</span>
+            <p>{{ . }}</p>
+          </div>
+          {{ end }}
+          {{ with .Params.snapshot_relevance }}
+          <div class="research-snapshot__item">
+            <span>Practical relevance</span>
+            <p>{{ . }}</p>
+          </div>
+          {{ end }}
+        </div>
+      </section>
+      {{ end }}
+      {{ with .Params.figure }}
+      <figure class="research-summary__figure">
+        <img src="{{ . | relURL }}" alt="{{ $.Params.figure_alt | default $.Title }}" loading="lazy" decoding="async">
+        {{ with $.Params.figure_caption }}
+        <figcaption>
+          <span>Research figure</span>
+          {{ . }}
+          {{ with $.Params.figure_credit }}<small>{{ . }}</small>{{ end }}
+        </figcaption>
+        {{ end }}
+      </figure>
+      {{ end }}
       <div class="prose research-summary__content">{{ .Content }}</div>
       <nav class="article-back" aria-label="Research summary navigation">
         <a href="{{ "notes/" | relURL }}">← All research summaries</a>

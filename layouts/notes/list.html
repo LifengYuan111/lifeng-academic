@@ -25,12 +25,14 @@
           <h2 id="{{ $topic | anchorize }}">{{ $topic }}</h2>
           <span>{{ len . }} {{ cond (eq (len .) 1) "summary" "summaries" }}</span>
         </div>
-        <div class="note-grid">
+        <div class="summary-list">
           {{ range .ByWeight }}
-          <article class="note-card">
+          <article class="summary-row">
             <p class="card-meta">{{ .Params.publication_year | default "Research summary" }}</p>
-            <h3><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h3>
-            <p>{{ .Description | default .Summary }}</p>
+            <div class="summary-row__body">
+              <h3><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h3>
+              <p>{{ .Description | default .Summary }}</p>
+            </div>
             <a class="text-link" href="{{ .RelPermalink }}">Read summary <span aria-hidden="true">→</span></a>
           </article>
           {{ end }}

@@ -6,6 +6,9 @@ weight = 30
 type = "notes"
 topic = "Climate & Agricultural Systems"
 publication_title = "Simulating the potential effects of elevated CO₂ concentration and temperature coupled with storm intensification on crop yield, surface runoff, and soil loss based on 25 GCMs ensemble: A site-specific case study in Oklahoma"
+snapshot_question = "How do elevated CO₂, warming, and storm intensification jointly affect crop yield, runoff, and soil loss?"
+snapshot_methods = "Modified WEPP · CLIGEN · 25-GCM CMIP5 ensemble · RCP4.5 and RCP8.5 scenarios"
+snapshot_relevance = "Supports climate-resilient cropping, tillage, and soil-conservation decisions under compound climate stressors."
 +++
 
 ## Objective

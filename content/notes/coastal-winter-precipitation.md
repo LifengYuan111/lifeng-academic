@@ -6,6 +6,9 @@ weight = 10
 type = "notes"
 topic = "Climate & Agricultural Systems"
 publication_title = "Exploring the statistical characteristics of coastal winter precipitation measured using a Parsivel² disdrometer: A case study in North Carolina"
+snapshot_question = "How do coastal winter precipitation types differ in particle-size distribution and fall velocity?"
+snapshot_methods = "Parsivel² disdrometer · precipitation-type classification · drop-size and velocity–diameter analysis"
+snapshot_relevance = "Improves precipitation characterization for forecasting, radar validation, runoff, and erosion modeling."
 +++
 
 ## Objective

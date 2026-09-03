@@ -156,6 +156,99 @@
   margin-top: 0;
 }
 
+.research-snapshot {
+  margin-bottom: clamp(3rem, 6vw, 4.5rem);
+  padding-block: 1.25rem;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.research-snapshot__title {
+  margin: 0 0 1rem;
+  color: var(--teal);
+  font-size: var(--text-xs);
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  line-height: 1.35;
+  text-transform: uppercase;
+}
+
+.research-snapshot__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.research-snapshot__item {
+  min-width: 0;
+  padding-inline: 1.15rem;
+}
+
+.research-snapshot__item:first-child {
+  padding-left: 0;
+}
+
+.research-snapshot__item:last-child {
+  padding-right: 0;
+}
+
+.research-snapshot__item + .research-snapshot__item {
+  border-left: 1px solid var(--line);
+}
+
+.research-snapshot__item > span {
+  display: block;
+  margin-bottom: 0.45rem;
+  color: var(--muted);
+  font-size: var(--text-xs);
+  font-weight: 800;
+  letter-spacing: 0.055em;
+  line-height: var(--line-meta);
+  text-transform: uppercase;
+}
+
+.research-snapshot__item p {
+  margin: 0;
+  color: var(--navy);
+  font-size: var(--text-sm);
+  font-weight: 650;
+  line-height: 1.55;
+}
+
+.research-summary__figure {
+  margin: 0 0 clamp(3rem, 6vw, 4.5rem);
+}
+
+.research-summary__figure img {
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius);
+  background: var(--white);
+}
+
+.research-summary__figure figcaption {
+  max-width: 68ch;
+  margin-top: 0.8rem;
+  color: var(--muted);
+  font-size: var(--text-xs);
+  line-height: var(--line-meta);
+}
+
+.research-summary__figure figcaption > span {
+  margin-right: 0.35rem;
+  color: var(--navy);
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.research-summary__figure figcaption small {
+  display: block;
+  margin-top: 0.25rem;
+  color: var(--muted);
+  font-size: inherit;
+}
+
 .research-summary__content {
   color: var(--color-body);
   font-size: clamp(1rem, 0.35vw + 0.94rem, 1.075rem);
@@ -322,6 +415,23 @@
     flex-direction: column;
   }
 
+  .research-snapshot__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .research-snapshot__item,
+  .research-snapshot__item:first-child,
+  .research-snapshot__item:last-child {
+    padding: 0;
+  }
+
+  .research-snapshot__item + .research-snapshot__item {
+    margin-top: 0.9rem;
+    padding-top: 0.9rem;
+    border-top: 1px solid var(--line);
+    border-left: 0;
+  }
+
   .research-summary__content h2 {
     margin-top: 3rem;
   }
@@ -361,5 +471,13 @@
   .research-summary__content pre {
     max-height: none;
     white-space: pre-wrap;
+  }
+
+  .research-snapshot {
+    break-inside: avoid;
+  }
+
+  .research-summary__figure {
+    break-inside: avoid;
   }
 }

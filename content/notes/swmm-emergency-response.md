@@ -6,6 +6,9 @@ weight = 20
 type = "notes"
 topic = "Urban Stormwater"
 publication_title = "Using SWMM for Emergency Response Planning: A Case Study Evaluating Biological Agent Transport Under Various Rainfall Scenarios and Urban Surfaces"
+snapshot_question = "How do rainfall intensity and urban surface type control biological-agent transport through stormwater systems?"
+snapshot_methods = "SWMM / PCSWMM · rainfall scenarios · contaminant fate and transport · Python automation"
+snapshot_relevance = "Supports exposure-zone identification, decontamination strategy evaluation, and emergency-response planning."
 +++
 
 ## Objective
