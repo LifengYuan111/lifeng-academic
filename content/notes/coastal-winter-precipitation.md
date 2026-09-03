@@ -1,6 +1,6 @@
 +++
-title = "Exploring the Statistical Characteristics of Coastal Winter Precipitation Measured using a Parsivel2 Disdrometer: A Case Study in North Carolina"
-description = "A Parsivel2 disdrometer study of coastal winter precipitation microphysics in North Carolina."
+title = "Exploring the Statistical Characteristics of Coastal Winter Precipitation Measured using a Parsivel² Disdrometer: A Case Study in North Carolina"
+description = "A Parsivel² disdrometer study of coastal winter precipitation microphysics in North Carolina."
 publication_year = 2024
 weight = 10
 type = "notes"
@@ -19,11 +19,11 @@ figure_credit = "Source: Yuan et al. (2024)."
 
 ## Objective
 
-The study investigates the microphysical characteristics of coastal winter precipitation in North Carolina using high-resolution data from a Parsivel2 disdrometer, with a focus on understanding particle size distribution (DSD), precipitation types, and statistical variability under different winter conditions.
+The study investigates the microphysical characteristics of coastal winter precipitation in North Carolina using high-resolution data from a Parsivel² disdrometer, with a focus on understanding particle size distribution (DSD), precipitation types, and statistical variability under different winter conditions.
 
 ## Methodology
 
-Instrument: OTT Parsivel2 disdrometer (optical precipitation sensor)
+Instrument: OTT Parsivel² disdrometer (optical precipitation sensor)
 
 Location: Coastal region of North Carolina
 
@@ -49,7 +49,7 @@ Mixed precipitation demonstrated high variability, with overlapping DSD features
 
 The velocity-diameter relationship deviated from idealized models, especially in snow events, likely due to non-spherical particles and turbulence.
 
-The Parsivel2 was shown to be effective in capturing microphysical transitions and providing real-time insights into coastal winter precipitation dynamics.
+The Parsivel² was shown to be effective in capturing microphysical transitions and providing real-time insights into coastal winter precipitation dynamics.
 
 ## Conclusion
 
