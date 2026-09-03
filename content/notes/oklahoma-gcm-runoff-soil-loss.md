@@ -9,11 +9,12 @@ publication_title = "Modeling surface runoff and soil loss response to climate c
 snapshot_question = "How will runoff, soil loss, and crop yield respond to future climate across diverse cropping and tillage systems in central Oklahoma?"
 snapshot_methods = "WEPP · 25 GCMs · 100 climate scenarios · 29 cropping and tillage systems · RCP4.5 and RCP8.5"
 snapshot_relevance = "Identifies conservation systems that can reduce soil erosion and support climate-resilient agricultural management."
-figure = "images/research-summaries/wepp-climate-runoff-soil-loss.png"
-figure_width = 1074
-figure_height = 725
-figure_alt = "Four panels comparing projected percentage changes in precipitation, runoff, and soil loss under RCP4.5 and RCP8.5 for two future periods"
-figure_caption = "Projected changes in annual precipitation and runoff in relation to soil-loss change under RCP4.5 and RCP8.5 for 2021–2050 and 2051–2080."
+figure = "images/research-summaries/oklahoma-soil-loss-exceedance.png"
+figure_width = 1578
+figure_height = 2800
+figure_layout = "portrait"
+figure_alt = "Two panels of annual soil-loss exceedance-probability curves comparing conventional tillage and no-till under baseline, future RCP4.5, and future RCP8.5 scenarios"
+figure_caption = "Exceedance-probability curves of annual soil loss for conventional tillage and no-till under baseline and two future climate scenarios: Future 1 RCP4.5 and Future 2 RCP8.5."
 figure_credit = "Source: Yuan et al. (2022)."
 +++
 
