@@ -1,11 +1,11 @@
 +++
-title = "Simulating the potential effects of elevated CO2 concentration and temperature coupled with storm intensification on crop yield, surface runoff, and soil loss based on 25 GCMs ensemble: A site-specific case study in Oklahoma"
+title = "Simulating the potential effects of elevated CO₂ concentration and temperature coupled with storm intensification on crop yield, surface runoff, and soil loss based on 25 GCMs ensemble: A site-specific case study in Oklahoma"
 description = "WEPP simulations of crop yield, runoff, and soil loss under elevated CO₂, temperature, and storm intensification."
 publication_year = 2022
 weight = 30
 type = "notes"
 topic = "Climate & Agricultural Systems"
-publication_title = "Simulating the potential effects of elevated CO2 concentration and temperature coupled with storm intensification on crop yield, surface runoff, and soil loss based on 25 GCMs ensemble: A site-specific case study in Oklahoma"
+publication_title = "Simulating the potential effects of elevated CO₂ concentration and temperature coupled with storm intensification on crop yield, surface runoff, and soil loss based on 25 GCMs ensemble: A site-specific case study in Oklahoma"
 +++
 
 ## Objective
