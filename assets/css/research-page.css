@@ -239,6 +239,40 @@
   font-size: var(--text-sm);
 }
 
+.research-contribution-list {
+  margin: var(--space-lg) 0 0;
+  border-top: 1px solid var(--line);
+}
+
+.research-contribution-row {
+  display: grid;
+  grid-template-columns: minmax(12rem, 0.72fr) minmax(0, 1.4fr);
+  gap: clamp(1.25rem, 4vw, 3rem);
+  align-items: baseline;
+  padding: clamp(1.15rem, 2.5vw, 1.55rem) 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.prose .research-contribution-row h3,
+.prose .research-contribution-row p {
+  margin: 0;
+}
+
+.prose .research-contribution-row h3 {
+  color: var(--navy);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: var(--text-card-title);
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+.prose .research-contribution-row p {
+  max-width: 58ch;
+  color: var(--muted);
+  font-size: var(--text-sm);
+  line-height: var(--line-card);
+}
+
 .research-statement {
   margin-top: clamp(3.5rem, 7vw, 5.5rem);
   border: 1px solid rgba(23, 50, 77, 0.14);
@@ -428,6 +462,11 @@
     align-items: flex-start;
     flex-direction: column;
     gap: 1.2rem;
+  }
+
+  .research-contribution-row {
+    grid-template-columns: 1fr;
+    gap: 0.45rem;
   }
 }
 

@@ -7,6 +7,11 @@
     "title": "Stormwater Fate & Transport of Biological Contaminants",
     "description": "Led high-resolution SWMM development to simulate Bacillus anthracis transport across urban surfaces under multiple storm scenarios, integrating custom Python automation and field observations for decontamination-strategy evaluation.",
     "output_impact": "Peer-reviewed SWMM study · automated modeling workflow · evidence for interagency emergency-response planning",
+    "evidence": [
+      {"label": "Research Summary", "url": "notes/swmm-emergency-response/"},
+      {"label": "Related Publication", "url": "https://doi.org/10.1016/j.jhazmat.2023.131747"},
+      {"label": "Dataset", "url": "https://catalog.data.gov/dataset/ancor-task-2-1-modeling-data"}
+    ],
     "tools": ["SWMM / PCSWMM", "Python / IronPython", "GIS", "HPC"],
     "funding": "U.S. EPA Homeland Security Research Program",
     "technical_components": ["Urban catchment modeling", "Rainfall-scenario design", "Contaminant fate and transport", "Model automation"],
@@ -22,6 +27,10 @@
     "title": "Climate-Sensitive Agricultural Management & Erosion Prediction",
     "description": "Simulated impacts of storm intensification and climate change on crop yield and soil loss under multiple tillage systems using WEPP and Python automation.",
     "output_impact": "Peer-reviewed climate-impact studies · automated multi-scenario WEPP workflow",
+    "evidence": [
+      {"label": "Research Summary", "url": "notes/oklahoma-gcm-runoff-soil-loss/"},
+      {"label": "Related Publication", "url": "https://doi.org/10.1016/j.still.2021.105296"}
+    ],
     "tools": ["WEPP", "Python", "Climate Ensembles", "CLIGEN"],
     "funding": "USDA Agricultural Research Service",
     "technical_components": ["Climate-data processing", "Batch simulation", "Cropping and tillage scenarios", "Runoff, soil-loss, and yield assessment"],
@@ -37,6 +46,10 @@
     "title": "Advancing Streamflow Prediction with SWAT & Machine Learning",
     "description": "Developed hybrid SWAT–SVR and SWAT–Wavelet models to improve streamflow and sediment predictions while supporting EPA watershed and water-quality tool evaluation.",
     "output_impact": "Hybrid SWAT–SVR and SWAT–Wavelet frameworks · peer-reviewed publications and technical review",
+    "evidence": [
+      {"label": "Research Summary", "url": "notes/swat-svr-streamflow/"},
+      {"label": "Related Publication", "url": "https://doi.org/10.1371/journal.pone.0248489"}
+    ],
     "tools": ["SWAT / SWAT-CUP", "SVR", "Wavelet", "GIS"],
     "funding": "U.S. Environmental Protection Agency",
     "technical_components": ["Hydrologic calibration", "Machine-learning integration", "Multi-site evaluation", "Performance visualization"],
@@ -52,6 +65,9 @@
     "title": "GIS Education & Technology Development",
     "description": "Developed GIS-based educational systems through university–industry collaboration, supporting interactive instruction, spatial analysis, and geographic visualization.",
     "output_impact": "Three registered GIS and geography educational software systems",
+    "evidence": [
+      {"label": "Teaching Portfolio", "url": "teaching/#gis-education--technology-development"}
+    ],
     "tools": ["ArcEngine", "Visual C#", "WebGIS"],
     "cta_label": "Explore teaching technology",
     "cta_url": "teaching/#gis-education--technology-development",
@@ -66,6 +82,9 @@
     "title": "Soil Erosion & GIS-Based Risk Mapping in the Loess Plateau",
     "description": "Principal Investigator of a rill-erosion modeling project using 3D Cellular Automata and GIS, validated through laboratory and field rainfall experiments and 3D laser scanning.",
     "output_impact": "3D cellular-automata erosion model · field and laboratory validation",
+    "evidence": [
+      {"label": "Related Publication", "url": "https://doi.org/10.1109/GIWRM.2012.6349546"}
+    ],
     "tools": ["Cellular Automata", "GIS", "3D Laser Scanning", "Rainfall Simulation"],
     "funding": "National Natural Science Foundation of China · Grant No. 41001158",
     "technical_components": ["Rill-erosion process modeling", "Experimental validation", "Terrain analysis"],
@@ -96,6 +115,10 @@
     "title": "Climate–Hydrology–Substance Transport",
     "description": "Used geostatistics and wavelet analysis to simulate long-term runoff, rainfall variability, and sediment transport in the Poyang Lake Basin.",
     "output_impact": "Long-term hydro-climate analyses · peer-reviewed precipitation study",
+    "evidence": [
+      {"label": "Research Summary", "url": "notes/poyang-precipitation/"},
+      {"label": "Related Publication", "url": "https://doi.org/10.4236/ojmh.2016.62010"}
+    ],
     "tools": ["Geostatistics", "Wavelet Analysis", "GIS", "Hydrologic Data"],
     "funding": "Chinese Academy of Sciences Knowledge Innovation Program",
     "technical_components": ["Long-term rainfall and runoff variability", "Sediment-transport assessment", "Spatial analysis"],

@@ -16,10 +16,6 @@ My work integrates process-based models, machine learning, statistical analysis,
 
 {{< about-expertise >}}
 
-## Work experience
-
-{{< career-timeline >}}
-
 ## Education
 
 ### Ph.D. in Physical Geography
@@ -44,6 +40,10 @@ Dissertation: *Analysis of the Physical and Chemical Properties of Soil in the N
 [Introduction to Northwest A&F University](https://en.nwsuaf.edu.cn/)
 
 [View WES verified education credential](https://badges.wes.org/Evidence?i=245b70b3-7d5d-4938-905c-a98e1390b897&type=us)
+
+## Work experience
+
+{{< career-timeline >}}
 
 ### Selected professional service
 

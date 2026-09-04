@@ -28,15 +28,9 @@ My work emphasizes:
 
 {{< research-approach >}}
 
-## Scholarly contributions and impact
+## Representative contributions
 
-My publication record reflects contributions in three main areas:
-
-1. Watershed-modeling applications and improvements
-2. Hybrid modeling approaches combining physics and machine learning
-3. Hydro-climate impact assessment and environmental-change analysis
-
-My work includes both applied studies and synthesis and review contributions, with citation impact demonstrating sustained engagement within the hydrology and environmental-modeling communities.
+{{< research-contributions >}}
 
 ## Research vision
 

@@ -88,6 +88,36 @@
   text-transform: uppercase;
 }
 
+.project-portfolio-card__evidence {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem 1rem;
+  margin: -0.15rem 0 1.15rem;
+}
+
+.prose .project-portfolio-card__evidence a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  color: var(--teal);
+  font-size: var(--text-xs);
+  font-weight: 800;
+  line-height: 1.5;
+  text-decoration: none;
+}
+
+.prose .project-portfolio-card__evidence a:hover,
+.prose .project-portfolio-card__evidence a:focus-visible {
+  color: var(--navy);
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.prose .project-portfolio-card__evidence a:focus-visible {
+  outline: 3px solid var(--focus-ring);
+  outline-offset: 3px;
+}
+
 .project-portfolio-card__tools {
   display: flex;
   flex-wrap: wrap;
