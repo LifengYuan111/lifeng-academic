@@ -57,6 +57,8 @@ This research demonstrates that multi-factor climate stress could severely chall
 
 WEPP (Water Erosion Prediction Project) run interface:
 
+![WEPP model interface configured for a 100-year simulation at Fort Reno, Oklahoma, showing a conventional canola–alfalfa management system along a 656.2-foot hillslope.](/images/research-summaries/wepp-model-running-interface.jpg)
+
 ## Supporting script
 
 ```python
