@@ -1,30 +1,81 @@
 <div class="project-portfolio-grid" aria-label="Selected research and development projects">
   {{ range site.Data.project_cards }}
   {{ $project := . }}
-  <article class="project-portfolio-card{{ if .featured }} project-portfolio-card--featured{{ end }}{{ if .compact }} project-portfolio-card--compact{{ end }}" id="{{ .id }}">
-    <p class="project-portfolio-card__category">{{ .category }}</p>
-    <p class="project-portfolio-card__meta">{{ .institution }} <span aria-hidden="true">·</span> {{ .period }}</p>
-    <h3>{{ .title }}</h3>
-    <p class="project-portfolio-card__description">{{ .description }}</p>
-    {{ with .output_impact }}
-    <p class="project-portfolio-card__output"><span>Output &amp; impact</span>{{ . }}</p>
-    {{ end }}
-    {{ with .evidence }}
-    <nav class="project-portfolio-card__evidence" aria-label="Evidence for {{ $project.title }}">
-      {{ range . }}
-      <a href="{{ if or (hasPrefix .url "http://") (hasPrefix .url "https://") }}{{ .url }}{{ else }}{{ .url | relURL }}{{ end }}">{{ .label }} <span aria-hidden="true">→</span></a>
-      {{ end }}
-    </nav>
-    {{ end }}
-    <ul class="project-portfolio-card__tools" aria-label="Tools and methods">
-      {{ range .tools }}<li>{{ . }}</li>{{ end }}
-    </ul>
-
     {{ if .compact }}
-      {{ if not .evidence }}
-        <a class="project-portfolio-card__cta" href="{{ .cta_url | relURL }}">{{ .cta_label }} <span aria-hidden="true">→</span></a>
-      {{ end }}
+    <article class="project-editorial-row" id="{{ .id }}">
+      <div class="project-editorial-row__meta">
+        <p class="project-portfolio-card__category">{{ .category }}</p>
+        <p class="project-portfolio-card__meta">{{ .institution }} <span aria-hidden="true">·</span> {{ .period }}</p>
+      </div>
+      <div class="project-editorial-row__body">
+        <h3>{{ .title }}</h3>
+        <p class="project-portfolio-card__description">{{ .description }}</p>
+        {{ with .output_impact }}
+        <p class="project-portfolio-card__output"><span>Output &amp; impact</span>{{ . }}</p>
+        {{ end }}
+        {{ with .evidence }}
+        <nav class="project-portfolio-card__evidence" aria-label="Evidence for {{ $project.title }}">
+          {{ range . }}
+          <a href="{{ if or (hasPrefix .url "http://") (hasPrefix .url "https://") }}{{ .url }}{{ else }}{{ .url | relURL }}{{ end }}">{{ .label }} <span aria-hidden="true">→</span></a>
+          {{ end }}
+        </nav>
+        {{ else }}
+          {{ with .cta_url }}<a class="project-portfolio-card__cta" href="{{ . | relURL }}">{{ $project.cta_label }} <span aria-hidden="true">→</span></a>{{ end }}
+        {{ end }}
+        <ul class="project-portfolio-card__tools" aria-label="Tools and methods">
+          {{ range .tools }}<li>{{ . }}</li>{{ end }}
+        </ul>
+        {{ with .role }}
+        <div class="project-portfolio-card__role project-editorial-row__role">
+          <span>Role</span>
+          <p>{{ delimit . " · " }}</p>
+        </div>
+        {{ end }}
+        {{ if or .funding .technical_components }}
+        <details class="project-portfolio-card__details project-editorial-row__details">
+          <summary>
+            <span class="project-portfolio-card__view">View project details</span>
+            <span class="project-portfolio-card__close">Close project details</span>
+          </summary>
+          <div class="project-portfolio-card__details-body">
+            {{ with .funding }}
+            <section>
+              <h4>Funding</h4>
+              <p>{{ . }}</p>
+            </section>
+            {{ end }}
+            {{ with .technical_components }}
+            <section>
+              <h4>Technical components</h4>
+              <ul>
+                {{ range . }}<li>{{ . }}</li>{{ end }}
+              </ul>
+            </section>
+            {{ end }}
+          </div>
+        </details>
+        {{ end }}
+      </div>
+    </article>
     {{ else }}
+    <article class="project-portfolio-card{{ if .featured }} project-portfolio-card--featured{{ end }}" id="{{ .id }}">
+      <p class="project-portfolio-card__category">{{ .category }}</p>
+      <p class="project-portfolio-card__meta">{{ .institution }} <span aria-hidden="true">·</span> {{ .period }}</p>
+      <h3>{{ .title }}</h3>
+      <p class="project-portfolio-card__description">{{ .description }}</p>
+      {{ with .output_impact }}
+      <p class="project-portfolio-card__output"><span>Output &amp; impact</span>{{ . }}</p>
+      {{ end }}
+      {{ with .evidence }}
+      <nav class="project-portfolio-card__evidence" aria-label="Evidence for {{ $project.title }}">
+        {{ range . }}
+        <a href="{{ if or (hasPrefix .url "http://") (hasPrefix .url "https://") }}{{ .url }}{{ else }}{{ .url | relURL }}{{ end }}">{{ .label }} <span aria-hidden="true">→</span></a>
+        {{ end }}
+      </nav>
+      {{ end }}
+      <ul class="project-portfolio-card__tools" aria-label="Tools and methods">
+        {{ range .tools }}<li>{{ . }}</li>{{ end }}
+      </ul>
       <div class="project-portfolio-card__role">
         <span>Role</span>
         <p>{{ delimit .role " · " }}</p>
@@ -47,7 +98,7 @@
           </section>
         </div>
       </details>
+    </article>
     {{ end }}
-  </article>
   {{ end }}
 </div>

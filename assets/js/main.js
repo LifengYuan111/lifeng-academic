@@ -28,8 +28,12 @@
   const items = [...document.querySelectorAll(".publication-item")];
   const count = document.querySelector("#publication-count");
   const empty = document.querySelector("#publication-empty");
+  const clearFilter = document.querySelector("#publication-clear-filter");
 
   if (search && year && items.length && count && empty) {
+    const requestedCollection = new URLSearchParams(window.location.search).get("collection");
+    const activeCollection = requestedCollection === "gis-education" ? requestedCollection : "";
+
     const filterPublications = () => {
       const query = search.value.trim().toLocaleLowerCase();
       const selectedYear = year.value;
@@ -38,16 +42,21 @@
       items.forEach((item) => {
         const matchesText = !query || item.textContent.toLocaleLowerCase().includes(query);
         const matchesYear = !selectedYear || item.dataset.year === selectedYear;
-        const show = matchesText && matchesYear;
+        const collections = (item.dataset.collections || "").split(/\s+/).filter(Boolean);
+        const matchesCollection = !activeCollection || collections.includes(activeCollection);
+        const show = matchesText && matchesYear && matchesCollection;
         item.hidden = !show;
         if (show) visible += 1;
       });
 
-      count.textContent = `${visible} publication${visible === 1 ? "" : "s"}`;
+      const collectionLabel = activeCollection === "gis-education" ? " GIS education" : "";
+      count.textContent = `${visible}${collectionLabel} publication${visible === 1 ? "" : "s"}`;
       empty.hidden = visible !== 0;
     };
 
+    if (clearFilter) clearFilter.hidden = !activeCollection;
     search.addEventListener("input", filterPublications);
     year.addEventListener("change", filterPublications);
+    filterPublications();
   }
 })();

@@ -1170,11 +1170,30 @@ p.card-meta {
 }
 
 .publication-count {
-  margin: 0 0 0.65rem;
+  margin: 0;
   color: var(--muted);
   font-size: var(--text-sm);
   font-weight: 700;
   white-space: nowrap;
+}
+
+.publication-filter-status {
+  display: grid;
+  gap: 0.25rem;
+  align-self: end;
+  margin-bottom: 0.65rem;
+}
+
+.publication-filter-status a {
+  color: var(--teal);
+  font-size: var(--text-xs);
+  font-weight: 750;
+  text-underline-offset: 0.2em;
+}
+
+.publication-filter-status a:hover,
+.publication-filter-status a:focus-visible {
+  color: var(--navy);
 }
 
 .publication-list {
@@ -1701,6 +1720,10 @@ p.card-meta {
   }
 
   .publication-count {
+    margin: 0;
+  }
+
+  .publication-filter-status {
     margin: 0;
   }
 

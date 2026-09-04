@@ -46,13 +46,7 @@ Beyond classroom instruction and graduate mentorship, I contributed to the devel
 
 ## Mentorship and student success
 
-As a mentor, I have actively supported both undergraduate and graduate students in research, technical development, and professional readiness. From 2009 to 2013, I supervised four graduate students working on GIS-based system design for real-world industry applications. These projects, developed in collaboration with external partners, provided practical experience and helped students transition successfully into careers in GIS, geospatial analysis, and environmental modeling.
-
-All of my mentees went on to secure positions in competitive fields, a testament to the effectiveness of applied mentorship. I have also co-authored several peer-reviewed articles with students, reinforcing my commitment to academic excellence and collaborative scholarship.
-
-### Graduate student mentorship
-
-While serving as an Associate Professor at Nanjing University of Posts and Telecommunications (2009–2013), I supervised four graduate students on applied GIS and environmental-modeling research projects. These projects, often conducted in collaboration with industry partners, focused on the development of GIS-based systems for practical applications. Under my guidance, all students successfully completed their degrees and secured positions in competitive sectors, reflecting the real-world relevance and impact of their training.
+From 2009 to 2013, while serving as an Associate Professor at Nanjing University of Posts and Telecommunications, I supervised four graduate students on applied GIS and environmental-modeling projects developed with external partners. The work combined research, technical development, and professional preparation; all four students completed their degrees and secured positions in competitive sectors, and several contributed to peer-reviewed publications.
 
 {{< mentorship-highlights >}}
 
@@ -71,7 +65,7 @@ Awarded to Liu Xingfei for the paper titled “CA Simulation of the Erosion-Depo
 
 ## Scholarly contributions and recognition
 
-Beyond teaching, I actively contribute to pedagogical research in GIS and curriculum innovation. I have published six academic papers on GIS education, instructional strategies, and course design. My teaching excellence has been recognized through several awards, including the Young Teacher Excellence Award in 2010 and multiple nominations for national teaching competitions. I have also been honored as a Teaching Exemplar and Outstanding Instructor.
+Beyond teaching, I actively contribute to pedagogical research in GIS and curriculum innovation. I have published [six academic papers on GIS education, instructional strategies, and course design](../publications/?collection=gis-education#all-publications-heading). My teaching excellence has been recognized through several awards, including the Young Teacher Excellence Award in 2010 and multiple nominations for national teaching competitions. I have also been honored as a Teaching Exemplar and Outstanding Instructor.
 
 ## Teaching qualifications
 

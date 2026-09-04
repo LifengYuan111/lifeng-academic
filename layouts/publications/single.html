@@ -1,4 +1,6 @@
 {{ define "main" }}
+{{ $gisEducationCollection := index site.Data.publication_collections "gis-education" }}
+{{ $gisEducationTitles := $gisEducationCollection.titles }}
 <header class="page-hero">
   <div class="container page-hero__inner">
     <p class="eyebrow">Scholarly output</p>
@@ -60,11 +62,14 @@
           {{ range (seq 2025 -1 2003) }}<option value="{{ . }}">{{ . }}</option>{{ end }}
         </select>
       </label>
-      <p id="publication-count" class="publication-count" aria-live="polite">{{ len site.Data.publications }} publications</p>
+      <div class="publication-filter-status">
+        <p id="publication-count" class="publication-count" aria-live="polite">{{ len site.Data.publications }} publications</p>
+        <a id="publication-clear-filter" href="{{ "publications/" | relURL }}" hidden>View all publications</a>
+      </div>
     </div>
     <ol id="publication-list" class="publication-list">
       {{ range (sort site.Data.publications "year" "desc") }}
-      <li class="publication-item" data-year="{{ .year }}">
+      <li class="publication-item" data-year="{{ .year }}" data-collections="{{ if in $gisEducationTitles .title }}gis-education{{ end }}">
         <span class="publication-item__year">{{ .year }}</span>
         <div class="publication-item__body">
           <h3>{{ .title }}</h3>

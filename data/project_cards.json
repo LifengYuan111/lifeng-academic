@@ -90,7 +90,7 @@
     "technical_components": ["Rill-erosion process modeling", "Experimental validation", "Terrain analysis"],
     "role": ["Principal Investigator", "Model development", "Experimental design", "Analysis and reporting"],
     "featured": false,
-    "compact": false
+    "compact": true
   },
   {
     "id": "nps-risk-assessment",
@@ -105,7 +105,7 @@
     "technical_components": ["Nutrient-risk indicators", "Watershed vulnerability mapping", "Spatial database design"],
     "role": ["Framework development", "GIS processing", "Risk assessment", "Database development"],
     "featured": false,
-    "compact": false
+    "compact": true
   },
   {
     "id": "hydro-climate-analysis",
@@ -124,6 +124,6 @@
     "technical_components": ["Long-term rainfall and runoff variability", "Sediment-transport assessment", "Spatial analysis"],
     "role": ["Data processing", "Statistical analysis", "Hydrologic interpretation and reporting"],
     "featured": false,
-    "compact": false
+    "compact": true
   }
 ]
