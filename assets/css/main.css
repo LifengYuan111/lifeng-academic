@@ -1205,7 +1205,7 @@ p.card-meta {
   font-weight: 800;
 }
 
-.publication-item h2 {
+.publication-item h3 {
   margin-bottom: 0.65rem;
   font-family: Inter, ui-sans-serif, sans-serif;
   font-size: clamp(1.05rem, 1.5vw, 1.15rem);

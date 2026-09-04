@@ -67,7 +67,7 @@
       <li class="publication-item" data-year="{{ .year }}">
         <span class="publication-item__year">{{ .year }}</span>
         <div class="publication-item__body">
-          <h2>{{ .title }}</h2>
+          <h3>{{ .title }}</h3>
           <p class="publication-authors">{{ replaceRE "(?i)(Lifeng Yuan|Yuan Lifeng)" "<strong>$1</strong>" .authors | safeHTML }}</p>
           <p class="publication-venue">
             {{ with .publication }}<em>{{ . }}</em>{{ end }}
