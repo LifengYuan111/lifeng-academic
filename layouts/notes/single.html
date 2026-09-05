@@ -74,7 +74,30 @@
         </div>
       </section>
       {{ end }}
-      {{ with .Params.figure }}
+      {{ with .Params.figure_gallery }}
+      <figure class="research-summary__figure research-summary__figure--gallery">
+        <div class="research-figure-gallery">
+          {{ range . }}
+          <a class="research-figure-gallery__item{{ with .layout }} research-figure-gallery__item--{{ . | anchorize }}{{ end }}" href="{{ .image | relURL }}" target="_blank" rel="noopener" aria-label="Open full-resolution image: {{ .label }}">
+            <img src="{{ .image | relURL }}" alt="{{ .alt }}"{{ with .width }} width="{{ . }}"{{ end }}{{ with .height }} height="{{ . }}"{{ end }} loading="lazy" decoding="async">
+            <span class="research-figure-gallery__copy">
+              <strong>{{ .label }}</strong>
+              <span>{{ .caption }}</span>
+              <em>Open full size <span aria-hidden="true">→</span></em>
+            </span>
+          </a>
+          {{ end }}
+        </div>
+        {{ with $.Params.figure_caption }}
+        <figcaption>
+          <span>{{ $.Params.figure_label | default "Research figures" }}</span>
+          {{ . }}
+          {{ with $.Params.figure_credit }}<small>{{ . }}</small>{{ end }}
+        </figcaption>
+        {{ end }}
+      </figure>
+      {{ else }}
+      {{ with $.Params.figure }}
       <figure class="research-summary__figure{{ with $.Params.figure_layout }} research-summary__figure--{{ . | anchorize }}{{ end }}">
         {{ if $.Params.figure_expandable }}
         <a class="research-summary__figure-link" href="{{ . | relURL }}" target="_blank" rel="noopener" aria-label="Open the full-resolution research figure">
@@ -92,6 +115,7 @@
         </figcaption>
         {{ end }}
       </figure>
+      {{ end }}
       {{ end }}
       <div class="prose research-summary__content">{{ .Content }}</div>
       <nav class="article-back" aria-label="Research summary navigation">

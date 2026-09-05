@@ -227,6 +227,89 @@
   background: var(--white);
 }
 
+.research-figure-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.research-figure-gallery__item {
+  display: flex;
+  min-width: 0;
+  overflow: hidden;
+  flex-direction: column;
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius);
+  background: var(--white);
+  color: var(--color-body);
+  text-decoration: none;
+  transition: border-color 0.2s ease;
+}
+
+.research-figure-gallery__item--wide {
+  grid-column: 1 / -1;
+}
+
+.research-summary__figure--gallery .research-figure-gallery__item img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 4;
+  border: 0;
+  border-radius: 0;
+  object-fit: cover;
+}
+
+.research-summary__figure--gallery .research-figure-gallery__item--wide img {
+  aspect-ratio: 4 / 3;
+}
+
+.research-figure-gallery__copy {
+  display: grid;
+  gap: 0.3rem;
+  padding: 0.85rem 1rem 1rem;
+  border-top: 1px solid var(--border-soft);
+}
+
+.research-figure-gallery__copy strong {
+  color: var(--navy);
+  font-size: var(--text-sm);
+  font-weight: 800;
+  line-height: 1.35;
+}
+
+.research-figure-gallery__copy > span {
+  color: var(--muted);
+  font-size: var(--text-xs);
+  line-height: var(--line-meta);
+}
+
+.research-figure-gallery__copy em {
+  margin-top: 0.2rem;
+  color: var(--teal);
+  font-size: var(--text-xs);
+  font-style: normal;
+  font-weight: 800;
+  line-height: var(--line-meta);
+}
+
+.research-figure-gallery__item:hover,
+.research-figure-gallery__item:focus-visible {
+  border-color: var(--teal);
+}
+
+.research-figure-gallery__item:hover .research-figure-gallery__copy em,
+.research-figure-gallery__item:focus-visible .research-figure-gallery__copy em {
+  color: var(--navy);
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.research-figure-gallery__item:focus-visible {
+  outline: 3px solid var(--focus-ring);
+  outline-offset: 4px;
+}
+
 .research-summary__figure--portrait img,
 .research-summary__figure--portrait figcaption {
   width: min(100%, 38rem);
@@ -467,6 +550,14 @@
 
   .research-snapshot__grid {
     grid-template-columns: 1fr;
+  }
+
+  .research-figure-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .research-figure-gallery__item--wide {
+    grid-column: auto;
   }
 
   .research-snapshot__item,
