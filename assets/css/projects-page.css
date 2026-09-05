@@ -111,6 +111,13 @@
   height: 1rem;
 }
 
+.project-portfolio-card__evidence .epa-icon {
+  width: 1.05rem;
+  height: 1.05rem;
+  border-width: 1.25px;
+  font-size: 0.33rem;
+}
+
 .prose .project-portfolio-card__evidence a:hover,
 .prose .project-portfolio-card__evidence a:focus-visible {
   color: var(--navy);

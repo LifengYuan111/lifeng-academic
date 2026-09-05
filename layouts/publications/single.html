@@ -36,6 +36,7 @@
             {{ with .doi }}<a href="https://doi.org/{{ . }}" target="_blank" rel="noopener noreferrer">DOI</a>{{ end }}
             {{ with .summary }}<a href="{{ . | relURL }}">Research Summary</a>{{ end }}
             {{ with .presentation }}<a href="{{ . | relURL }}" target="_blank" rel="noopener noreferrer">Presentation</a>{{ end }}
+            {{ with .epa }}<a class="featured-publication-card__epa" href="{{ . }}" target="_blank" rel="noopener noreferrer">{{ partial "epa-icon.html" . }}<span>EPA Project</span></a>{{ end }}
             {{ with .github }}<a class="featured-publication-card__github" href="{{ . }}" target="_blank" rel="noopener noreferrer">{{ partial "github-icon.html" . }}<span>GitHub</span></a>{{ end }}
           </nav>
           {{ end }}

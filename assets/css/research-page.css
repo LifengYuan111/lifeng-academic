@@ -151,7 +151,13 @@
   text-decoration: underline;
 }
 
-.research-theme-card__github-link {
+.research-theme-card__resource-links {
+  display: flex;
+  gap: 0.15rem;
+}
+
+.research-theme-card__github-link,
+.research-theme-card__epa-link {
   display: inline-flex;
   width: 36px;
   height: 36px;
@@ -163,12 +169,15 @@
 }
 
 .research-theme-card__github-link:hover,
-.research-theme-card__github-link:focus-visible {
+.research-theme-card__github-link:focus-visible,
+.research-theme-card__epa-link:hover,
+.research-theme-card__epa-link:focus-visible {
   background: rgba(31, 111, 120, 0.09);
   color: var(--teal);
 }
 
-.research-theme-card__github-link:focus-visible {
+.research-theme-card__github-link:focus-visible,
+.research-theme-card__epa-link:focus-visible {
   outline: 3px solid var(--focus-ring);
   outline-offset: 2px;
 }
@@ -176,6 +185,13 @@
 .research-theme-card__github-link .github-icon {
   width: 22px;
   height: 22px;
+}
+
+.research-theme-card__epa-link .epa-icon {
+  width: 22px;
+  height: 22px;
+  border-width: 1.5px;
+  font-size: 0.41rem;
 }
 
 .research-theme-card__works small {
@@ -328,6 +344,13 @@
 .research-contribution-row__github .github-icon {
   width: 1rem;
   height: 1rem;
+}
+
+.research-contribution-row__epa .epa-icon {
+  width: 1.05rem;
+  height: 1.05rem;
+  border-width: 1.25px;
+  font-size: 0.33rem;
 }
 
 .prose .research-contribution-row__links a:hover,

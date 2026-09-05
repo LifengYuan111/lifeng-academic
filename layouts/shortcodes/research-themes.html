@@ -22,11 +22,18 @@
             </a>
             {{ with .publication_title }}
               {{ $publicationLinks := index site.Data.publication_links . }}
-              {{ with $publicationLinks.github }}
-              <a class="research-theme-card__github-link" href="{{ . }}" target="_blank" rel="noopener noreferrer" title="Open associated GitHub repository" aria-label="Open associated GitHub repository">
-                {{ partial "github-icon.html" . }}
-              </a>
-              {{ end }}
+              <div class="research-theme-card__resource-links">
+                {{ with $publicationLinks.github }}
+                <a class="research-theme-card__github-link" href="{{ . }}" target="_blank" rel="noopener noreferrer" title="Open associated GitHub repository" aria-label="Open associated GitHub repository">
+                  {{ partial "github-icon.html" . }}
+                </a>
+                {{ end }}
+                {{ with $publicationLinks.epa }}
+                <a class="research-theme-card__epa-link" href="{{ . }}" target="_blank" rel="noopener noreferrer" title="View on the U.S. EPA official website" aria-label="View on the U.S. EPA official website">
+                  {{ partial "epa-icon.html" . }}
+                </a>
+                {{ end }}
+              </div>
             {{ end }}
           </div>
         </li>

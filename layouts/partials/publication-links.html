@@ -39,6 +39,11 @@
       <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="5" cy="6" r="2"/><circle cx="19" cy="5" r="2"/><circle cx="19" cy="19" r="2"/><circle cx="8" cy="17" r="2"/><path d="m7 7 9.8-1.6M6.5 8l1.1 6.8M10 16.8l7-10M10 17.3l7 1.4"/></svg>
     </a>
     {{- end }}
+    {{- with .epa }}
+    <a class="publication-link publication-link--epa" href="{{ . }}" target="_blank" rel="noopener noreferrer" title="View on the U.S. EPA official website" aria-label="View on the U.S. EPA official website">
+      {{ partial "epa-icon.html" . }}
+    </a>
+    {{- end }}
     {{- with .github }}
     <a class="publication-link publication-link--github" href="{{ . }}" target="_blank" rel="noopener noreferrer" title="Open associated GitHub repository" aria-label="Open associated GitHub repository">
       {{ partial "github-icon.html" . }}

@@ -42,6 +42,11 @@
                   {{ partial "github-icon.html" . }}
                 </a>
                 {{ end }}
+                {{ with $publicationLinks.epa }}
+                <a class="summary-row__epa-link" href="{{ . }}" target="_blank" rel="noopener noreferrer" title="View on the U.S. EPA official website" aria-label="View on the U.S. EPA official website">
+                  {{ partial "epa-icon.html" . }}
+                </a>
+                {{ end }}
               {{ end }}
             </div>
           </article>

@@ -95,13 +95,15 @@
         "title": "Coastal winter precipitation measured with a Parsivel² disdrometer",
         "meta": "Atmospheric Research · 2024",
         "url": "notes/coastal-winter-precipitation/",
-        "external": false
+        "external": false,
+        "publication_title": "Exploring the statistical characteristics of coastal winter precipitation measured using a Parsivel² disdrometer: A case study in North Carolina"
       },
       {
         "title": "SWMM emergency-response modeling of biological-agent transport across urban surfaces",
         "meta": "Journal of Hazardous Materials · 2023",
         "url": "notes/swmm-emergency-response/",
-        "external": false
+        "external": false,
+        "publication_title": "Using SWMM for Emergency Response Planning: A Case Study Evaluating Biological Agent Transport Under Various Rainfall Scenarios and Urban Surfaces"
       }
     ]
   }

@@ -10,13 +10,15 @@
   "Exploring the statistical characteristics of coastal winter precipitation measured using a Parsivel² disdrometer: A case study in North Carolina": {
     "doi": "10.1016/j.atmosres.2024.107487",
     "summary": "notes/coastal-winter-precipitation/",
-    "presentation": "files/presentations/coastal-winter-precipitation-poster.png"
+    "presentation": "files/presentations/coastal-winter-precipitation-poster.png",
+    "epa": "https://www.epa.gov/emergency-response-research/analysis-coastal-operational-resiliency"
   },
   "Using SWMM for Emergency Response Planning: A Case Study Evaluating Biological Agent Transport Under Various Rainfall Scenarios and Urban Surfaces": {
     "doi": "10.1016/j.jhazmat.2023.131747",
     "summary": "notes/swmm-emergency-response/",
     "presentation": "files/presentations/swmm-emergency-response-poster.jpg",
-    "dataset": "https://catalog.data.gov/dataset/ancor-task-2-1-modeling-data"
+    "dataset": "https://catalog.data.gov/dataset/ancor-task-2-1-modeling-data",
+    "epa": "https://www.epa.gov/emergency-response-research/analysis-coastal-operational-resiliency"
   },
   "Comparing two weather generator‐based downscaling tools for simulating storm intensification and its impacts on soil erosion under climate change": {
     "doi": "10.1002/joc.7971",

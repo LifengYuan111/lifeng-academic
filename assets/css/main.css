@@ -179,6 +179,21 @@ p {
   stroke-width: 1.8;
 }
 
+.epa-icon {
+  display: inline-flex;
+  width: 27px;
+  height: 27px;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid currentColor;
+  border-radius: 50%;
+  font-size: 0.5rem;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  line-height: 1;
+}
+
 .skip-link {
   position: fixed;
   z-index: 999;
@@ -1078,7 +1093,8 @@ p.card-meta {
   white-space: nowrap;
 }
 
-.summary-row__github-link {
+.summary-row__github-link,
+.summary-row__epa-link {
   display: inline-flex;
   width: 36px;
   height: 36px;
@@ -1091,12 +1107,15 @@ p.card-meta {
 }
 
 .summary-row__github-link:hover,
-.summary-row__github-link:focus-visible {
+.summary-row__github-link:focus-visible,
+.summary-row__epa-link:hover,
+.summary-row__epa-link:focus-visible {
   background: rgba(31, 111, 120, 0.09);
   color: var(--teal);
 }
 
-.summary-row__github-link:focus-visible {
+.summary-row__github-link:focus-visible,
+.summary-row__epa-link:focus-visible {
   outline: 3px solid var(--focus-ring);
   outline-offset: 2px;
 }
@@ -1104,6 +1123,13 @@ p.card-meta {
 .summary-row__github-link .github-icon {
   width: 22px;
   height: 22px;
+}
+
+.summary-row__epa-link .epa-icon {
+  width: 22px;
+  height: 22px;
+  border-width: 1.5px;
+  font-size: 0.41rem;
 }
 
 .note-card {
@@ -1342,6 +1368,11 @@ p.card-meta {
 .publication-link--github .github-icon {
   width: 25px;
   height: 25px;
+}
+
+.publication-link--epa .epa-icon {
+  width: 27px;
+  height: 27px;
 }
 
 .publication-link__doi {
