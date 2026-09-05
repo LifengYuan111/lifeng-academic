@@ -17,49 +17,38 @@ figure_caption = "Projected changes in annual precipitation and runoff in relati
 figure_credit = "Source: Yuan et al. (2022)."
 +++
 
-## Objective
+## Research Question
 
-This study evaluates the long-term impacts of climate change stressors—specifically elevated CO₂, increased temperature, and storm intensification—on agricultural productivity and environmental degradation in Oklahoma. The goal is to inform future land and water management practices under projected climate scenarios.
+How do elevated atmospheric CO₂, warming, and storm intensification interact to affect crop yield, surface runoff, and soil loss in Oklahoma agricultural systems?
+
+## Why It Matters
+
+Climate-impact assessments that treat temperature, CO₂, and rainfall intensity separately can miss important compound effects on agricultural productivity and erosion risk. Representing these stressors together provides more realistic evidence for future land, water, and soil-conservation decisions.
 
 ## Methods
 
-Models Used: Weather Generator (CLIGEN), a modified WEPP (Water Erosion Prediction Project)
+- Used CLIGEN and a modified **WEPP (Water Erosion Prediction Project)** model.
+- Downscaled and bias-corrected an ensemble of **25 CMIP5 general circulation models**.
+- Compared baseline conditions with RCP4.5 and RCP8.5 CO₂ projections.
+- Evaluated temperature increases from **1.5°C to 4.5°C** and intensified-storm scenarios.
+- Applied the scenario framework at an Oklahoma research site representative of southern Great Plains agricultural landscapes.
 
-Climate Data Source: Ensemble of 25 General Circulation Models (GCMs) from CMIP5, downscaled and bias-corrected for high-resolution climate projections.
+## Key Findings
 
-Scenario Design:
+- Elevated CO₂ enhanced simulated crop productivity, but larger temperature increases offset those gains, particularly under higher-emission conditions.
+- Storm intensification substantially increased runoff and soil erosion, particularly in some no-till or monoculture scenarios.
+- Changes in rainfall intensity had a stronger influence on soil loss than changes in average annual precipitation.
+- Combined climate stressors increased the modeled vulnerability of agricultural landscapes to hydrologic and erosion extremes.
 
-CO₂ concentrations: Baseline vs. RCP4.5 & 8.5 projections
+## My Contribution
 
-Temperature increase: 1.5°C to 4.5°C scenarios
-
-Rainfall: Intensified storm scenarios using modified precipitation patterns
-
-Site: A research site in Oklahoma representative of southern Great Plains agricultural landscapes.
-
-## Key Results
-
-Crop Yield:
-
-Elevated CO₂ enhanced crop productivity (e.g., biomass), but extreme temperature increases offset gains, especially in high emission scenarios.
-
-Surface Runoff & Soil Loss:
-
-Storm intensification significantly increased runoff volumes and soil erosion, particularly in no-till or monoculture scenarios.
-
-Projected changes in rainfall intensity had a stronger influence on soil loss than changes in average annual precipitation.
-
-WEPP simulations showed increased vulnerability of the landscape to hydrologic and erosion extremes under combined stressors.
-
-## Conclusion
-
-This research demonstrates that multi-factor climate stress could severely challenge agricultural sustainability and watershed resilience. Integrating CO₂-plant interactions with hydrological modeling provides a more realistic forecast of future impacts. The study highlights the importance of adaptive soil conservation practices and resilient cropping systems to buffer against climate extremes in the region.
+Lifeng Yuan developed the Python automation workflow for the modified WEPP model and contributed scenario design, model execution, data analysis, visualization, interpretation, and manuscript preparation.
 
 WEPP (Water Erosion Prediction Project) run interface:
 
 ![WEPP model interface configured for a 100-year simulation at Fort Reno, Oklahoma, showing a conventional canola–alfalfa management system along a 656.2-foot hillslope.](/images/research-summaries/wepp-model-running-interface.jpg)
 
-## Supporting script
+### Supporting Python workflow
 
 ```python
 ############################################################################################
@@ -223,14 +212,20 @@ for man_file in mans_filename:
     for cli_file in clis_filename:
 
         run_wepp(man_file, cli_file)
-
-The above developed Python script significantly enhances the simulation capability of the modified WEPP (Water Erosion Prediction Project) model, which traditionally supports only a single combination of climate, cropping, and tillage management per run. This custom script automates and batch-processes WEPP simulations, enabling the model to simultaneously execute 29 distinct combinations of climate scenarios and land management practices over a 100-year period. By systematically modifying input parameters and managing simulation runs, the script efficiently generates long-term projections of runoff, soil loss, and crop yield, streamlining what would otherwise be a time-consuming and manual process. This tool is especially valuable for evaluating the impacts of climate change and conservation practices on soil and water resources at scale. 
-
-Results Visualization Tool: R 
-
-Exceedance probability of annual soil loss for continuous winter wheat under conventional and no-till treatments during baseline, future1 RCP4.5, and future 2 RCP 8.5 scenarios (Solid line stands for the baseline, dashed line is the mean of 25 GCMs) 
-
-Average annual runoff (a) and soil loss (b) grouped by cropping (Ca: canola; Wt: wheat; Sg: sorghum; Sb: soybean; Ct: cotton; Ca-alf: canola-alfalfa; Wt-alf: wheat-alfalfa; Sg-alf: Sorghum-alfalfa; Sb-alf: soybean-alfalfa; Ct-alf: cotton-alfalfa; Wt_double: winter wheat-summer soybean double crops) and tillage systems (RT: reduced till; DT: delayed till; NT: no till; CT: conventional till) under baseline conditions and those averaged over 25 GCMs under two RCPs scenarios during 2021-2050 and 2051-2080 (*, **, *** refer to statistical significant at the 90, 95, 99% confidence level; one-sample one-tailed t-test n = 25). 
-
-Highlighted in WEPP-CO₂ Climate Impact Study 
 ```
+
+The custom Python workflow extended the modified WEPP model beyond one-at-a-time combinations of climate, cropping, and tillage inputs. It automated batch processing for 29 management combinations over 100-year simulations and systematically organized long-term runoff, soil-loss, and crop-yield outputs.
+
+### Results visualization
+
+R was used to compare exceedance probabilities of annual soil loss for continuous winter wheat under conventional and no-till treatments during the baseline, Future 1 RCP4.5, and Future 2 RCP8.5 scenarios. Solid lines represent the baseline; dashed lines represent the mean of the 25 GCM simulations.
+
+Average annual runoff and soil loss were also grouped by cropping system—canola, wheat, sorghum, soybean, cotton, crop–alfalfa rotations, and winter wheat–summer soybean double cropping—and by reduced, delayed, no-till, and conventional tillage. Baseline results were compared with 25-GCM ensemble means under two RCPs for 2021–2050 and 2051–2080, with one-sample, one-tailed *t*-tests used to assess statistical significance.
+
+## Practical Relevance
+
+The results show that compound climate stress could challenge agricultural sustainability and watershed resilience. Integrating CO₂–plant interactions with hydrologic and erosion modeling supports selection of adaptive soil-conservation practices and resilient cropping systems under future climate extremes.
+
+## Publication & Resources
+
+{{< publication-resources >}}

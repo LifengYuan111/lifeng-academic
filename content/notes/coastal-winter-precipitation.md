@@ -17,40 +17,37 @@ figure_caption = "Joint distribution of mass-weighted mean drop diameter and nor
 figure_credit = "Source: Yuan et al. (2024)."
 +++
 
-## Objective
+## Research Question
 
-The study investigates the microphysical characteristics of coastal winter precipitation in North Carolina using high-resolution data from a Parsivel² disdrometer, with a focus on understanding particle size distribution (DSD), precipitation types, and statistical variability under different winter conditions.
+How do particle-size distributions, fall velocities, and statistical characteristics differ among coastal winter precipitation types in North Carolina?
 
-## Methodology
+## Why It Matters
 
-Instrument: OTT Parsivel² disdrometer (optical precipitation sensor)
+Coastal winter storms can shift rapidly among rain, snow, and mixed precipitation. Better characterization of these microphysical transitions can improve precipitation estimates, radar interpretation, runoff and erosion modeling, and short-term forecasting.
 
-Location: Coastal region of North Carolina
+## Methods
 
-Data Period: Winter months
-
-Analysis:
-
-Precipitation classified into stratiform, convective, and mixed precipitation
-
-DSD and velocity-diameter relationships analyzed
-
-Statistical properties of precipitation events studied (e.g., mean diameter, number concentration, radar reflectivity)
+- Collected high-resolution winter observations with an **OTT Parsivel² optical disdrometer** in coastal North Carolina.
+- Classified events as stratiform, convective, or mixed precipitation.
+- Analyzed particle-size distributions and velocity–diameter relationships.
+- Evaluated statistical properties including mean particle diameter, number concentration, and radar reflectivity.
 
 ## Key Findings
 
-Distinct statistical signatures were identified for different precipitation types:
+- Rain showed narrower particle-size distributions with a higher concentration of small drops.
+- Snow displayed broader distributions with larger, slower-falling particles.
+- Mixed precipitation showed high variability and overlapping distribution characteristics.
+- Velocity–diameter relationships deviated from idealized models, especially during snow events, likely because of particle shape and turbulence.
+- Parsivel² observations captured microphysical transitions in real time.
 
-Rain showed narrower DSDs with higher number concentration of small drops.
+## My Contribution
 
-Snow displayed broader distributions with larger, slower-falling particles.
+As first author, Lifeng Yuan contributed to the disdrometer-data analysis, interpretation of precipitation-type differences, scientific visualization, and manuscript development.
 
-Mixed precipitation demonstrated high variability, with overlapping DSD features.
+## Practical Relevance
 
-The velocity-diameter relationship deviated from idealized models, especially in snow events, likely due to non-spherical particles and turbulence.
+The study demonstrates how disdrometer observations can improve understanding of rapidly changing coastal winter precipitation and provide evidence for forecasting, radar validation, and hydrologic and erosion modeling.
 
-The Parsivel² was shown to be effective in capturing microphysical transitions and providing real-time insights into coastal winter precipitation dynamics.
+## Publication & Resources
 
-## Conclusion
-
-The study demonstrates the utility of disdrometer-based analysis for improving understanding of precipitation microphysics in coastal winter environments. The insights can support better forecasting, radar validation, and hydrological modeling for regions affected by rapidly changing winter weather.
+{{< publication-resources >}}

@@ -48,3 +48,7 @@ According to the published author-contribution statement, Lifeng Yuan contribute
 ## Practical Relevance
 
 The study demonstrates how signal decomposition and machine learning can complement a process-based watershed model, providing a practical example of physics–data integration for multi-site hydrologic prediction.
+
+## Publication & Resources
+
+{{< publication-resources >}}

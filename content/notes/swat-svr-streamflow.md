@@ -18,66 +18,38 @@ figure_caption = "Spatial-calibration workflow comparing SWAT–SVR output with 
 figure_credit = "Source: Yuan and Forshay (2021)."
 +++
 
-## Summary
+## Research Question
 
-This study presents a hybrid modeling approach combining the Soil and Water Assessment Tool (SWAT) with Support Vector Regression (SVR) to improve monthly streamflow prediction in the Illinois River Watershed (IRW), USA. Traditional SWAT calibration using SWAT-CUP is time-consuming and often inaccurate in dry seasons or ungauged watersheds. The new SWAT-SVR model uses SWAT outputs and drainage area as SVR inputs, bypassing heavy calibration and enabling more accurate spatial predictions. The model showed better performance in the wet season and for medium streamflows (5–30 m³/s), with applicability for watersheds ranging from 500 to 3000 km². This article can be accessed from https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0248489. 
+Can support vector regression use process-based SWAT output and spatial information to improve monthly streamflow prediction where conventional multi-site calibration is costly or observations are limited?
 
-## Highlights
+## Why It Matters
 
-### 1. Problem Statement
+Rainfall–runoff relationships are nonlinear, and process-based, conceptual, and data-driven models each have limitations. SWAT calibration can be data-intensive and time-consuming, particularly across multiple locations, while standalone machine-learning models require sufficient observations. A hybrid method can combine physical watershed representation with efficient nonlinear correction.
 
-Rainfall-runoff relationships are complex and nonlinear.
+## Methods
 
-Existing models (conceptual, physically-based, or data-driven) each have limitations.
+- Developed a hybrid **SWAT–SVR** framework using SWAT streamflow and upstream drainage area as support-vector-regression inputs.
+- Applied spatial calibration and leave-one-out validation across **13 USGS stations** in the Illinois River watershed, U.S.
+- Compared the hybrid framework with conventional SWAT-CUP calibration.
+- Evaluated annual and seasonal performance, flow-duration behavior, drainage-area suitability, and prediction across flow ranges.
 
-SWAT is powerful but calibration is data-intensive and time-consuming.
+## Key Findings
 
-SVM (SVR) can handle nonlinear patterns but needs sufficient data.
+- SWAT–SVR outperformed SWAT-CUP, particularly during the dry season, when all SWAT-CUP simulations were rated unsatisfactory.
+- Annual SWAT–SVR simulations achieved satisfactory to very good performance at **67% of stations**.
+- Performance was strongest for medium flows of **5–30 m³/s** and drainage areas of approximately **500–3,000 km²**.
+- Flow-duration curves reproduced medium and low flows well.
+- High flows above 30 m³/s remained difficult to predict because of limited training data.
+- The framework reduced calibration effort to three primary SVR parameters: *C*, γ, and ε.
 
-### 2. Solution
+## My Contribution
 
-Developed a hybrid SWAT-SVR model to combine the strengths of physical modeling (SWAT) and machine learning (SVR).
+Lifeng Yuan developed the hybrid SWAT–SVR framework and contributed model implementation, data processing, machine-learning integration, statistical evaluation, visualization, and manuscript preparation.
 
-Used streamflow from SWAT and upstream drainage area as SVR inputs.
+## Practical Relevance
 
-Applied spatial calibration and leave-one-out validation for 13 USGS stations in the IRW.
+The method offers a data-efficient alternative to conventional SWAT calibration for regional applications, data-limited watersheds, and ungauged basins by transferring spatial information from monitored proxy sites.
 
-### 3. Model Performance
+## Publication & Resources
 
-SWAT-SVR outperformed SWAT-CUP, especially in the dry season.
-
-SWAT-CUP failed in dry-season prediction (all simulations were rated "Unsatisfactory").
-
-SWAT-SVR had:
-
-Good prediction of medium flows (5–30 m³/s),
-
-Poor prediction of high flows (>30 m³/s) due to insufficient data for training,
-
-Satisfactory to Very Good performance for 67% of stations in annual simulations.
-
-### 4. Spatial Suitability
-
-Best performance observed for basins with drainage areas between 500–3000 km².
-
-Flow duration curves showed good match in medium and low flows.
-
-### 5. Efficiency
-
-SWAT-SVR reduces calibration effort: only three SVR parameters (C, γ, ε) to tune.
-
-Useful in ungauged or limited-data watersheds by borrowing spatial information from proxy sites.
-
-### 6. Conclusion
-
-The SWAT-SVR hybrid model is promising for monthly streamflow prediction in watersheds with:
-
-Medium size (500–3000 km²),
-
-Medium flows (5–30 m³/s),
-
-Limited gauging data.
-
-Offers a data-efficient alternative to conventional SWAT calibration methods.
-
-Particularly beneficial for regional applications and ungauged basin studies.
+{{< publication-resources >}}

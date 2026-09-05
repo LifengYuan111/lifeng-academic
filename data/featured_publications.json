@@ -1,5 +1,9 @@
 [
   {
+    "title": "Evaluating Parsivel²’s raindrop data: A comparative study of different terminal drop velocity models on simulated and natural rain events",
+    "tags": ["Rainfall Microphysics", "Measurement Quality"]
+  },
+  {
     "title": "Exploring the statistical characteristics of coastal winter precipitation measured using a Parsivel² disdrometer: A case study in North Carolina",
     "tags": ["Rainfall Microphysics", "Hydrology"]
   },
@@ -18,9 +22,5 @@
   {
     "title": "Modeling surface runoff and soil loss response to climate change under GCM ensembles and multiple cropping and tillage systems in Oklahoma",
     "tags": ["WEPP", "Agricultural Systems"]
-  },
-  {
-    "title": "Review of Watershed-Scale Water Quality and Nonpoint Source Pollution Models",
-    "tags": ["Watershed Models", "Water Quality"]
   }
 ]

@@ -41,10 +41,16 @@ Agricultural conservation planning must account for both uncertain future climat
 - **No-till** produced the lowest simulated soil loss among the evaluated tillage systems.
 - Crop–alfalfa rotations and the wheat–soybean double-cropping system were among the more effective options for controlling erosion.
 
+## My Contribution
+
+Lifeng Yuan led model development, workflow automation, data analysis, visualization, and manuscript preparation for the multi-scenario WEPP assessment.
+
 ## Practical Relevance
 
 The study demonstrates why agricultural climate-impact assessments should evaluate ensembles of climate projections together with a wide range of management systems. Its results support selection of cropping and tillage practices that maintain erosion control under uncertain future conditions.
 
-## Citation
+## Publication & Resources
 
 Yuan, L., Zhang, X.-C. J., Busteed, P., Flanagan, D. C., & Srivastava, A. (2022). Modeling surface runoff and soil loss response to climate change under GCM ensembles and multiple cropping and tillage systems in Oklahoma. *Soil and Tillage Research, 218*, 105296. https://doi.org/10.1016/j.still.2021.105296
+
+{{< publication-resources >}}

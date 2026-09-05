@@ -34,7 +34,9 @@
       {{ end }}
     </aside>
     <div class="research-summary__main">
-      {{ with .Params.publication_title }}
+      {{ if not (in .RawContent "publication-resources") }}
+      {{ $publicationTitle := .Params.publication_title }}
+      {{ with $publicationTitle }}
         {{ $publication := index site.Data.publication_links . }}
         {{ with $publication }}
         <aside class="summary-resources" aria-label="Publication resources">
@@ -42,9 +44,10 @@
             <p>Publication resources</p>
             <span>Open the article, full text, presentation, dataset, or Scholar record where available.</span>
           </div>
-          {{ partial "publication-links.html" (dict "title" $.Params.publication_title "hideSummary" true) }}
+          {{ partial "publication-links.html" (dict "title" $publicationTitle "hideSummary" true) }}
         </aside>
         {{ end }}
+      {{ end }}
       {{ end }}
       {{ if or .Params.snapshot_question .Params.snapshot_methods .Params.snapshot_relevance }}
       <section class="research-snapshot" aria-labelledby="research-snapshot-title">

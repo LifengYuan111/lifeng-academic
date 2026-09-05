@@ -1,0 +1,13 @@
+{{- $title := .Page.Params.publication_title -}}
+{{- with $title -}}
+  {{- $publication := index site.Data.publication_links . -}}
+  {{- with $publication }}
+  <aside class="summary-resources" aria-label="Publication resources">
+    <div class="summary-resources__copy">
+      <p>Publication resources</p>
+      <span>Open the article, full text, presentation, dataset, or Scholar record where available.</span>
+    </div>
+    {{ partial "publication-links.html" (dict "title" $title "hideSummary" true) }}
+  </aside>
+  {{- end -}}
+{{- end -}}

@@ -17,43 +17,34 @@ figure_caption = "Comparison of simulated biological-agent transport pathways an
 figure_credit = "Source: Yuan et al. (2023)."
 +++
 
-## Objective
+## Research Question
 
-This study aims to assess how biological agents, specifically surrogates for hazardous pathogens like Bacillus anthracis, could be transported through urban stormwater systems under different rainfall intensities and land surface types. The research supports emergency preparedness and homeland security response using hydrological modeling.
+How do rainfall intensity and urban surface type influence the washoff, transport, and potential exposure pathways of biological-agent surrogates in an urban stormwater system?
+
+## Why It Matters
+
+Emergency-response teams need defensible estimates of where hazardous biological material may move after release and rainfall. Urban hydrologic modeling can connect surface conditions, drainage pathways, and storm intensity to potential exposure zones and decontamination priorities.
 
 ## Methods
 
-Tool Used: EPA Storm Water Management Model (SWMM/PCSWMM)
-
-Simulations: Modeled biological contaminant runoff and transport under varying storm scenarios (e.g., low vs. high intensity rainfall)
-
-Different urban surface configurations (e.g., impervious vs. pervious areas)
-
-Data Inputs: Urban hydrologic and hydraulic parameters, agent decay rates, washoff coefficients, flow pathways
-
-Approach: Integration of custom Python scripts for model automation and scenario comparisons
+- Applied the EPA Storm Water Management Model (**SWMM/PCSWMM**).
+- Simulated biological-contaminant runoff and transport under rainfall scenarios with different intensities.
+- Compared impervious and pervious urban surface configurations, including asphalt, concrete, and grass.
+- Integrated urban hydrologic and hydraulic parameters, agent-decay rates, washoff coefficients, and flow pathways.
+- Used custom Python scripts to automate output extraction and scenario comparisons.
 
 ## Key Findings
 
-Surface type and rainfall intensity significantly affect biological agent fate:
+- Heavier storms produced faster and more widespread dispersal of biological-agent surrogates.
+- Impervious surfaces generated quicker runoff and reduced opportunities for agent decay or settling.
+- Surface configuration and rainfall intensity jointly controlled transport pathways and contaminant-load patterns.
+- The modeling framework identified infrastructure and drainage zones that may be more vulnerable to contamination.
 
-Heavier storms result in faster and more widespread dispersal of biological agents.
+## My Contribution
 
-Impervious surfaces contribute to quicker runoff and less opportunity for agent decay or settling.
+Lifeng Yuan led SWMM model development, Python scripting, field-data integration, scenario evaluation, visualization, and manuscript preparation. The study demonstrated SWMM's applicability to non-traditional pollutants and was conducted through the U.S. EPA Homeland Security Research Program in collaboration with the U.S. Coast Guard and Department of Homeland Security.
 
-The model identifies critical infrastructure zones most vulnerable to contamination.
-
-Results help guide decontamination strategies and emergency planning by illustrating potential exposure zones.
-
-## Contributions
-
-Demonstrated the applicability of SWMM for non-traditional pollutants such as pathogens.
-
-Offered a framework for using hydrological modeling in biosecurity planning.
-
-Supported by U.S. EPA Homeland Security Research Program in collaboration with USCG and DHS.
-
-## Supporting script
+### Supporting Python workflow
 
 ```python
 ##############################################################################
@@ -176,3 +167,11 @@ for k,v in land_dict.items():
 
         export_output(k,category[2],fnNames[6],fnUnits[3],v[i])
 ```
+
+## Practical Relevance
+
+The workflow supports emergency planning by showing how storm conditions and surface type alter contaminant mobility, helping agencies identify potential exposure zones, compare decontamination strategies, and prioritize monitoring and response actions.
+
+## Publication & Resources
+
+{{< publication-resources >}}
