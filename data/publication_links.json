@@ -5,7 +5,8 @@
   },
   "Evaluating Parsivel²’s raindrop data: A comparative study of different terminal drop velocity models on simulated and natural rain events": {
     "doi": "10.1016/j.atmosenv.2025.121548",
-    "summary": "notes/parsivel-terminal-velocity-models/"
+    "summary": "notes/parsivel-terminal-velocity-models/",
+    "dataset": "https://doi.org/10.23719/1531905"
   },
   "Exploring the statistical characteristics of coastal winter precipitation measured using a Parsivel² disdrometer: A case study in North Carolina": {
     "doi": "10.1016/j.atmosres.2024.107487",
