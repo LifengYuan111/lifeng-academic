@@ -106,6 +106,11 @@
   text-decoration: none;
 }
 
+.project-portfolio-card__evidence .github-icon {
+  width: 1rem;
+  height: 1rem;
+}
+
 .prose .project-portfolio-card__evidence a:hover,
 .prose .project-portfolio-card__evidence a:focus-visible {
   color: var(--navy);

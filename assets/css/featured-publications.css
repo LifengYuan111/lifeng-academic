@@ -99,6 +99,17 @@
   text-decoration: none;
 }
 
+.featured-publication-card__actions .featured-publication-card__github {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.featured-publication-card__github .github-icon {
+  width: 1rem;
+  height: 1rem;
+}
+
 .featured-publication-card__actions a:hover,
 .featured-publication-card__actions a:focus-visible {
   color: var(--navy);

@@ -15,10 +15,20 @@
       <ul>
         {{ range . }}
         <li>
-          <a href="{{ if .external }}{{ .url }}{{ else }}{{ .url | relURL }}{{ end }}"{{ if .external }} target="_blank" rel="noopener noreferrer"{{ end }}>
-            <span>{{ .title }}</span>
-            <small>{{ .meta }}</small>
-          </a>
+          <div class="research-theme-card__work">
+            <a class="research-theme-card__work-link" href="{{ if .external }}{{ .url }}{{ else }}{{ .url | relURL }}{{ end }}"{{ if .external }} target="_blank" rel="noopener noreferrer"{{ end }}>
+              <span>{{ .title }}</span>
+              <small>{{ .meta }}</small>
+            </a>
+            {{ with .publication_title }}
+              {{ $publicationLinks := index site.Data.publication_links . }}
+              {{ with $publicationLinks.github }}
+              <a class="research-theme-card__github-link" href="{{ . }}" target="_blank" rel="noopener noreferrer" title="Open associated GitHub repository" aria-label="Open associated GitHub repository">
+                {{ partial "github-icon.html" . }}
+              </a>
+              {{ end }}
+            {{ end }}
+          </div>
         </li>
         {{ end }}
       </ul>

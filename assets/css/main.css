@@ -168,6 +168,17 @@ p {
   border: 0;
 }
 
+.github-icon {
+  display: block;
+  flex: 0 0 auto;
+  overflow: visible;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.8;
+}
+
 .skip-link {
   position: fixed;
   z-index: 999;
@@ -1056,9 +1067,43 @@ p.card-meta {
   line-height: var(--line-card);
 }
 
-.summary-row > .text-link {
+.summary-row__actions {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
   margin-top: 0.15rem;
+}
+
+.summary-row__actions > .text-link {
   white-space: nowrap;
+}
+
+.summary-row__github-link {
+  display: inline-flex;
+  width: 36px;
+  height: 36px;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.summary-row__github-link:hover,
+.summary-row__github-link:focus-visible {
+  background: rgba(31, 111, 120, 0.09);
+  color: var(--teal);
+}
+
+.summary-row__github-link:focus-visible {
+  outline: 3px solid var(--focus-ring);
+  outline-offset: 2px;
+}
+
+.summary-row__github-link .github-icon {
+  width: 22px;
+  height: 22px;
 }
 
 .note-card {
@@ -1292,6 +1337,11 @@ p.card-meta {
   stroke-linecap: round;
   stroke-linejoin: round;
   stroke-width: 1.8;
+}
+
+.publication-link--github .github-icon {
+  width: 25px;
+  height: 25px;
 }
 
 .publication-link__doi {
@@ -1769,7 +1819,7 @@ p.card-meta {
   }
 
   .summary-row p.card-meta,
-  .summary-row > .text-link {
+  .summary-row__actions {
     margin: 0;
     padding: 0;
   }

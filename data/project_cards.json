@@ -29,7 +29,8 @@
     "output_impact": "Peer-reviewed climate-impact studies · automated multi-scenario WEPP workflow",
     "evidence": [
       {"label": "Research Summary", "url": "notes/oklahoma-gcm-runoff-soil-loss/"},
-      {"label": "Related Publication", "url": "https://doi.org/10.1016/j.still.2021.105296"}
+      {"label": "Related Publication", "url": "https://doi.org/10.1016/j.still.2021.105296"},
+      {"label": "GitHub Workflow", "url": "https://github.com/LifengYuan111/wepp-climate", "icon": "github"}
     ],
     "tools": ["WEPP", "Python", "Climate Ensembles", "CLIGEN"],
     "funding": "USDA Agricultural Research Service",

@@ -128,7 +128,14 @@
   border-top: 1px solid rgba(216, 222, 220, 0.75);
 }
 
-.research-theme-card__works a {
+.research-theme-card__work {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.research-theme-card__work-link {
   display: block;
   padding: 0.7rem 0;
   color: var(--navy);
@@ -138,10 +145,37 @@
   text-decoration: none;
 }
 
-.research-theme-card__works a:hover,
-.research-theme-card__works a:focus-visible {
+.research-theme-card__work-link:hover,
+.research-theme-card__work-link:focus-visible {
   color: var(--teal);
   text-decoration: underline;
+}
+
+.research-theme-card__github-link {
+  display: inline-flex;
+  width: 36px;
+  height: 36px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.research-theme-card__github-link:hover,
+.research-theme-card__github-link:focus-visible {
+  background: rgba(31, 111, 120, 0.09);
+  color: var(--teal);
+}
+
+.research-theme-card__github-link:focus-visible {
+  outline: 3px solid var(--focus-ring);
+  outline-offset: 2px;
+}
+
+.research-theme-card__github-link .github-icon {
+  width: 22px;
+  height: 22px;
 }
 
 .research-theme-card__works small {
@@ -281,11 +315,19 @@
 }
 
 .prose .research-contribution-row__links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.28rem;
   color: var(--teal);
   font-size: var(--text-xs);
   font-weight: 800;
   line-height: 1.5;
   text-decoration: none;
+}
+
+.research-contribution-row__github .github-icon {
+  width: 1rem;
+  height: 1rem;
 }
 
 .prose .research-contribution-row__links a:hover,

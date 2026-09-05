@@ -16,7 +16,8 @@
         {{ with .evidence }}
         <nav class="project-portfolio-card__evidence" aria-label="Evidence for {{ $project.title }}">
           {{ range . }}
-          <a href="{{ if or (hasPrefix .url "http://") (hasPrefix .url "https://") }}{{ .url }}{{ else }}{{ .url | relURL }}{{ end }}">{{ .label }} <span aria-hidden="true">→</span></a>
+          {{ $external := or (hasPrefix .url "http://") (hasPrefix .url "https://") }}
+          <a href="{{ if $external }}{{ .url }}{{ else }}{{ .url | relURL }}{{ end }}"{{ if $external }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ with .icon }}{{ if eq . "github" }}{{ partial "github-icon.html" . }}{{ end }}{{ end }}{{ .label }} <span aria-hidden="true">→</span></a>
           {{ end }}
         </nav>
         {{ else }}
@@ -69,7 +70,8 @@
       {{ with .evidence }}
       <nav class="project-portfolio-card__evidence" aria-label="Evidence for {{ $project.title }}">
         {{ range . }}
-        <a href="{{ if or (hasPrefix .url "http://") (hasPrefix .url "https://") }}{{ .url }}{{ else }}{{ .url | relURL }}{{ end }}">{{ .label }} <span aria-hidden="true">→</span></a>
+        {{ $external := or (hasPrefix .url "http://") (hasPrefix .url "https://") }}
+        <a href="{{ if $external }}{{ .url }}{{ else }}{{ .url | relURL }}{{ end }}"{{ if $external }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ with .icon }}{{ if eq . "github" }}{{ partial "github-icon.html" . }}{{ end }}{{ end }}{{ .label }} <span aria-hidden="true">→</span></a>
         {{ end }}
       </nav>
       {{ end }}

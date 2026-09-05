@@ -58,13 +58,15 @@
         "title": "Elevated CO₂, temperature, and storm-intensification effects on crop yield, runoff, and soil loss",
         "meta": "Catena · 2022",
         "url": "notes/elevated-co2-temperature/",
-        "external": false
+        "external": false,
+        "publication_title": "Simulating the potential effects of elevated CO₂ concentration and temperature coupled with storm intensification on crop yield, surface runoff, and soil loss based on 25 GCMs ensemble: A site-specific case study in Oklahoma"
       },
       {
         "title": "Surface-runoff and soil-loss response to climate change under GCM ensembles and management systems",
         "meta": "Soil & Tillage Research · 2022",
         "url": "notes/oklahoma-gcm-runoff-soil-loss/",
-        "external": false
+        "external": false,
+        "publication_title": "Modeling surface runoff and soil loss response to climate change under GCM ensembles and multiple cropping and tillage systems in Oklahoma"
       }
     ]
   },

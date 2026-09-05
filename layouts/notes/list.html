@@ -33,7 +33,17 @@
               <h3><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h3>
               <p>{{ .Description | default .Summary }}</p>
             </div>
-            <a class="text-link" href="{{ .RelPermalink }}">Read summary <span aria-hidden="true">→</span></a>
+            <div class="summary-row__actions">
+              <a class="text-link" href="{{ .RelPermalink }}">Read summary <span aria-hidden="true">→</span></a>
+              {{ with .Params.publication_title }}
+                {{ $publicationLinks := index site.Data.publication_links . }}
+                {{ with $publicationLinks.github }}
+                <a class="summary-row__github-link" href="{{ . }}" target="_blank" rel="noopener noreferrer" title="Open associated GitHub repository" aria-label="Open associated GitHub repository">
+                  {{ partial "github-icon.html" . }}
+                </a>
+                {{ end }}
+              {{ end }}
+            </div>
           </article>
           {{ end }}
         </div>

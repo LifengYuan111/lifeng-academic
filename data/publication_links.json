@@ -29,11 +29,13 @@
   },
   "Modeling surface runoff and soil loss response to climate change under GCM ensembles and multiple cropping and tillage systems in Oklahoma": {
     "doi": "10.1016/j.still.2021.105296",
-    "summary": "notes/oklahoma-gcm-runoff-soil-loss/"
+    "summary": "notes/oklahoma-gcm-runoff-soil-loss/",
+    "github": "https://github.com/LifengYuan111/wepp-climate"
   },
   "Simulating the potential effects of elevated CO₂ concentration and temperature coupled with storm intensification on crop yield, surface runoff, and soil loss based on 25 GCMs ensemble: A site-specific case study in Oklahoma": {
     "doi": "10.1016/j.catena.2022.106251",
-    "summary": "notes/elevated-co2-temperature/"
+    "summary": "notes/elevated-co2-temperature/",
+    "github": "https://github.com/LifengYuan111/wepp-climate"
   },
   "Enhanced streamflow prediction with SWAT using support vector regression for spatial calibration: A case study in the Illinois River watershed, US": {
     "doi": "10.1371/journal.pone.0248489",
