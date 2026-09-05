@@ -19,7 +19,7 @@
     "doi": "10.1016/j.jhazmat.2023.131747",
     "summary": "notes/swmm-emergency-response/",
     "presentation": "files/presentations/swmm-emergency-response-poster.jpg",
-    "dataset": "https://catalog.data.gov/dataset/ancor-task-2-1-modeling-data",
+    "dataset": "https://doi.org/10.23719/1528466",
     "epa": "https://cfpub.epa.gov/si/si_public_record_report.cfm?dirEntryId=358414&Lab=CESER&simplesearch=0&showcriteria=2&sortby=pubDate&searchall=mikelonis&timstype=&datebeginpublishedpresented=12/20/2021"
   },
   "Comparing two weather generator‐based downscaling tools for simulating storm intensification and its impacts on soil erosion under climate change": {
@@ -45,7 +45,8 @@
   "Enhanced streamflow prediction with SWAT using support vector regression for spatial calibration: A case study in the Illinois River watershed, US": {
     "doi": "10.1371/journal.pone.0248489",
     "pdf": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0248489&type=printable",
-    "summary": "notes/swat-svr-streamflow/"
+    "summary": "notes/swat-svr-streamflow/",
+    "dataset": "https://doi.org/10.23719/1520734"
   },
   "Review of Watershed-Scale Water Quality and Nonpoint Source Pollution Models": {
     "doi": "10.3390/geosciences10010025",
@@ -61,7 +62,8 @@
     "doi": "10.3390/w12010039",
     "pdf": "https://www.mdpi.com/2073-4441/12/1/39/pdf?version=1577421718",
     "summary": "notes/xinjiang-river-swat/",
-    "presentation": "files/presentations/xinjiang-river-swat-presentation.jpg"
+    "presentation": "files/presentations/xinjiang-river-swat-presentation.jpg",
+    "dataset": "https://doi.org/10.23719/1518425"
 },
   "Soil Erosion Assessment of the Poyang Lake Basin, China: Using USLE, GIS and Remote Sensing": {
     "doi": "10.4172/2469-4134.1000168"
