@@ -11,6 +11,7 @@
     "doi": "10.1016/j.atmosres.2024.107487",
     "summary": "notes/coastal-winter-precipitation/",
     "presentation": "files/presentations/coastal-winter-precipitation-poster.png",
+    "dataset": "https://doi.org/10.23719/1529804",
     "epa": "https://cfpub.epa.gov/si/si_public_record_report.cfm?LAB=CESER&dirEntryID=361585"
   },
   "Using SWMM for Emergency Response Planning: A Case Study Evaluating Biological Agent Transport Under Various Rainfall Scenarios and Urban Surfaces": {
