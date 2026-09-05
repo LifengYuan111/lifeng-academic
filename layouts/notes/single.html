@@ -76,10 +76,17 @@
       {{ end }}
       {{ with .Params.figure }}
       <figure class="research-summary__figure{{ with $.Params.figure_layout }} research-summary__figure--{{ . | anchorize }}{{ end }}">
+        {{ if $.Params.figure_expandable }}
+        <a class="research-summary__figure-link" href="{{ . | relURL }}" target="_blank" rel="noopener" aria-label="Open the full-resolution research figure">
+          <img src="{{ . | relURL }}" alt="{{ $.Params.figure_alt | default $.Title }}"{{ with $.Params.figure_width }} width="{{ . }}"{{ end }}{{ with $.Params.figure_height }} height="{{ . }}"{{ end }} loading="lazy" decoding="async">
+          <span>Open full-resolution figure <span aria-hidden="true">→</span></span>
+        </a>
+        {{ else }}
         <img src="{{ . | relURL }}" alt="{{ $.Params.figure_alt | default $.Title }}"{{ with $.Params.figure_width }} width="{{ . }}"{{ end }}{{ with $.Params.figure_height }} height="{{ . }}"{{ end }} loading="lazy" decoding="async">
+        {{ end }}
         {{ with $.Params.figure_caption }}
         <figcaption>
-          <span>Research figure</span>
+          <span>{{ $.Params.figure_label | default "Research figure" }}</span>
           {{ . }}
           {{ with $.Params.figure_credit }}<small>{{ . }}</small>{{ end }}
         </figcaption>

@@ -239,6 +239,43 @@
   margin-inline: auto;
 }
 
+.research-summary__figure-link {
+  display: block;
+  color: var(--teal);
+  font-size: var(--text-xs);
+  font-weight: 800;
+  line-height: var(--line-meta);
+  text-align: right;
+  text-decoration: none;
+}
+
+.research-summary__figure-link img {
+  display: block;
+  transition: border-color 0.2s ease;
+}
+
+.research-summary__figure-link > span {
+  display: inline-block;
+  margin-top: 0.55rem;
+}
+
+.research-summary__figure-link:hover,
+.research-summary__figure-link:focus-visible {
+  color: var(--navy);
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.research-summary__figure-link:hover img,
+.research-summary__figure-link:focus-visible img {
+  border-color: var(--teal);
+}
+
+.research-summary__figure-link:focus-visible {
+  outline: 3px solid var(--focus-ring);
+  outline-offset: 4px;
+}
+
 .research-summary__figure figcaption {
   max-width: 68ch;
   margin-top: 0.8rem;

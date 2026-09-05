@@ -9,12 +9,14 @@ publication_title = "Evaluating Monthly Flow Prediction Based on SWAT and Suppor
 snapshot_question = "Can wavelet decomposition strengthen a hybrid SWAT–SVR framework for multi-site monthly streamflow prediction?"
 snapshot_methods = "SWAT-CUP · discrete wavelet transform · support vector regression · 12 hydrologic sites"
 snapshot_relevance = "Demonstrates physics–data integration that improves prediction while retaining watershed-process representation."
-figure = "images/research-summaries/swat-wsvr-taylor-diagrams.png"
-figure_width = 446
-figure_height = 642
-figure_layout = "compact"
-figure_alt = "Twelve Taylor diagrams comparing streamflow model performance across hydrologic monitoring sites"
-figure_caption = "Taylor-diagram comparison of monthly streamflow performance across 12 hydrologic sites for SWAT-CUP, SWAT–SVR, and the wavelet-enhanced SWAT–WSVR framework."
+figure = "images/research-summaries/swat-wsvr-monthly-flow-comparison.webp"
+figure_width = 3600
+figure_height = 1800
+figure_layout = "wide"
+figure_label = "Figure 7"
+figure_expandable = true
+figure_alt = "Twelve time-series panels comparing observed monthly streamflow with SWAT-CUP, SWAT-SVR, and SWAT-WSVR simulations across hydrologic monitoring sites"
+figure_caption = "Monthly streamflow time-series comparison across 12 hydrologic sites for observed flow, SWAT-CUP, SWAT–SVR, and the wavelet-enhanced SWAT–WSVR framework. Vertical blue lines separate calibration and validation periods. Select the figure to open the full-resolution version."
 figure_credit = "Source: Yuan and Forshay (2022)."
 +++
 
