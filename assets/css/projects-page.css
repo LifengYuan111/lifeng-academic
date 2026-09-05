@@ -111,11 +111,9 @@
   height: 1rem;
 }
 
-.project-portfolio-card__evidence .epa-icon {
-  width: 1.05rem;
-  height: 1.05rem;
-  border-width: 1.25px;
-  font-size: 0.33rem;
+.project-portfolio-card__evidence .external-link-icon {
+  width: 1rem;
+  height: 1rem;
 }
 
 .prose .project-portfolio-card__evidence a:hover,

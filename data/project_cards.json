@@ -10,7 +10,7 @@
     "evidence": [
       {"label": "Research Summary", "url": "notes/swmm-emergency-response/"},
       {"label": "Related Publication", "url": "https://doi.org/10.1016/j.jhazmat.2023.131747"},
-      {"label": "EPA Project", "url": "https://www.epa.gov/emergency-response-research/analysis-coastal-operational-resiliency", "icon": "epa"},
+      {"label": "EPA Project Page", "url": "https://www.epa.gov/emergency-response-research/analysis-coastal-operational-resiliency", "icon": "external"},
       {"label": "Dataset", "url": "https://catalog.data.gov/dataset/ancor-task-2-1-modeling-data"}
     ],
     "tools": ["SWMM / PCSWMM", "Python / IronPython", "GIS", "HPC"],

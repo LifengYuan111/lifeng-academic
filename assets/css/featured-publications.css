@@ -100,7 +100,7 @@
 }
 
 .featured-publication-card__actions .featured-publication-card__github,
-.featured-publication-card__actions .featured-publication-card__epa {
+.featured-publication-card__actions .featured-publication-card__official-link {
   display: inline-flex;
   align-items: center;
   gap: 0.3rem;
@@ -111,11 +111,9 @@
   height: 1rem;
 }
 
-.featured-publication-card__epa .epa-icon {
-  width: 1.2rem;
-  height: 1.2rem;
-  border-width: 1.5px;
-  font-size: 0.36rem;
+.featured-publication-card__official-link .external-link-icon {
+  width: 1rem;
+  height: 1rem;
 }
 
 .featured-publication-card__actions a:hover,

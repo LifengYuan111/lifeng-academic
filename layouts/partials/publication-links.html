@@ -11,7 +11,7 @@
     {{- end }}
     {{- with .record }}
     <a class="publication-link" href="{{ . }}" target="_blank" rel="noopener noreferrer" title="Open publication record" aria-label="Open publication record">
-      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6m0-6-9 9"/><path d="M20 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h5"/></svg>
+      {{ partial "external-link-icon.html" . }}
     </a>
     {{- end }}
     {{- with .pdf }}
@@ -40,8 +40,8 @@
     </a>
     {{- end }}
     {{- with .epa }}
-    <a class="publication-link publication-link--epa" href="{{ . }}" target="_blank" rel="noopener noreferrer" title="View on the U.S. EPA official website" aria-label="View on the U.S. EPA official website">
-      {{ partial "epa-icon.html" . }}
+    <a class="publication-link publication-link--external" href="{{ . }}" target="_blank" rel="noopener noreferrer" title="View on the U.S. EPA official website" aria-label="View on the U.S. EPA official website">
+      {{ partial "external-link-icon.html" . }}
     </a>
     {{- end }}
     {{- with .github }}
