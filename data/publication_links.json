@@ -19,7 +19,8 @@
     "dataset": "https://catalog.data.gov/dataset/ancor-task-2-1-modeling-data"
   },
   "Comparing two weather generator‐based downscaling tools for simulating storm intensification and its impacts on soil erosion under climate change": {
-    "doi": "10.1002/joc.7971"
+    "doi": "10.1002/joc.7971",
+    "github": "https://github.com/LifengYuan111/wepp-climate"
   },
   "Evaluating Monthly Flow Prediction Based on SWAT and Support Vector Regression Coupled with Discrete Wavelet Transform": {
     "doi": "10.3390/w14172649",
