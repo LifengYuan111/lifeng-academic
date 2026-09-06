@@ -387,6 +387,39 @@ p {
   line-height: 1.55;
 }
 
+.home-hero__availability {
+  display: flex;
+  max-width: 39rem;
+  align-items: flex-start;
+  gap: var(--space-xs);
+  margin: -0.35rem 0 var(--space-lg);
+  color: rgba(255, 255, 255, 0.82);
+  font-family: var(--font-sans);
+  font-size: var(--text-sm);
+  line-height: 1.6;
+}
+
+.home-hero__availability-mark {
+  width: 0.5rem;
+  height: 0.5rem;
+  flex: 0 0 auto;
+  margin-top: 0.48em;
+  border-radius: 50%;
+  background: var(--teal-light);
+}
+
+.home-hero__availability a {
+  color: var(--white);
+  font-weight: 700;
+  text-decoration-color: var(--teal-light);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+}
+
+.home-hero__availability a:hover {
+  color: var(--teal-light);
+}
+
 .eyebrow {
   margin-bottom: var(--space-sm);
   color: var(--teal);
