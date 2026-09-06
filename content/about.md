@@ -45,11 +45,11 @@ Dissertation: *Analysis of the Physical and Chemical Properties of Soil in the N
 
 {{< career-timeline >}}
 
-### Selected professional service
+### Selected Professional Service
 
-- Reviewer for journals including *Water Resources Research*, *Journal of Hydrology*, *Water Research*, *Environmental Modelling & Software*, and *Catena*.
-- EPA research-project and technical reviewer, 2021–2025.
-- Expert advisor for EPA research activities related to wetlands, nutrient reduction, and contaminant transport.
+- Peer reviewer for journals spanning hydrology, water quality, environmental modeling, machine learning, soil erosion, atmospheric science, and sustainability, including *Water Resources Research*, *Water Research*, *Journal of Hydrology*, *Environmental Modelling & Software*, *CATENA*, *Applied Soft Computing*, *Atmospheric Research*, and *Sustainable Futures*.
+- U.S. EPA research-project and technical reviewer, 2021–2025.
+- Expert advisor for U.S. EPA research activities related to wetlands, nutrient reduction, and contaminant transport.
 
 ### Field & laboratory experience
 
