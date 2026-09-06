@@ -1,0 +1,16 @@
+{{- $src := .Get "src" -}}
+{{- $alt := .Get "alt" | default "Research photograph" -}}
+{{- $layout := .Get "layout" | default "wide" -}}
+<figure class="research-summary__figure research-summary__figure--{{ $layout | anchorize }} research-summary__figure--inline">
+  <a class="research-summary__figure-link" href="{{ $src | relURL }}" target="_blank" rel="noopener" aria-label="Open the full-resolution research photograph">
+    <img src="{{ $src | relURL }}" alt="{{ $alt }}"{{ with .Get "width" }} width="{{ . }}"{{ end }}{{ with .Get "height" }} height="{{ . }}"{{ end }} loading="lazy" decoding="async">
+    <span>Open full-resolution photograph <span aria-hidden="true">→</span></span>
+  </a>
+  {{ with .Get "caption" }}
+  <figcaption>
+    <span>{{ $.Get "label" | default "Research photograph" }}</span>
+    {{ . }}
+    {{ with $.Get "credit" }}<small>{{ . }}</small>{{ end }}
+  </figcaption>
+  {{ end }}
+</figure>

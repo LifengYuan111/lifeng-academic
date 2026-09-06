@@ -52,4 +52,6 @@ The study shows that a physically based watershed model can identify critical so
 
 Presented at the 2019 AWRA Spring Specialty Conference, Omaha, Nebraska, March 25–27, 2019.
 
+{{< research-photo src="images/research-summaries/awra-2019-presentation.jpg" alt="Lifeng Yuan presenting SWAT watershed-modeling methods at the 2019 AWRA Spring Specialty Conference in Omaha, Nebraska" width="1536" height="2048" layout="portrait" label="Conference presentation" caption="Lifeng Yuan presenting SWAT watershed-modeling methods at the 2019 AWRA Spring Specialty Conference in Omaha, Nebraska." credit="Photograph provided by Lifeng Yuan." >}}
+
 {{< publication-resources >}}
